@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a0c765d-83fd-4361-b096-fd5e3cc0e14d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ant.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/build.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/createdb.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/filldb.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/initdb.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/schema.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/usecases.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sportinfo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/postgresql-42.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +57,7 @@
       <updated>1582117191967</updated>
       <workItem from="1582117194667" duration="1659000" />
       <workItem from="1582119531574" duration="695000" />
-      <workItem from="1582134265974" duration="342000" />
+      <workItem from="1582134265974" duration="547000" />
     </task>
     <servers />
   </component>
