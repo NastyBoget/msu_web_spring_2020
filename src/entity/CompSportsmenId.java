@@ -7,7 +7,7 @@ import java.util.Objects;
 
 @Embeddable
 public class CompSportsmenId implements Serializable {
-    @Column(name = "sportsmen_id")
+    @Column(name = "sportsman_id")
     private Long sportsmenId;
 
     @Column(name = "comp_id")

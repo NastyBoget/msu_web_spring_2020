@@ -10,7 +10,7 @@ public class SportsmenTeamsId implements Serializable {
     @Column(name = "sportsman_id")
     private Long sportsmanId;
 
-    @Column(name = "comp_id")
+    @Column(name = "team_id")
     private Long teamId;
 
     public SportsmenTeamsId() {}

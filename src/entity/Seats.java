@@ -21,12 +21,12 @@ public class Seats implements Serializable {
     @EmbeddedId
     private SeatsId id;
 
-    @OneToOne
-    @JoinColumn(name = "comp_id", nullable = false)
+    @ManyToOne
+    @JoinColumn(name = "comp_id", nullable = false, insertable = false, updatable = false)
     private Competition compId;
 
     @Basic
-    @Column(name = "seats_type", nullable = false)
+    @Column(name = "seats_type", nullable = false, insertable = false, updatable = false)
     private String type;
 
     @Basic

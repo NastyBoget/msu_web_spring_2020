@@ -24,15 +24,21 @@
             password
         </property>
 
+        <property name="connection.pool_size">
+            1
+        </property>
+
         <!-- Mapping files -->
         <mapping class="entity.Competition"/>
+        <mapping class="entity.Trainer"/>
+        <mapping class="entity.Sportsman"/>
+        <mapping class="entity.Team"/>
         <mapping class="entity.CompSportsmen"/>
         <mapping class="entity.CompTeams"/>
         <mapping class="entity.Seats"/>
-        <mapping class="entity.Sportsman"/>
         <mapping class="entity.SportsmenTeams"/>
-        <mapping class="entity.Team"/>
-        <mapping class="entity.Trainer"/>
+
+
 
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
