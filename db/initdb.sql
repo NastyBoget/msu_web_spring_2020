@@ -1,3 +1,7 @@
+-- Initialize database --
+
+---- Create types ----
+
 CREATE TYPE STATUS AS ENUM ('soon', 'now', 'passed');
 
 CREATE TYPE SPORT AS ENUM ('football', 'synchronized swimming',
@@ -5,8 +9,10 @@ CREATE TYPE SPORT AS ENUM ('football', 'synchronized swimming',
 
 CREATE TYPE SEATS AS ENUM ('front', 'middle', 'back');
 
+---- Create tables -----
+
 CREATE TABLE competitions (
-    comp_id INTEGER PRIMARY KEY,
+    comp_id SERIAL PRIMARY KEY,
     comp_name VARCHAR(50) NOT NULL,
     location VARCHAR(50) NOT NULL,
     comp_time TIMESTAMP NOT NULL,
@@ -16,19 +22,19 @@ CREATE TABLE competitions (
 );
 
 CREATE TABLE IF NOT EXISTS trainers (
-    trainer_id INTEGER PRIMARY KEY,
+    trainer_id SERIAL PRIMARY KEY,
     trainer_name VARCHAR(50) NOT NULL,
     birthday DATE NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS teams (
-    team_id INTEGER PRIMARY KEY,
+    team_id SERIAL PRIMARY KEY,
     trainer_id INTEGER REFERENCES trainers NOT NULL,
     team_name VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS sportsmen (
-     sportsman_id INTEGER PRIMARY KEY,
+     sportsman_id SERIAL PRIMARY KEY,
      trainer_id INTEGER REFERENCES trainers, -- may be NULL if sportsman has a team
      team_id INTEGER REFERENCES teams, -- may be NULL if sportsman hasn't a team
      sportsman_name VARCHAR(50) NOT NULL,
@@ -61,7 +67,7 @@ CREATE TABLE IF NOT EXISTS seats_info (
     seats_type SEATS NOT NULL,
     num_seats SMALLINT NOT NULL CHECK (num_seats > 0),
     num_free_seats SMALLINT NOT NULL CHECK (num_free_seats >= 0),
-    price MONEY NOT NULL,
+    price NUMERIC NOT NULL CHECK (price >= 0.0),
     CHECK (num_free_seats <= num_seats)
 );
 
