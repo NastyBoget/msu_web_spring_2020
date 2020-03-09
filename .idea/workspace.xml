@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a0c765d-83fd-4361-b096-fd5e3cc0e14d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/sportinfo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_4_10_5_4_10.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sportinfo/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sportinfo/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/CompSportsmenId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/CompSportsmenId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Seats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Seats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/SportsmenTeamsId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/SportsmenTeamsId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,25 +63,6 @@
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sportinfo" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sportinfo: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="comp_sportsmen: table" type="69fad909:PgImplModel$LocalTable" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="sportinfo" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="sportinfo: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="object types" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
     </expand>
     <select />
   </component>
@@ -142,7 +116,14 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="DBManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DBManager" />
+      <module name="sportinfo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="sportinfo" />
@@ -217,6 +198,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.DBManager" />
       </list>
     </recent_temporary>
   </component>
@@ -280,7 +262,8 @@
       <workItem from="1583561461684" duration="7872000" />
       <workItem from="1583656874905" duration="11708000" />
       <workItem from="1583675402770" duration="2811000" />
-      <workItem from="1583678526684" duration="3529000" />
+      <workItem from="1583678526684" duration="7802000" />
+      <workItem from="1583775434303" duration="5131000" />
     </task>
     <servers />
   </component>
@@ -288,14 +271,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="115" key="#Assign_Data_Sources" timestamp="1583676580912">
+    <state x="320" y="115" key="#Assign_Data_Sources" timestamp="1583691799412">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="115" key="#Assign_Data_Sources/0.0.1440.900@0.0.1440.900" timestamp="1583676580912" />
+    <state x="320" y="115" key="#Assign_Data_Sources/0.0.1440.900@0.0.1440.900" timestamp="1583691799412" />
     <state x="455" y="137" key="#Glassfish_Server" timestamp="1582228737969">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="455" y="137" key="#Glassfish_Server/0.0.1440.900@0.0.1440.900" timestamp="1582228737969" />
+    <state x="320" y="115" key="#Inspections" timestamp="1583687193584">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="115" key="#Inspections/0.0.1440.900@0.0.1440.900" timestamp="1583687193584" />
     <state x="320" y="115" key="#Notifications" timestamp="1583660422433">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -320,26 +307,26 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1583677420066" />
-    <state width="1398" height="314" key="GridCell.Tab.0.bottom" timestamp="1583685259679">
+    <state width="1398" height="382" key="GridCell.Tab.0.bottom" timestamp="1583782351110">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="314" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583685259679" />
-    <state width="1398" height="314" key="GridCell.Tab.0.center" timestamp="1583685259677">
+    <state width="1398" height="382" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583782351110" />
+    <state width="1398" height="382" key="GridCell.Tab.0.center" timestamp="1583782351108">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="314" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583685259677" />
-    <state width="1398" height="314" key="GridCell.Tab.0.left" timestamp="1583685259677">
+    <state width="1398" height="382" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583782351108" />
+    <state width="1398" height="382" key="GridCell.Tab.0.left" timestamp="1583782351108">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="314" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583685259677" />
-    <state width="1398" height="314" key="GridCell.Tab.0.right" timestamp="1583685259678">
+    <state width="1398" height="382" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583782351108" />
+    <state width="1398" height="382" key="GridCell.Tab.0.right" timestamp="1583782351109">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="314" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583685259678" />
-    <state x="0" y="23" width="1440" height="722" key="SettingsEditor" timestamp="1583683251726">
+    <state width="1398" height="382" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583782351109" />
+    <state x="0" y="23" width="1440" height="722" key="SettingsEditor" timestamp="1583781533544">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="23" width="1440" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1583683251726" />
+    <state x="0" y="23" width="1440" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1583781533544" />
     <state x="399" y="121" key="antBuildFilePropertiesDialogDimension" timestamp="1582119563272">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

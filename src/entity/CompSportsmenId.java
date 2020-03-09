@@ -8,7 +8,7 @@ import java.util.Objects;
 @Embeddable
 public class CompSportsmenId implements Serializable {
     @Column(name = "sportsman_id")
-    private Long sportsmenId;
+    private Long sportsmanId;
 
     @Column(name = "comp_id")
     private Long compId;
@@ -16,12 +16,12 @@ public class CompSportsmenId implements Serializable {
     public CompSportsmenId() {}
 
     public CompSportsmenId(Long compId, Long sportsmenId) {
-        this.sportsmenId = sportsmenId;
+        this.sportsmanId = sportsmenId;
         this.compId = compId;
     }
 
     public Long getSportsmenId() {
-        return sportsmenId;
+        return sportsmanId;
     }
 
     public Long getCompId() {
