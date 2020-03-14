@@ -5,7 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sportinfo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sportinfo/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/CompSportsmenId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/CompSportsmenId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daoClasses/CompetitionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/daoClasses/CompetitionDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daoClasses/SeatsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/daoClasses/SeatsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daoClasses/TeamDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/daoClasses/TeamDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +108,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="XML" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
@@ -263,7 +265,8 @@
       <workItem from="1583656874905" duration="11708000" />
       <workItem from="1583675402770" duration="2811000" />
       <workItem from="1583678526684" duration="7802000" />
-      <workItem from="1583775434303" duration="5131000" />
+      <workItem from="1583775434303" duration="5467000" />
+      <workItem from="1584210157761" duration="6981000" />
     </task>
     <servers />
   </component>
@@ -295,10 +298,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="455" y="137" key="#Web_Browsers/0.0.1440.900@0.0.1440.900" timestamp="1582228665710" />
-    <state x="339" y="79" width="1071" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583683332217">
+    <state x="339" y="79" width="1071" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584215206047">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="339" y="79" width="1071" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1583683332217" />
+    <state x="339" y="79" width="1071" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1584215206047" />
     <state x="0" y="0" width="643" height="900" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog" timestamp="1583439784226">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -307,26 +310,26 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1583677420066" />
-    <state width="1398" height="382" key="GridCell.Tab.0.bottom" timestamp="1583782351110">
+    <state width="1398" height="544" key="GridCell.Tab.0.bottom" timestamp="1584218118410">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="382" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583782351110" />
-    <state width="1398" height="382" key="GridCell.Tab.0.center" timestamp="1583782351108">
+    <state width="1398" height="544" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584218118410" />
+    <state width="1398" height="544" key="GridCell.Tab.0.center" timestamp="1584218118408">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="382" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583782351108" />
-    <state width="1398" height="382" key="GridCell.Tab.0.left" timestamp="1583782351108">
+    <state width="1398" height="544" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584218118408" />
+    <state width="1398" height="544" key="GridCell.Tab.0.left" timestamp="1584218118407">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="382" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583782351108" />
-    <state width="1398" height="382" key="GridCell.Tab.0.right" timestamp="1583782351109">
+    <state width="1398" height="544" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584218118407" />
+    <state width="1398" height="544" key="GridCell.Tab.0.right" timestamp="1584218118409">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="382" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583782351109" />
-    <state x="0" y="23" width="1440" height="722" key="SettingsEditor" timestamp="1583781533544">
+    <state width="1398" height="544" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584218118409" />
+    <state x="0" y="23" width="1440" height="722" key="SettingsEditor" timestamp="1584216312742">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="23" width="1440" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1583781533544" />
+    <state x="0" y="23" width="1440" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1584216312742" />
     <state x="399" y="121" key="antBuildFilePropertiesDialogDimension" timestamp="1582119563272">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

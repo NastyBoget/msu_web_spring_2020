@@ -2,7 +2,6 @@ package daoClasses;
 
 import dao.GenericDAO;
 import entity.Competition;
-import entity.Seats;
 
 import javax.persistence.TemporalType;
 import javax.persistence.TypedQuery;
@@ -36,6 +35,15 @@ public class CompetitionDAO extends GenericDAO<Competition, Long> {
                 "SELECT e FROM Competition e " +
                         "WHERE LOWER(e.sportKind) LIKE LOWER(:sportKind)")
                 .setParameter("sportKind", '%' + sportKind + '%');
+        return query.getResultList();
+    }
+
+    @SuppressWarnings("unchecked")
+    public List<Competition> getByStatus(String status) {
+        TypedQuery<Competition> query = getSession().createQuery(
+                "SELECT e FROM Competition e " +
+                        "WHERE LOWER(e.compStatus) LIKE LOWER(:status)")
+                .setParameter("status", status);
         return query.getResultList();
     }
 

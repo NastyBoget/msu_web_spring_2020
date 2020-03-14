@@ -15,4 +15,5 @@ public class TeamDAO extends GenericDAO<Team, Long> {
                 .setParameter("name", '%' + name + '%');
         return query.getResultList();
     }
+
 }
