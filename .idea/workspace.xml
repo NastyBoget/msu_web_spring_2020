@@ -2,9 +2,108 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a0c765d-83fd-4361-b096-fd5e3cc0e14d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_4_10_5_4_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_4_10_5_4_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/filldb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/filldb.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/initdb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/initdb.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/daoClasses/CompSportsmenDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/daoClasses/CompTeamsDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/daoClasses/CompetitionDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/daoClasses/SeatsDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/entity/CompSportsmen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/entity/CompTeams.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/entity/Competition.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sportinfo/entity/Competition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/entity/Seats.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sportinfo/entity/Seats.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/entity/SeatsId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/tests/CompetitionDAOTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/.idea/ant.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/.idea/artifacts/sportinfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/.idea/libraries/Hibernate_5_4_10_5_4_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/build.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/dao/GenericDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/daoClasses/SportsmanDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/daoClasses/SportsmenTeamsDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/daoClasses/TeamDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/daoClasses/TrainerDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/db/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/db/createdb.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/db/dropdb.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/db/droptables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/db/filldb.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/db/initdb.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/db/schema.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/db/usecases.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/entity/CompSportsmenId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/entity/CompTeamsId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/entity/Competition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/entity/SeatsId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/entity/Sportsman.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/entity/SportsmenTeams.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/entity/SportsmenTeamsId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/entity/Team.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/entity/Trainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/byte-buddy-1.10.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/classmate-1.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/dom4j-2.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/hamcrest-core-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/hibernate-core-5.4.10.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/jandex-2.1.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/junit-4.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/postgresql-42.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/stax-ex-1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/testng-6.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/txw2-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/sportinfo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/src/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/tests/CompetitionDAOTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sportinfo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sportinfo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/GenericDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/GenericDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daoClasses/CompSportsmenDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoClasses/CompSportsmenDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daoClasses/CompTeamsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoClasses/CompTeamsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daoClasses/CompetitionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoClasses/CompetitionDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daoClasses/SeatsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoClasses/SeatsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daoClasses/SportsmanDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoClasses/SportsmanDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daoClasses/SportsmenTeamsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoClasses/SportsmenTeamsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daoClasses/TeamDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoClasses/TeamDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daoClasses/TrainerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoClasses/TrainerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/CompSportsmen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/CompSportsmen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/CompSportsmenId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/CompSportsmenId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/CompTeams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/CompTeams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/CompTeamsId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/CompTeamsId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Competition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Competition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Seats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Seats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/SeatsId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/SeatsId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Sportsman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Sportsman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/SportsmenTeams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/SportsmenTeams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/SportsmenTeamsId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/SportsmenTeamsId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Trainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Trainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/CompetitionDAOTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,10 +164,6 @@
     </expand>
     <select />
   </component>
-  <component name="ErrorTreeViewConfiguration">
-    <option name="hideWarnings" value="true" />
-    <option name="HIDE_WARNINGS" value="true" />
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="sportinfo" />
   </component>
@@ -98,6 +193,8 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
@@ -110,19 +207,19 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="XML" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$/lib" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CompetitionDAOTest">
-    <configuration name="DBManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DBManager" />
+  <component name="RunManager" selected="JUnit.CompetitionDAOTest (1)">
+    <configuration name="Main " type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="sportinfo" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -199,6 +296,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CompetitionDAOTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sportinfo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CompetitionDAOTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CompetitionDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sportinfo" />
       <extension name="coverage">
@@ -214,11 +320,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CompetitionDAOTest.saveUpdateDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sportinfo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CompetitionDAOTest" />
+      <option name="METHOD_NAME" value="saveUpdateDelete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CompetitionDAOTest" />
+        <item itemvalue="JUnit.CompetitionDAOTest (1)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.DBManager" />
+        <item itemvalue="Application.Main " />
+        <item itemvalue="JUnit.CompetitionDAOTest.saveUpdateDelete" />
+        <item itemvalue="JUnit.CompetitionDAOTest" />
       </list>
     </recent_temporary>
   </component>
@@ -262,7 +380,7 @@
   </component>
   <component name="StructureViewFactory">
     <option name="AUTOSCROLL_MODE" value="false" />
-    <option name="ACTIVE_ACTIONS" value=",SQL_ALPHA_COMPARATOR,Other,Select statements,DML statements" />
+    <option name="ACTIVE_ACTIONS" value=",SQL_ALPHA_COMPARATOR,Other,Select statements,DML statements,SHOW_PROPERTIES" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -285,7 +403,7 @@
       <workItem from="1583678526684" duration="7802000" />
       <workItem from="1583775434303" duration="5467000" />
       <workItem from="1584210157761" duration="6981000" />
-      <workItem from="1584254066178" duration="5472000" />
+      <workItem from="1584254066178" duration="11546000" />
     </task>
     <servers />
   </component>
@@ -305,50 +423,62 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="132" key="#HTTP_Proxy/0.0.1440.900@0.0.1440.900" timestamp="1584255181585" />
-    <state x="320" y="115" key="#Inspections" timestamp="1583687193584">
+    <state x="320" y="115" key="#Inspections" timestamp="1584266213160">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="115" key="#Inspections/0.0.1440.900@0.0.1440.900" timestamp="1583687193584" />
+    <state x="320" y="115" key="#Inspections/0.0.1440.900@0.0.1440.900" timestamp="1584266213160" />
+    <state x="396" y="115" key="#Main_" timestamp="1584272213849">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="396" y="115" key="#Main_(1)" timestamp="1584271523227">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="396" y="115" key="#Main_(1)/0.0.1440.900@0.0.1440.900" timestamp="1584271523227" />
+    <state x="396" y="115" key="#Main_/0.0.1440.900@0.0.1440.900" timestamp="1584272213849" />
     <state x="320" y="115" key="#Notifications" timestamp="1583660422433">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="115" key="#Notifications/0.0.1440.900@0.0.1440.900" timestamp="1583660422433" />
-    <state x="320" y="115" key="#Project_Structure" timestamp="1582117210145">
+    <state x="320" y="115" key="#Project_Structure" timestamp="1584272641122">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="115" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1582117210145" />
+    <state x="320" y="115" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1584272641122" />
     <state x="455" y="137" key="#Web_Browsers" timestamp="1582228665710">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="455" y="137" key="#Web_Browsers/0.0.1440.900@0.0.1440.900" timestamp="1582228665710" />
-    <state x="339" y="79" width="1071" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584215206047">
+    <state x="339" y="79" width="1071" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584271761478">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="339" y="79" width="1071" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1584215206047" />
+    <state x="339" y="79" width="1071" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1584271761478" />
+    <state x="334" y="146" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1584270574781">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="334" y="146" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1440.900@0.0.1440.900" timestamp="1584270574781" />
     <state x="0" y="0" width="643" height="900" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog" timestamp="1583439784226">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="0" y="0" width="643" height="900" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog/0.0.1440.900@0.0.1440.900" timestamp="1583439784226" />
-    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1583677420066">
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584267299906">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1583677420066" />
-    <state width="1398" height="117" key="GridCell.Tab.0.bottom" timestamp="1584265601185">
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1584267299906" />
+    <state width="1398" height="184" key="GridCell.Tab.0.bottom" timestamp="1584272779959">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="117" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584265601185" />
-    <state width="1398" height="117" key="GridCell.Tab.0.center" timestamp="1584265601183">
+    <state width="1398" height="184" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584272779959" />
+    <state width="1398" height="184" key="GridCell.Tab.0.center" timestamp="1584272779958">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="117" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584265601183" />
-    <state width="1398" height="117" key="GridCell.Tab.0.left" timestamp="1584265601181">
+    <state width="1398" height="184" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584272779958" />
+    <state width="1398" height="184" key="GridCell.Tab.0.left" timestamp="1584272779957">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="117" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584265601181" />
-    <state width="1398" height="117" key="GridCell.Tab.0.right" timestamp="1584265601184">
+    <state width="1398" height="184" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584272779957" />
+    <state width="1398" height="184" key="GridCell.Tab.0.right" timestamp="1584272779958">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="117" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584265601184" />
+    <state width="1398" height="184" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584272779958" />
     <state width="1398" height="120" key="GridCell.Tab.1.bottom" timestamp="1584258966878">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -365,10 +495,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="120" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1584258966877" />
-    <state x="0" y="132" width="1440" height="722" key="SettingsEditor" timestamp="1584257669978">
+    <state x="0" y="132" width="1440" height="722" key="SettingsEditor" timestamp="1584271894816">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="132" width="1440" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1584257669978" />
+    <state x="0" y="132" width="1440" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1584271894816" />
     <state x="399" y="121" key="antBuildFilePropertiesDialogDimension" timestamp="1582119563272">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -377,77 +507,81 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="397" y="282" width="649" height="380" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1582225555376" />
-    <state x="424" y="351" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1584255883073">
+    <state x="424" y="351" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1584269173410">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="424" y="351" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1440.900@0.0.1440.900" timestamp="1584255883073" />
+    <state x="424" y="351" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1440.900@0.0.1440.900" timestamp="1584269173410" />
+    <state x="450" y="369" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1584272702221">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="450" y="369" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1440.900@0.0.1440.900" timestamp="1584272702221" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
-          <line>29</line>
+          <url>file://$PROJECT_DIR$/src/main/java/tests/CompetitionDAOTest.java</url>
+          <line>28</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
-          <line>35</line>
+          <url>file://$PROJECT_DIR$/src/main/java/tests/CompetitionDAOTest.java</url>
+          <line>34</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
-          <line>42</line>
+          <url>file://$PROJECT_DIR$/src/main/java/tests/CompetitionDAOTest.java</url>
+          <line>41</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
-          <line>43</line>
+          <url>file://$PROJECT_DIR$/src/main/java/tests/CompetitionDAOTest.java</url>
+          <line>42</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
-          <line>50</line>
+          <url>file://$PROJECT_DIR$/src/main/java/tests/CompetitionDAOTest.java</url>
+          <line>49</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
-          <line>51</line>
+          <url>file://$PROJECT_DIR$/src/main/java/tests/CompetitionDAOTest.java</url>
+          <line>50</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
-          <line>59</line>
+          <url>file://$PROJECT_DIR$/src/main/java/tests/CompetitionDAOTest.java</url>
+          <line>58</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
-          <line>60</line>
+          <url>file://$PROJECT_DIR$/src/main/java/tests/CompetitionDAOTest.java</url>
+          <line>59</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
-          <line>58</line>
+          <url>file://$PROJECT_DIR$/src/main/java/tests/CompetitionDAOTest.java</url>
+          <line>57</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
-          <line>62</line>
+          <url>file://$PROJECT_DIR$/src/main/java/tests/CompetitionDAOTest.java</url>
+          <line>61</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
-          <line>63</line>
+          <url>file://$PROJECT_DIR$/src/main/java/tests/CompetitionDAOTest.java</url>
+          <line>62</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
-          <line>70</line>
+          <url>file://$PROJECT_DIR$/src/main/java/tests/CompetitionDAOTest.java</url>
+          <line>69</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
-          <line>72</line>
+          <url>file://$PROJECT_DIR$/src/main/java/tests/CompetitionDAOTest.java</url>
+          <line>71</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
