@@ -50,17 +50,17 @@ public class Main {
                     comp.getPoints()
             );
         }
-//        seatsDAO.setSession(s);
-//        List<Seats> seatsList = seatsDAO.getAll();
-//        for (Seats seats: seatsList) {
-//            System.out.println(
-//                    seats.getCompId() + " | " +
-//                    seats.getNumSeats() + " | " +
-//                    seats.getNumFreeSeats() + " | " +
-//                    seats.getType() + " | " +
-//                    seats.getPrice()
-//            );
-//        }
+        seatsDAO.setSession(s);
+        List<Seats> seatsList = seatsDAO.getAll();
+        for (Seats seats: seatsList) {
+            System.out.println(
+                    seats.getCompId() + " | " +
+                    seats.getNumSeats() + " | " +
+                    seats.getNumFreeSeats() + " | " +
+                    seats.getType() + " | " +
+                    seats.getPrice()
+            );
+        }
         sportsmanDAO.setSession(s);
         List<Sportsman> sportsmanList = sportsmanDAO.getAll();
         for (Sportsman sportsman: sportsmanList) {

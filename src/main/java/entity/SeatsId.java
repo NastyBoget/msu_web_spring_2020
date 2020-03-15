@@ -1,17 +1,25 @@
 package entity;
 
+import org.hibernate.annotations.Type;
+import org.hibernate.annotations.TypeDef;
+
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import java.io.Serializable;
 import java.util.Objects;
 
 @Embeddable
+@TypeDef(name = "pgsql_enum", typeClass = PSQLType.class)
 public class SeatsId implements Serializable {
 
     @Column(name = "comp_id")
     private Long compId;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "seats_type")
+    @Type(type = "pgsql_enum")
     private Seats.SeatsType seatsType;
 
     public SeatsId() {}
