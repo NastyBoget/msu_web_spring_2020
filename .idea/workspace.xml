@@ -2,609 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a0c765d-83fd-4361-b096-fd5e3cc0e14d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_4_10_5_4_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_4_10_5_4_10.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sportinfo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sportinfo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/GenericDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daoClasses/CompSportsmenDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daoClasses/CompTeamsDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daoClasses/CompetitionDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daoClasses/SeatsDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daoClasses/SportsmanDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daoClasses/SportsmenTeamsDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daoClasses/TeamDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daoClasses/TrainerDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/CompSportsmen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/CompSportsmenId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/CompTeams.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/CompTeamsId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Competition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/PSQLType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Seats.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/SeatsId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Sportsman.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/SportsmenTeams.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/SportsmenTeamsId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Team.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Trainer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CompetitionDAOTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/ant.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/artifacts/sportinfo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/libraries/Hibernate_5_4_10_5_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ant.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/artifacts/sportinfo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/build.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/byte-buddy-1.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/.idea/ant.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/.idea/artifacts/sportinfo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/.idea/libraries/Hibernate_5_4_10_5_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/ant.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/artifacts/sportinfo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/build.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/byte-buddy-1.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/ant.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/artifacts/sportinfo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/build.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/byte-buddy-1.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/classmate-1.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/createdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/db/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/db/createdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/db/dropdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/db/droptables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/db/filldb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/db/initdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/db/schema.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/db/usecases.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/dom4j-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/dropdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/droptables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/filldb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/hibernate-core-5.4.10.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/initdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/jandex-2.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/javassist-3.24.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/lib/byte-buddy-1.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/lib/classmate-1.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/lib/dom4j-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/lib/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/lib/hibernate-core-5.4.10.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/lib/jandex-2.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/lib/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/lib/postgresql-42.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/lib/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/lib/testng-6.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/lib/txw2-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/libraries/Hibernate_5_4_10_5_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/postgresql-42.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/schema.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/testng-6.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/txw2-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/usecases.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/classmate-1.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/createdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/db/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/db/createdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/db/dropdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/db/droptables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/db/filldb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/db/initdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/db/schema.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/db/usecases.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/dom4j-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/dropdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/droptables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/filldb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/hibernate-core-5.4.10.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/initdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/jandex-2.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/javassist-3.24.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/lib/byte-buddy-1.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/lib/classmate-1.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/lib/dom4j-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/lib/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/lib/hibernate-core-5.4.10.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/lib/jandex-2.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/lib/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/lib/postgresql-42.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/lib/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/lib/testng-6.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/lib/txw2-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/libraries/Hibernate_5_4_10_5_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/main/resources/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/postgresql-42.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/resources/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/schema.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/ant.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/artifacts/sportinfo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/build.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/byte-buddy-1.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/classmate-1.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/createdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/db/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/db/createdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/db/dropdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/db/droptables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/db/filldb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/db/initdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/db/schema.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/db/usecases.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/dom4j-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/dropdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/droptables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/filldb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/hibernate-core-5.4.10.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/initdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/jandex-2.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/javassist-3.24.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/lib/byte-buddy-1.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/lib/classmate-1.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/lib/dom4j-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/lib/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/lib/hibernate-core-5.4.10.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/lib/jandex-2.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/lib/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/lib/postgresql-42.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/lib/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/lib/testng-6.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/lib/txw2-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/libraries/Hibernate_5_4_10_5_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/postgresql-42.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/schema.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/testng-6.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/txw2-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/usecases.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/testng-6.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/txw2-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/usecases.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classes/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classmate-1.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/createdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/GenericDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daoClasses/CompSportsmenDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daoClasses/CompTeamsDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daoClasses/CompetitionDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daoClasses/SeatsDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daoClasses/SportsmanDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daoClasses/SportsmenTeamsDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daoClasses/TeamDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daoClasses/TrainerDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/createdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/dropdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/droptables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/filldb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/initdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/schema.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/usecases.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dom4j-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dropdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/droptables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/CompSportsmen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/CompSportsmenId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/CompTeams.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/CompTeamsId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Competition$CompStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Competition$SportKind.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Competition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Seats$SeatsType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Seats.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/SeatsId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Sportsman.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/SportsmenTeams.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/SportsmenTeamsId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Team.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Trainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filldb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate-core-5.4.10.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/initdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jandex-2.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javassist-3.24.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/byte-buddy-1.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/classmate-1.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/dom4j-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/hibernate-core-5.4.10.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/jandex-2.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/postgresql-42.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/testng-6.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lib/txw2-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/libraries/Hibernate_5_4_10_5_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/resources/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/postgresql-42.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/resources/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schema.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sportinfo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/ant.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/artifacts/sportinfo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/libraries/Hibernate_5_4_10_5_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/ant.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/artifacts/sportinfo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/build.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/byte-buddy-1.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/ant.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/artifacts/sportinfo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/build.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/byte-buddy-1.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/classmate-1.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/createdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/db/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/db/createdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/db/dropdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/db/droptables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/db/filldb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/db/initdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/db/schema.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/db/usecases.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/dom4j-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/dropdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/droptables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/filldb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/hibernate-core-5.4.10.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/initdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/jandex-2.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/javassist-3.24.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/lib/byte-buddy-1.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/lib/classmate-1.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/lib/dom4j-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/lib/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/lib/hibernate-core-5.4.10.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/lib/jandex-2.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/lib/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/lib/postgresql-42.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/lib/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/lib/testng-6.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/lib/txw2-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/libraries/Hibernate_5_4_10_5_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/postgresql-42.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/schema.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/testng-6.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/txw2-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/usecases.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classmate-1.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/createdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/db/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/db/createdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/db/dropdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/db/droptables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/db/filldb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/db/initdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/db/schema.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/db/usecases.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/dom4j-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/dropdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/droptables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/filldb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/hibernate-core-5.4.10.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/initdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/jandex-2.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/javassist-3.24.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/lib/byte-buddy-1.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/lib/classmate-1.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/lib/dom4j-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/lib/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/lib/hibernate-core-5.4.10.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/lib/jandex-2.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/lib/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/lib/postgresql-42.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/lib/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/lib/testng-6.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/lib/txw2-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/libraries/Hibernate_5_4_10_5_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/main/resources/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/postgresql-42.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/resources/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/schema.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/ant.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/artifacts/sportinfo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/build.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/byte-buddy-1.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/classmate-1.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/createdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/db/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/db/createdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/db/dropdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/db/droptables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/db/filldb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/db/initdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/db/schema.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/db/usecases.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/dom4j-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/dropdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/droptables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/filldb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/hibernate-core-5.4.10.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/initdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/jandex-2.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/javassist-3.24.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/lib/byte-buddy-1.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/lib/classmate-1.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/lib/dom4j-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/lib/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/lib/hibernate-core-5.4.10.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/lib/jandex-2.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/lib/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/lib/postgresql-42.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/lib/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/lib/testng-6.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/lib/txw2-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/libraries/Hibernate_5_4_10_5_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/postgresql-42.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/schema.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/testng-6.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/txw2-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/usecases.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/testng-6.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/txw2-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/usecases.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/testng-6.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/txw2-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/usecases.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/CompetitionDAOTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -730,14 +129,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CompetitionDAOTest">
-    <configuration name="Main " type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="sportinfo" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.CompSportsmenDAOTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="sportinfo" />
@@ -828,6 +220,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CompSportsmenDAOTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sportinfo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CompSportsmenDAOTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CompetitionDAOTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sportinfo" />
       <option name="PACKAGE_NAME" value="" />
@@ -841,11 +244,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CompetitionDAOTest" />
+        <item itemvalue="TestNG.CompSportsmenDAOTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="TestNG.CompetitionDAOTest" />
         <item itemvalue="JUnit.CompetitionDAOTest (1)" />
         <item itemvalue="JUnit.CompetitionDAOTest.getById" />
-        <item itemvalue="Application.Main " />
       </list>
     </recent_temporary>
   </component>
@@ -914,7 +317,7 @@
       <workItem from="1584210157761" duration="6981000" />
       <workItem from="1584254066178" duration="14210000" />
       <workItem from="1584276241135" duration="1307000" />
-      <workItem from="1584278945662" duration="8139000" />
+      <workItem from="1584278945662" duration="9900000" />
     </task>
     <servers />
   </component>
@@ -922,10 +325,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="115" key="#Assign_Data_Sources" timestamp="1584287232541">
+    <state x="320" y="115" key="#Assign_Data_Sources" timestamp="1584287838779">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="115" key="#Assign_Data_Sources/0.0.1440.900@0.0.1440.900" timestamp="1584287232541" />
+    <state x="320" y="115" key="#Assign_Data_Sources/0.0.1440.900@0.0.1440.900" timestamp="1584287838779" />
     <state x="455" y="137" key="#Glassfish_Server" timestamp="1582228737969">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -982,28 +385,28 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1584267299906" />
-    <state width="1440" height="353" key="GridCell.Tab.0.bottom" timestamp="1584287566060">
+    <state width="1440" height="132" key="GridCell.Tab.0.bottom" timestamp="1584289342615">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="353" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584287566060" />
+    <state width="1440" height="132" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584289342615" />
     <state width="1398" height="534" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1584275973182" />
     <state width="1440" height="282" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1584285281309" />
-    <state width="1440" height="353" key="GridCell.Tab.0.center" timestamp="1584287566059">
+    <state width="1440" height="132" key="GridCell.Tab.0.center" timestamp="1584289342613">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="353" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584287566059" />
+    <state width="1440" height="132" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584289342613" />
     <state width="1398" height="534" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1584275973180" />
     <state width="1440" height="282" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1584285281308" />
-    <state width="1440" height="353" key="GridCell.Tab.0.left" timestamp="1584287566058">
+    <state width="1440" height="132" key="GridCell.Tab.0.left" timestamp="1584289342612">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="353" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584287566058" />
+    <state width="1440" height="132" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584289342612" />
     <state width="1398" height="534" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1584275973180" />
     <state width="1440" height="282" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1584285281307" />
-    <state width="1440" height="353" key="GridCell.Tab.0.right" timestamp="1584287566060">
+    <state width="1440" height="132" key="GridCell.Tab.0.right" timestamp="1584289342614">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="353" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584287566060" />
+    <state width="1440" height="132" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584289342614" />
     <state width="1398" height="534" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1584275973181" />
     <state width="1440" height="282" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1584285281309" />
     <state width="1398" height="534" key="GridCell.Tab.1.bottom" timestamp="1584275973186">
