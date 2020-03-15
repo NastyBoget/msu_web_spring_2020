@@ -2,108 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a0c765d-83fd-4361-b096-fd5e3cc0e14d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/filldb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/filldb.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/initdb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/initdb.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/daoClasses/CompSportsmenDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/daoClasses/CompTeamsDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/daoClasses/CompetitionDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/daoClasses/SeatsDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/entity/CompSportsmen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/entity/CompTeams.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/entity/Competition.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sportinfo/entity/Competition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/entity/Seats.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sportinfo/entity/Seats.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/entity/SeatsId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/tests/CompetitionDAOTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/.idea/ant.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/.idea/artifacts/sportinfo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/.idea/libraries/Hibernate_5_4_10_5_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/build.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/dao/GenericDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/daoClasses/SportsmanDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/daoClasses/SportsmenTeamsDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/daoClasses/TeamDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/daoClasses/TrainerDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/db/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/db/createdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/db/dropdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/db/droptables.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/db/filldb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/db/initdb.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/db/schema.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/db/usecases.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/entity/CompSportsmenId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/entity/CompTeamsId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/entity/Competition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/entity/SeatsId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/entity/Sportsman.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/entity/SportsmenTeams.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/entity/SportsmenTeamsId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/entity/Team.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/entity/Trainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/byte-buddy-1.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/classmate-1.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/dom4j-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/hibernate-core-5.4.10.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/jandex-2.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/postgresql-42.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/testng-6.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/lib/txw2-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/sportinfo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/src/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/sportinfo/tests/CompetitionDAOTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sportinfo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sportinfo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/GenericDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/GenericDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/daoClasses/CompSportsmenDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoClasses/CompSportsmenDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/daoClasses/CompTeamsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoClasses/CompTeamsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/daoClasses/CompetitionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoClasses/CompetitionDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/daoClasses/SeatsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoClasses/SeatsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/daoClasses/SportsmanDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoClasses/SportsmanDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/daoClasses/SportsmenTeamsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoClasses/SportsmenTeamsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/daoClasses/TeamDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoClasses/TeamDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/daoClasses/TrainerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daoClasses/TrainerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/CompSportsmen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/CompSportsmen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/CompSportsmenId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/CompSportsmenId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/CompTeams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/CompTeams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/CompTeamsId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/CompTeamsId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Competition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Competition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Seats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Seats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/SeatsId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/SeatsId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Sportsman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Sportsman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/SportsmenTeams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/SportsmenTeams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/SportsmenTeamsId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/SportsmenTeamsId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Trainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Trainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/CompetitionDAOTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Competition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Competition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Seats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Seats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CompetitionDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CompetitionDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CompetitionDAOTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/classes/classes/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/classes/classes/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/classes/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/classes/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/classes/target/classes/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/classes/target/classes/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Competition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Competition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entity/Seats.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Seats.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/classes/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/target/classes/classes/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/target/classes/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/target/classes/target/classes/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CompetitionDAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CompetitionDAOTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,6 +76,15 @@
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sportinfo" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="sportinfo: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="object types" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
     </expand>
     <select />
   </component>
@@ -207,7 +131,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="XML" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$/lib" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -403,7 +327,7 @@
       <workItem from="1583678526684" duration="7802000" />
       <workItem from="1583775434303" duration="5467000" />
       <workItem from="1584210157761" duration="6981000" />
-      <workItem from="1584254066178" duration="11546000" />
+      <workItem from="1584254066178" duration="14210000" />
     </task>
     <servers />
   </component>
@@ -463,42 +387,50 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1584267299906" />
-    <state width="1398" height="184" key="GridCell.Tab.0.bottom" timestamp="1584272779959">
+    <state width="1398" height="534" key="GridCell.Tab.0.bottom" timestamp="1584275973182">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1398" height="135" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584275690478" />
+    <state width="1398" height="534" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1584275973182" />
+    <state width="1398" height="534" key="GridCell.Tab.0.center" timestamp="1584275973180">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1398" height="135" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584275690477" />
+    <state width="1398" height="534" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1584275973180" />
+    <state width="1398" height="534" key="GridCell.Tab.0.left" timestamp="1584275973180">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1398" height="135" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584275690476" />
+    <state width="1398" height="534" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1584275973180" />
+    <state width="1398" height="534" key="GridCell.Tab.0.right" timestamp="1584275973181">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1398" height="135" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584275690478" />
+    <state width="1398" height="534" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1584275973181" />
+    <state width="1398" height="534" key="GridCell.Tab.1.bottom" timestamp="1584275973186">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1398" height="534" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584273890305" />
+    <state width="1398" height="534" key="GridCell.Tab.1.bottom/0.23.1440.810@0.23.1440.810" timestamp="1584275973186" />
+    <state width="1398" height="534" key="GridCell.Tab.1.center" timestamp="1584275973183">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1398" height="534" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1584273890304" />
+    <state width="1398" height="534" key="GridCell.Tab.1.center/0.23.1440.810@0.23.1440.810" timestamp="1584275973183" />
+    <state width="1398" height="534" key="GridCell.Tab.1.left" timestamp="1584275973182">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1398" height="534" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1584273890304" />
+    <state width="1398" height="534" key="GridCell.Tab.1.left/0.23.1440.810@0.23.1440.810" timestamp="1584275973182" />
+    <state width="1398" height="534" key="GridCell.Tab.1.right" timestamp="1584275973185">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="1398" height="534" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1584273890305" />
+    <state width="1398" height="534" key="GridCell.Tab.1.right/0.23.1440.810@0.23.1440.810" timestamp="1584275973185" />
+    <state x="0" y="132" width="1440" height="722" key="SettingsEditor" timestamp="1584273662573">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="184" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584272779959" />
-    <state width="1398" height="184" key="GridCell.Tab.0.center" timestamp="1584272779958">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="184" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584272779958" />
-    <state width="1398" height="184" key="GridCell.Tab.0.left" timestamp="1584272779957">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="184" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584272779957" />
-    <state width="1398" height="184" key="GridCell.Tab.0.right" timestamp="1584272779958">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="184" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584272779958" />
-    <state width="1398" height="120" key="GridCell.Tab.1.bottom" timestamp="1584258966878">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="120" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584258966878" />
-    <state width="1398" height="120" key="GridCell.Tab.1.center" timestamp="1584258966877">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="120" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1584258966877" />
-    <state width="1398" height="120" key="GridCell.Tab.1.left" timestamp="1584258966876">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="120" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1584258966876" />
-    <state width="1398" height="120" key="GridCell.Tab.1.right" timestamp="1584258966877">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="120" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1584258966877" />
-    <state x="0" y="132" width="1440" height="722" key="SettingsEditor" timestamp="1584271894816">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="0" y="132" width="1440" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1584271894816" />
+    <state x="0" y="132" width="1440" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1584273662573" />
     <state x="399" y="121" key="antBuildFilePropertiesDialogDimension" timestamp="1582119563272">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

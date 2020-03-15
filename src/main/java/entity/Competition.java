@@ -19,7 +19,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "competitions", schema = "public", catalog = "sportinfo")
-@TypeDef(name = "pgsql_enum", typeClass = org.hibernate.type.EnumType.class)
+@TypeDef(name = "pgsql_enum", typeClass = PSQLType.class)
 public class Competition {
     public enum CompStatus {
         soon,

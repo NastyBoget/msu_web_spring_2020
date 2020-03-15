@@ -11,6 +11,8 @@ import java.util.List;
 import daoClasses.CompetitionDAO;
 import entity.Competition;
 
+// https://habr.com/ru/post/121234/
+
 public class CompetitionDAOTest {
     private CompetitionDAO _dao;
     private Session s;
@@ -47,15 +49,15 @@ public class CompetitionDAOTest {
         tmp.setFreeSeatsStatus(Boolean.TRUE);
         _dao.save(tmp);
         assertEquals("New competition", _dao.getById((long) 6).getCompName());
-        assertEquals("now", _dao.getById((long) 6).getCompStatus());
+        assertEquals(Competition.CompStatus.now, _dao.getById((long) 6).getCompStatus());
         assertEquals(new Timestamp(2020, 3, 31, 10, 0, 0, 0),
-                _dao.getById((long) -1).getCompTime());
-        assertEquals("Russia, Moscow, Arena CSKA", _dao.getById((long) -1).getLocation());
-        assertEquals("football", _dao.getById((long) 6).getSportKind());
+                _dao.getById((long) 6).getCompTime());
+        assertEquals("Russia, Moscow, Arena CSKA", _dao.getById((long) 6).getLocation());
+        assertEquals(Competition.SportKind.football, _dao.getById((long) 6).getSportKind());
         assertEquals(Boolean.TRUE, _dao.getById((long) 6).isFreeSeatsStatus());
         tmp.setCompName("New competition name");
         _dao.update(tmp);
-        assertEquals("New competition name",  _dao.getById((long)-1).getCompName());
+        assertEquals("New competition name",  _dao.getById((long) 6).getCompName());
         // ...
         _dao.delete(tmp);
         assertNull(_dao.getById((long) 6));

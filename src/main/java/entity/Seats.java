@@ -18,7 +18,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "seats_info", schema = "public", catalog = "sportinfo")
-@TypeDef(name = "pgsql_enum", typeClass = org.hibernate.type.EnumType.class)
+@TypeDef(name = "pgsql_enum", typeClass = PSQLType.class)
 public class Seats implements Serializable {
     public enum SeatsType {
         front,
