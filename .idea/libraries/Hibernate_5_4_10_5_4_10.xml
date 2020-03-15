@@ -22,6 +22,7 @@
       <root url="jar://$PROJECT_DIR$/lib/hibernate-core-5.4.10.Final.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/postgresql-42.0.0.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/testng-6.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/annotations-13.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
