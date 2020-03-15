@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a0c765d-83fd-4361-b096-fd5e3cc0e14d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_4_10_5_4_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_4_10_5_4_10.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sportinfo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sportinfo/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/daoClasses/CompetitionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/daoClasses/CompetitionDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/daoClasses/SeatsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/daoClasses/SeatsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/daoClasses/TeamDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/daoClasses/TeamDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sportinfo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sportinfo.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +65,10 @@
     </expand>
     <select />
   </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="sportinfo" />
   </component>
@@ -100,7 +101,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
@@ -108,17 +109,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="XML" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$/lib" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.CompetitionDAOTest">
     <configuration name="DBManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DBManager" />
       <module name="sportinfo" />
@@ -197,8 +199,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CompetitionDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sportinfo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CompetitionDAOTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CompetitionDAOTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.DBManager" />
       </list>
@@ -267,6 +285,7 @@
       <workItem from="1583678526684" duration="7802000" />
       <workItem from="1583775434303" duration="5467000" />
       <workItem from="1584210157761" duration="6981000" />
+      <workItem from="1584254066178" duration="5472000" />
     </task>
     <servers />
   </component>
@@ -282,6 +301,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="455" y="137" key="#Glassfish_Server/0.0.1440.900@0.0.1440.900" timestamp="1582228737969" />
+    <state x="320" y="132" key="#HTTP_Proxy" timestamp="1584255181585">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="132" key="#HTTP_Proxy/0.0.1440.900@0.0.1440.900" timestamp="1584255181585" />
     <state x="320" y="115" key="#Inspections" timestamp="1583687193584">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -310,26 +333,42 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1583677420066" />
-    <state width="1398" height="544" key="GridCell.Tab.0.bottom" timestamp="1584218118410">
+    <state width="1398" height="117" key="GridCell.Tab.0.bottom" timestamp="1584265601185">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="544" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584218118410" />
-    <state width="1398" height="544" key="GridCell.Tab.0.center" timestamp="1584218118408">
+    <state width="1398" height="117" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584265601185" />
+    <state width="1398" height="117" key="GridCell.Tab.0.center" timestamp="1584265601183">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="544" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584218118408" />
-    <state width="1398" height="544" key="GridCell.Tab.0.left" timestamp="1584218118407">
+    <state width="1398" height="117" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584265601183" />
+    <state width="1398" height="117" key="GridCell.Tab.0.left" timestamp="1584265601181">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="544" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584218118407" />
-    <state width="1398" height="544" key="GridCell.Tab.0.right" timestamp="1584218118409">
+    <state width="1398" height="117" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584265601181" />
+    <state width="1398" height="117" key="GridCell.Tab.0.right" timestamp="1584265601184">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="544" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584218118409" />
-    <state x="0" y="23" width="1440" height="722" key="SettingsEditor" timestamp="1584216312742">
+    <state width="1398" height="117" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584265601184" />
+    <state width="1398" height="120" key="GridCell.Tab.1.bottom" timestamp="1584258966878">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="23" width="1440" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1584216312742" />
+    <state width="1398" height="120" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584258966878" />
+    <state width="1398" height="120" key="GridCell.Tab.1.center" timestamp="1584258966877">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="120" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1584258966877" />
+    <state width="1398" height="120" key="GridCell.Tab.1.left" timestamp="1584258966876">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="120" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1584258966876" />
+    <state width="1398" height="120" key="GridCell.Tab.1.right" timestamp="1584258966877">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="120" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1584258966877" />
+    <state x="0" y="132" width="1440" height="722" key="SettingsEditor" timestamp="1584257669978">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="0" y="132" width="1440" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1584257669978" />
     <state x="399" y="121" key="antBuildFilePropertiesDialogDimension" timestamp="1582119563272">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -338,9 +377,80 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="397" y="282" width="649" height="380" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1582225555376" />
-    <state x="424" y="351" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1583676424427">
+    <state x="424" y="351" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1584255883073">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="424" y="351" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1440.900@0.0.1440.900" timestamp="1583676424427" />
+    <state x="424" y="351" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1440.900@0.0.1440.900" timestamp="1584255883073" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/CompetitionDAOTest.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
