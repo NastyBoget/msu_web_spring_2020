@@ -23,6 +23,7 @@ public class Main {
         List<Competition> compList = competitionDAO.getAll();
         for (Competition comp: compList) {
             System.out.println(
+                    comp + " | " +
                     comp.getCompId() + " | " +
                     comp.getCompName() + " | " +
                     comp.getCompStatus() + " | " +
@@ -66,6 +67,7 @@ public class Main {
         List<Sportsman> sportsmanList = sportsmanDAO.getAll();
         for (Sportsman sportsman: sportsmanList) {
             System.out.println(
+                    sportsman + " | " +
                     sportsman.getSportsmanId() + " | " +
                     sportsman.getTrainerId() + " | " +
                     sportsman.getTeamId() + " | " +
@@ -85,6 +87,7 @@ public class Main {
         List<Team> teamList = teamDAO.getAll();
         for (Team team: teamList) {
             System.out.println(
+                    team + " | " +
                     team.getTeamId() + " | " +
                     team.getTrainerId() + " | " +
                     team.getTeamName()
@@ -94,6 +97,7 @@ public class Main {
         List<Trainer> trainerList = trainerDAO.getAll();
         for (Trainer trainer: trainerList) {
             System.out.println(
+                    trainer + " | " +
                   trainer.getTrainerId() + " | " +
                   trainer.getName() + " | " +
                   trainer.getBirthday()

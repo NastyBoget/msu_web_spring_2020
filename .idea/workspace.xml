@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6a0c765d-83fd-4361-b096-fd5e3cc0e14d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sportinfo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sportinfo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +129,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CompSportsmenDAOTest">
+  <component name="RunManager" selected="TestNG.TrainerDAOTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="sportinfo" />
@@ -210,16 +210,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CompetitionDAOTest.getById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sportinfo" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CompetitionDAOTest" />
-      <option name="METHOD_NAME" value="getById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CompSportsmenDAOTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sportinfo" />
       <option name="PACKAGE_NAME" value="" />
@@ -242,13 +232,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TrainerDAOTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sportinfo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TrainerDAOTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CompSportsmenDAOTest" />
+        <item itemvalue="TestNG.TrainerDAOTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="TestNG.CompSportsmenDAOTest" />
         <item itemvalue="TestNG.CompetitionDAOTest" />
         <item itemvalue="JUnit.CompetitionDAOTest (1)" />
-        <item itemvalue="JUnit.CompetitionDAOTest.getById" />
       </list>
     </recent_temporary>
   </component>
@@ -317,7 +318,7 @@
       <workItem from="1584210157761" duration="6981000" />
       <workItem from="1584254066178" duration="14210000" />
       <workItem from="1584276241135" duration="1307000" />
-      <workItem from="1584278945662" duration="9900000" />
+      <workItem from="1584278945662" duration="11694000" />
     </task>
     <servers />
   </component>
@@ -385,28 +386,28 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1584267299906" />
-    <state width="1440" height="132" key="GridCell.Tab.0.bottom" timestamp="1584289342615">
+    <state width="1440" height="222" key="GridCell.Tab.0.bottom" timestamp="1584291313030">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="132" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584289342615" />
+    <state width="1440" height="222" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584291313030" />
     <state width="1398" height="534" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1584275973182" />
     <state width="1440" height="282" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1584285281309" />
-    <state width="1440" height="132" key="GridCell.Tab.0.center" timestamp="1584289342613">
+    <state width="1440" height="222" key="GridCell.Tab.0.center" timestamp="1584291313029">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="132" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584289342613" />
+    <state width="1440" height="222" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584291313029" />
     <state width="1398" height="534" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1584275973180" />
     <state width="1440" height="282" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1584285281308" />
-    <state width="1440" height="132" key="GridCell.Tab.0.left" timestamp="1584289342612">
+    <state width="1440" height="222" key="GridCell.Tab.0.left" timestamp="1584291313028">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="132" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584289342612" />
+    <state width="1440" height="222" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584291313028" />
     <state width="1398" height="534" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1584275973180" />
     <state width="1440" height="282" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1584285281307" />
-    <state width="1440" height="132" key="GridCell.Tab.0.right" timestamp="1584289342614">
+    <state width="1440" height="222" key="GridCell.Tab.0.right" timestamp="1584291313029">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1440" height="132" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584289342614" />
+    <state width="1440" height="222" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584291313029" />
     <state width="1398" height="534" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1584275973181" />
     <state width="1440" height="282" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1584285281309" />
     <state width="1398" height="534" key="GridCell.Tab.1.bottom" timestamp="1584275973186">
