@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<project basedir = "." default = "build" name = "build">
+    <property file = "../build.properties"/>
+
+    <path id = "classpath.master">
+        <fileset dir = "${lib.dir}">
+            <include name = "*.jar"/>
+        </fileset>
+
+        <pathelement path = "${build.dir}"/>
+    </path>
+
+    <target name = "build">
+        <mkdir dir = "${build.dir}"/>
+
+        <javac includeantruntime = "false"
+               destdir = "${build.dir}"
+               source = "${jdk.version}"
+               target = "${jdk.version}">
+            <src path = "${src.dir}"/>
+            <classpath refid = "classpath.master"/>
+        </javac>
+    </target>
+</project>

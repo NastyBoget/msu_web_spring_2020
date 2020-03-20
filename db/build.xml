@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <project basedir="." default="all" name="setupdb">
 
-  <property file="build.properties"/>
+  <property file="../build.properties"/>
 
   <target name="createdb">
-
     <sql classpath="${postgresql.classpath}"
          driver="${postgresql.driver}"
          url="${postgresql.localhost}"
@@ -13,11 +12,9 @@
          autocommit="True"
          src="${db.dir}/createdb.sql">
     </sql>
-
   </target>
 
   <target name="initdb">
-
     <sql classpath="${postgresql.classpath}"
          driver="${postgresql.driver}"
          url="${postgresql.localhost}${postgresql.database}"
@@ -26,11 +23,9 @@
          autocommit="True"
          src="${db.dir}/initdb.sql">
     </sql>
-
   </target>
 
   <target name="filldb">
-
     <sql classpath="${postgresql.classpath}"
          driver="${postgresql.driver}"
          url="${postgresql.localhost}${postgresql.database}"
@@ -39,11 +34,9 @@
          autocommit="True"
          src="${db.dir}/filldb.sql">
     </sql>
-
   </target>
 
   <target name="droptables">
-
     <sql classpath="${postgresql.classpath}"
          driver="${postgresql.driver}"
          url="${postgresql.localhost}"
@@ -52,11 +45,9 @@
          autocommit="True"
          src="${db.dir}/droptables.sql">
     </sql>
-
   </target>
 
   <target name="dropdb">
-
     <sql classpath="${postgresql.classpath}"
          driver="${postgresql.driver}"
          url="${postgresql.localhost}"
@@ -65,7 +56,6 @@
          autocommit="True"
          src="${db.dir}/dropdb.sql">
     </sql>
-
   </target>
 
   <target name="all"

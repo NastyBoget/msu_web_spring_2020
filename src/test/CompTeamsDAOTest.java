@@ -1,3 +1,5 @@
+package test;
+
 import daoClasses.CompTeamsDAO;
 import entity.*;
 import org.hibernate.Session;

@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<project basedir="." default="initdb" name="sportinfo">
+<project basedir="." default="all" name="sportinfo">
 
   <property file="build.properties"/>
 
   <target name="initdb">
-
     <ant antfile="${db.dir}/build.xml"/>
-
   </target>
+
+  <target name = "build">
+    <ant antfile = "${src.dir}/build.xml"/>
+  </target>
+
+  <target name = "runtests" depends = "initdb, build">
+    <ant antfile = "${test.dir}/build.xml"/>
+  </target>
+
+  <target name = "clean">
+    <delete failonerror = "false">
+      <fileset dir = "${build.dir}">
+        <include name = "**/*.class"/>
+      </fileset>
+    </delete>
+  </target>
+
+  <target name = "all" depends = "clean, initdb, build, runtests"/>
 
 </project>

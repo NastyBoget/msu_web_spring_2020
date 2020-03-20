@@ -1,3 +1,5 @@
+package test;
+
 import daoClasses.TrainerDAO;
 import entity.Trainer;
 import org.hibernate.Session;

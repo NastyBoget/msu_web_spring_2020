@@ -1,3 +1,5 @@
+package test;
+
 import daoClasses.CompSportsmenDAO;
 import entity.*;
 import org.hibernate.Session;

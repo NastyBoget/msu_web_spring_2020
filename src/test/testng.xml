@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name = "Default Suite">
+    <test name = "sportinfo">
+        <classes>
+            <class name = "test.CompetitionDAOTest"/>
+<!--            <class name = "test.CompSportsmenDAOTest"/>-->
+<!--            <class name = "test.CompTeamsDAOTest"/>-->
+<!--            <class name = "test.SeatsDAOTest"/>-->
+<!--            <class name = "test.SportsmanDAOTest"/>-->
+<!--            <class name = "test.SportsmenTeamsDAOTest"/>-->
+<!--            <class name = "test.TeamDAOTest"/>-->
+<!--            <class name = "test.TrainerDAOTest"/>-->
+        </classes>
+    </test>
+</suite>

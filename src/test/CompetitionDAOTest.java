@@ -1,16 +1,17 @@
+package test;
+
+import daoClasses.CompetitionDAO;
+import entity.Competition;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-import org.testng.annotations.*;
-
-import static org.testng.Assert.*;
+import org.testng.annotations.Test;
 
 import java.sql.Timestamp;
 import java.util.Arrays;
 import java.util.List;
 
-import daoClasses.CompetitionDAO;
-import entity.Competition;
+import static org.testng.Assert.*;
 
 // https://habr.com/ru/post/121234/
 
