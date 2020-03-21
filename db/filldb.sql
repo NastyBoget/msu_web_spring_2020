@@ -20,12 +20,12 @@ INSERT INTO trainers (trainer_name, birthday) VALUES
     ('Denis Guryanov', '1980-01-24'),
     ('Andre Burakovsky', '1983-06-18');
 
-INSERT INTO teams (team_id, trainer_id, team_name) VALUES
-    (1, 3, 'Vegas Golden Knights'),
-    (2, 4, 'CSKA'),
-    (3, 1, 'Calgary Flames'),
-    (4, 2, 'Edmonton oilers'),
-    (5, 5, 'Tampa Bay Lightning');
+INSERT INTO teams (trainer_id, team_name) VALUES
+    (3, 'Vegas Golden Knights'),
+    (4, 'CSKA'),
+    (1, 'Calgary Flames'),
+    (2, 'Edmonton oilers'),
+    (5, 'Tampa Bay Lightning');
 
 INSERT INTO sportsmen (trainer_id, team_id,
                        sportsman_name, birthday) VALUES

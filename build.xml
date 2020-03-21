@@ -11,9 +11,9 @@
     <ant antfile = "${src.dir}/build.xml"/>
   </target>
 
-  <target name = "runtests" depends = "initdb, build">
-    <ant antfile = "${test.dir}/build.xml"/>
-  </target>
+<!--  <target name = "runtests" depends = "initdb, build">-->
+<!--    <ant antfile = "${test.dir}/build.xml"/>-->
+<!--  </target>-->
 
   <target name = "clean">
     <delete failonerror = "false">
@@ -23,6 +23,6 @@
     </delete>
   </target>
 
-  <target name = "all" depends = "clean, initdb, build, runtests"/>
+  <target name = "all" depends = "clean, initdb, build"/>
 
 </project>

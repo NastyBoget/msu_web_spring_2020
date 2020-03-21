@@ -1,47 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="sportinfo" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0c765d-83fd-4361-b096-fd5e3cc0e14d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ant.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_4_10_5_4_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_4_10_5_4_10.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/db/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/testng-6.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/filldb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/filldb.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sportinfo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sportinfo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/dao/GenericDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/daoClasses/CompSportsmenDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/daoClasses/CompTeamsDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/daoClasses/CompetitionDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/daoClasses/SeatsDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/daoClasses/SportsmanDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/daoClasses/SportsmenTeamsDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/daoClasses/TeamDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/daoClasses/TrainerDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/entity/CompSportsmen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/entity/CompSportsmenId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/entity/CompTeams.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/entity/CompTeamsId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/entity/Competition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/entity/PSQLType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/entity/Seats.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/entity/SeatsId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/entity/Sportsman.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/entity/SportsmenTeams.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/entity/SportsmenTeamsId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/entity/Team.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/entity/Trainer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daoClasses/SeatsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/daoClasses/SeatsDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/CompSportsmenDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/CompSportsmenDAOTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/CompTeamsDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/CompTeamsDAOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/CompetitionDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/CompetitionDAOTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/SeatsDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/SeatsDAOTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/SportsmanDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/SportsmanDAOTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/SportsmenTeamsDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/SportsmenTeamsDAOTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/TeamDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TeamDAOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TrainerDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TrainerDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/testng.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +97,26 @@
         <item name="sportinfo: database" type="162271b6:PgImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="teams: table" type="69fad909:PgImplModel$LocalTable" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sportinfo" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="sportinfo: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="trainers: table" type="69fad909:PgImplModel$LocalTable" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="sportinfo" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="sportinfo: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
         <item name="object types" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
@@ -131,6 +129,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Tag Library Descriptor" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -254,6 +253,108 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CompSportsmenDAOTest.getCompSportsmen" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sportinfo" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.CompSportsmenDAOTest" />
+      <option name="METHOD_NAME" value="getCompSportsmen" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/out" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="AntTarget" enabled="true" antfile="file://$PROJECT_DIR$/build.xml" target="all" />
+      </method>
+    </configuration>
+    <configuration name="CompTeamsDAOTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sportinfo" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.CompTeamsDAOTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/out" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="AntTarget" enabled="true" antfile="file://$PROJECT_DIR$/build.xml" target="all" />
+      </method>
+    </configuration>
+    <configuration name="SeatsDAOTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sportinfo" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.SeatsDAOTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/out" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="AntTarget" enabled="true" antfile="file://$PROJECT_DIR$/build.xml" target="all" />
+      </method>
+    </configuration>
+    <configuration name="SeatsDAOTest.getSeats" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sportinfo" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.SeatsDAOTest" />
+      <option name="METHOD_NAME" value="getSeats" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/out" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="AntTarget" enabled="true" antfile="file://$PROJECT_DIR$/build.xml" target="all" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
       <module name="sportinfo" />
       <useClassPathOnly />
@@ -288,17 +389,24 @@
       <properties />
       <listeners />
       <method v="2">
-        <option name="Make" enabled="true" />
         <option name="AntTarget" enabled="true" antfile="file://$PROJECT_DIR$/build.xml" target="all" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="TestNG.test" />
+      <item itemvalue="TestNG.CompSportsmenDAOTest.getCompSportsmen" />
+      <item itemvalue="TestNG.CompTeamsDAOTest" />
+      <item itemvalue="TestNG.SeatsDAOTest" />
+      <item itemvalue="TestNG.SeatsDAOTest.getSeats" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="TestNG.SeatsDAOTest.getSeats" />
+        <item itemvalue="TestNG.SeatsDAOTest" />
+        <item itemvalue="TestNG.CompTeamsDAOTest" />
+        <item itemvalue="TestNG.CompSportsmenDAOTest.getCompSportsmen" />
       </list>
     </recent_temporary>
   </component>
@@ -374,7 +482,8 @@
       <workItem from="1584704164301" duration="24000" />
       <workItem from="1584704219431" duration="16755000" />
       <workItem from="1584726964878" duration="415000" />
-      <workItem from="1584733590486" duration="2546000" />
+      <workItem from="1584733590486" duration="5292000" />
+      <workItem from="1584774448265" duration="16257000" />
     </task>
     <servers />
   </component>
@@ -386,6 +495,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="286" y="111" width="867" height="675" key="#/0.0.1440.900@0.0.1440.900" timestamp="1584714218278" />
+    <state x="388" y="77" key="#/Users/anastasiabogatenkova/3_course/Prac/sportinfo/src/test/testng.xml" timestamp="1584739109671">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="388" y="77" key="#/Users/anastasiabogatenkova/3_course/Prac/sportinfo/src/test/testng.xml/0.0.1440.900@0.0.1440.900" timestamp="1584739109671" />
     <state x="320" y="115" key="#Assign_Data_Sources" timestamp="1584287838779">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -418,6 +531,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="115" width="937" height="669" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1584735836051" />
+    <state x="388" y="77" key="#SeatsDAOTest.getSeats" timestamp="1584780434927">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="388" y="77" key="#SeatsDAOTest.getSeats/0.0.1440.900@0.0.1440.900" timestamp="1584780434927" />
     <state x="455" y="137" key="#Web_Browsers" timestamp="1582228665710">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -426,18 +543,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="660" y="40" key="#all/0.0.1440.900@0.0.1440.900" timestamp="1584721673715" />
-    <state x="339" y="23" width="1071" height="810" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584737410009">
+    <state x="339" y="23" width="1071" height="810" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584792142293">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="339" y="23" width="1071" height="810" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1584737410009" />
-    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1584285009354">
+    <state x="339" y="23" width="1071" height="810" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1584792142293" />
+    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1584783815415">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1440.900@0.0.1440.900" timestamp="1584285009354" />
-    <state x="612" y="224" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1584736649196">
+    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1440.900@0.0.1440.900" timestamp="1584783815415" />
+    <state x="612" y="224" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1584738456998">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="612" y="224" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1584736649196" />
+    <state x="612" y="224" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1584738456998" />
     <state x="612" y="227" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1584712116849">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -454,62 +571,62 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="0" y="0" width="643" height="900" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog/0.0.1440.900@0.0.1440.900" timestamp="1583439784226" />
-    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584712878617">
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584739312736">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1584712878617" />
-    <state x="683" y="55" key="#runtests" timestamp="1584712603842">
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1584739312736" />
+    <state x="683" y="55" key="#runtests" timestamp="1584739252411">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="683" y="55" key="#runtests/0.0.1440.900@0.0.1440.900" timestamp="1584712603842" />
-    <state width="1398" height="391" key="GridCell.Tab.0.bottom" timestamp="1584737507837">
+    <state x="683" y="55" key="#runtests/0.0.1440.900@0.0.1440.900" timestamp="1584739252411" />
+    <state width="1398" height="476" key="GridCell.Tab.0.bottom" timestamp="1584792217718">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="391" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584737507837" />
-    <state width="1398" height="534" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1584275973182" />
+    <state width="1398" height="476" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584792217718" />
+    <state width="1398" height="162" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1584778567931" />
     <state width="336" height="288" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1584725907069" />
-    <state width="1398" height="391" key="GridCell.Tab.0.center" timestamp="1584737507835">
+    <state width="1398" height="476" key="GridCell.Tab.0.center" timestamp="1584792217717">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="391" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584737507835" />
-    <state width="1398" height="534" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1584275973180" />
+    <state width="1398" height="476" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584792217717" />
+    <state width="1398" height="162" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1584778567930" />
     <state width="336" height="288" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1584725907068" />
-    <state width="1398" height="391" key="GridCell.Tab.0.left" timestamp="1584737507833">
+    <state width="1398" height="476" key="GridCell.Tab.0.left" timestamp="1584792217716">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="391" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584737507833" />
-    <state width="1398" height="534" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1584275973180" />
+    <state width="1398" height="476" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584792217716" />
+    <state width="1398" height="162" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1584778567930" />
     <state width="336" height="288" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1584725907065" />
-    <state width="1398" height="391" key="GridCell.Tab.0.right" timestamp="1584737507836">
+    <state width="1398" height="476" key="GridCell.Tab.0.right" timestamp="1584792217717">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="391" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584737507836" />
-    <state width="1398" height="534" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1584275973181" />
+    <state width="1398" height="476" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584792217717" />
+    <state width="1398" height="162" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1584778567931" />
     <state width="336" height="288" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1584725907068" />
-    <state width="1398" height="534" key="GridCell.Tab.1.bottom" timestamp="1584275973186">
-      <screen x="0" y="23" width="1440" height="810" />
-    </state>
-    <state width="1398" height="534" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584273890305" />
-    <state width="1398" height="534" key="GridCell.Tab.1.bottom/0.23.1440.810@0.23.1440.810" timestamp="1584275973186" />
-    <state width="1398" height="534" key="GridCell.Tab.1.center" timestamp="1584275973183">
-      <screen x="0" y="23" width="1440" height="810" />
-    </state>
-    <state width="1398" height="534" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1584273890304" />
-    <state width="1398" height="534" key="GridCell.Tab.1.center/0.23.1440.810@0.23.1440.810" timestamp="1584275973183" />
-    <state width="1398" height="534" key="GridCell.Tab.1.left" timestamp="1584275973182">
-      <screen x="0" y="23" width="1440" height="810" />
-    </state>
-    <state width="1398" height="534" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1584273890304" />
-    <state width="1398" height="534" key="GridCell.Tab.1.left/0.23.1440.810@0.23.1440.810" timestamp="1584275973182" />
-    <state width="1398" height="534" key="GridCell.Tab.1.right" timestamp="1584275973185">
-      <screen x="0" y="23" width="1440" height="810" />
-    </state>
-    <state width="1398" height="534" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1584273890305" />
-    <state width="1398" height="534" key="GridCell.Tab.1.right/0.23.1440.810@0.23.1440.810" timestamp="1584275973185" />
-    <state x="0" y="132" width="1440" height="722" key="SettingsEditor" timestamp="1584736499109">
+    <state width="1398" height="39" key="GridCell.Tab.1.bottom" timestamp="1584789900867">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="132" width="1440" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1584736499109" />
+    <state width="1398" height="39" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584789900867" />
+    <state width="1398" height="534" key="GridCell.Tab.1.bottom/0.23.1440.810@0.23.1440.810" timestamp="1584275973186" />
+    <state width="1398" height="39" key="GridCell.Tab.1.center" timestamp="1584789900866">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="39" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1584789900866" />
+    <state width="1398" height="534" key="GridCell.Tab.1.center/0.23.1440.810@0.23.1440.810" timestamp="1584275973183" />
+    <state width="1398" height="39" key="GridCell.Tab.1.left" timestamp="1584789900865">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="39" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1584789900865" />
+    <state width="1398" height="534" key="GridCell.Tab.1.left/0.23.1440.810@0.23.1440.810" timestamp="1584275973182" />
+    <state width="1398" height="39" key="GridCell.Tab.1.right" timestamp="1584789900866">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="39" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1584789900866" />
+    <state width="1398" height="534" key="GridCell.Tab.1.right/0.23.1440.810@0.23.1440.810" timestamp="1584275973185" />
+    <state x="0" y="132" width="1440" height="722" key="SettingsEditor" timestamp="1584738467554">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="0" y="132" width="1440" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1584738467554" />
     <state x="399" y="121" key="antBuildFilePropertiesDialogDimension" timestamp="1584727321099">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -518,10 +635,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="359" y="299" key="antSetDialogDimensionKey/0.0.1440.900@0.0.1440.900" timestamp="1584727176348" />
-    <state x="503" y="235" key="chooseDestDirectoryDialog" timestamp="1584708709538">
+    <state x="503" y="235" key="chooseDestDirectoryDialog" timestamp="1584737953593">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="503" y="235" key="chooseDestDirectoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1584708709538" />
+    <state x="503" y="235" key="chooseDestDirectoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1584737953593" />
+    <state x="482" y="211" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1584780887323">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="482" y="211" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1440.900@0.0.1440.900" timestamp="1584780887323" />
     <state x="397" y="282" width="649" height="380" key="com.intellij.ide.util.TipDialog" timestamp="1582225555376">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

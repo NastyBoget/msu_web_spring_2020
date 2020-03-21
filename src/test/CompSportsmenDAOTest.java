@@ -1,7 +1,7 @@
 package test;
 
 import daoClasses.CompSportsmenDAO;
-import entity.*;
+import entity.CompSportsmen;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.*;
 
 public class CompSportsmenDAOTest {
     private CompSportsmenDAO _dao;
@@ -31,14 +31,33 @@ public class CompSportsmenDAOTest {
     @Test(priority = 0)
     void getCompSportsmen() throws Exception {
         setUp();
+        List<CompSportsmen> _list = _dao.getByCompId((long) 4);
+        assertEquals(3, _list.size());
+        for (CompSportsmen i: _list) {
+            assertNull(i.getPlace());
+            assertNull(i.getPoints());
+            assertEquals(4, (long) i.getCompId().getCompId());
+        }
 
-        shutDown();
-    }
+        _list = _dao.getBySportsmanId((long) 6);
+        assertEquals(1, _list.size());
+        for (CompSportsmen i: _list) {
+            assertEquals(2, (int) i.getPlace());
+            assertEquals(40, (int) i.getPoints());
+            assertEquals(6, (long) i.getSportsmanId().getSportsmanId());
+        }
 
-    @Test(priority = 1)
-    void saveUpdateDelete() throws Exception {
-        setUp();
+        CompSportsmen _entity = _dao.getByCompositeId((long) 4, (long) 10);
+        assertNull(_entity.getPoints());
+        assertNull(_entity.getPlace());
+        assertEquals(4, (long) _entity.getCompId().getCompId());
+        assertEquals(10, (long) _entity.getSportsmanId().getSportsmanId());
 
+        _list = _dao.getByCompId((long) 100);
+        assertTrue(_list.isEmpty());
+        _list = _dao.getBySportsmanId((long) 100);
+        assertTrue(_list.isEmpty());
+        assertNull(_dao.getByCompositeId((long) 100, (long) 100));
         shutDown();
     }
 

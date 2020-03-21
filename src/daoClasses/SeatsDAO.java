@@ -12,7 +12,7 @@ public class SeatsDAO extends GenericDAO<Seats, SeatsId> {
     public List<Seats> getByCompId(Long compId) {
         TypedQuery<Seats> query = getSession().createQuery(
                 "SELECT e FROM Seats e " +
-                        "WHERE e.compId = :compId")
+                        "WHERE e.id.compId = :compId")
                 .setParameter("compId", compId);
         return query.getResultList();
     }
