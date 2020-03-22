@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="sportinfo(failed)">
+    <classes>
+      <class name="test.CompTeamsDAOTest">
+        <methods>
+          <include name="getCompTeams"/>
+          <include name="findAll"/>
+        </methods>
+      </class> <!-- test.CompTeamsDAOTest -->
+      <class name="test.SportsmanDAOTest">
+        <methods>
+          <include name="getSportsman"/>
+          <include name="saveUpdateDelete"/>
+          <include name="findAll"/>
+        </methods>
+      </class> <!-- test.SportsmanDAOTest -->
+      <class name="test.SeatsDAOTest">
+        <methods>
+          <include name="findAll"/>
+          <include name="getSeats"/>
+        </methods>
+      </class> <!-- test.SeatsDAOTest -->
+      <class name="test.CompetitionDAOTest">
+        <methods>
+          <include name="getCompetition"/>
+          <include name="saveUpdateDelete"/>
+          <include name="findAll"/>
+        </methods>
+      </class> <!-- test.CompetitionDAOTest -->
+      <class name="test.TrainerDAOTest">
+        <methods>
+          <include name="saveUpdateDelete"/>
+          <include name="findAll"/>
+          <include name="getTrainer"/>
+        </methods>
+      </class> <!-- test.TrainerDAOTest -->
+      <class name="test.SportsmenTeamsDAOTest">
+        <methods>
+          <include name="getSportsmenTeams"/>
+          <include name="findAll"/>
+        </methods>
+      </class> <!-- test.SportsmenTeamsDAOTest -->
+      <class name="test.CompSportsmenDAOTest">
+        <methods>
+          <include name="getCompSportsmen"/>
+          <include name="findAll"/>
+        </methods>
+      </class> <!-- test.CompSportsmenDAOTest -->
+      <class name="test.TeamDAOTest">
+        <methods>
+          <include name="saveUpdateDelete"/>
+          <include name="findAll"/>
+          <include name="getTrainer"/>
+        </methods>
+      </class> <!-- test.TeamDAOTest -->
+    </classes>
+  </test> <!-- sportinfo(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

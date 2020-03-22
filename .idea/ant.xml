@@ -15,5 +15,6 @@
         <entry path="file://$PROJECT_DIR$/lib" />
       </additionalClassPath>
     </buildFile>
+    <buildFile url="file://$PROJECT_DIR$/src/test/build.xml" />
   </component>
 </project>

@@ -12,6 +12,7 @@
 
     <target name = "build">
         <mkdir dir = "${build.dir}"/>
+        <copy file="src/hibernate.cfg.xml" todir="${build.dir}"/>
 
         <javac includeantruntime = "false"
                destdir = "${build.dir}"
