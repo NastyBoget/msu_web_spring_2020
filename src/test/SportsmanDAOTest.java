@@ -64,14 +64,12 @@ public class SportsmanDAOTest {
     public void saveUpdateDelete() throws Exception {
         setUp();
         Sportsman sportsman = new Sportsman();
-        sportsman.setSportsmanId((long) 11);
         sportsman.setSportsmanName("Daniel Malygin");
         sportsman.setBirthday(new Date(100, 1, 24));
         sportsman.setTeamId(null);
         sportsman.setTrainerId(_dao_trainer.getById((long) 1));
 
         _dao.save(sportsman);
-        assertEquals(11, (long) sportsman.getSportsmanId());
         assertEquals("Daniel Malygin", sportsman.getSportsmanName());
         assertEquals(new Date(100, 1, 24), sportsman.getBirthday());
         assertNull(sportsman.getTeamId());

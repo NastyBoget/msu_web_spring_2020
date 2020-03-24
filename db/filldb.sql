@@ -2,7 +2,7 @@
 
 INSERT INTO competitions (comp_name, location, comp_time,
                           comp_status, sport_kind, free_seats_status) VALUES
-    ('FIFA World Cup', 'Russia, Moscow, Arena CSKA', '2019-09-22 17:20+3',
+    ('FIFA World Cup', 'Russia, Moscow, Arena CSKA', '2019-09-22 17:20+0',
      'passed', 'football', FALSE),
     ('MN West Association Championship', 'USA, Wayzata, Minnesota',
      '2020-02-20 10:00+0', 'soon', 'synchronized_swimming', FALSE),

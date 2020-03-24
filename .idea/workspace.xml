@@ -7,10 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0c765d-83fd-4361-b096-fd5e3cc0e14d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ant.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ant.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/filldb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/filldb.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/CompetitionDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/CompetitionDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/SportsmanDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/SportsmanDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng/Default Suite/sportinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/testng/Default Suite/sportinfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng/Default Suite/sportinfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng/Default Suite/sportinfo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng/Default Suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng/Default Suite/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/testng/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/testng/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng/junitreports/TEST-test.CompSportsmenDAOTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng/junitreports/TEST-test.CompSportsmenDAOTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng/junitreports/TEST-test.CompTeamsDAOTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng/junitreports/TEST-test.CompTeamsDAOTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng/junitreports/TEST-test.CompetitionDAOTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng/junitreports/TEST-test.CompetitionDAOTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng/junitreports/TEST-test.SeatsDAOTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng/junitreports/TEST-test.SeatsDAOTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng/junitreports/TEST-test.SportsmanDAOTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng/junitreports/TEST-test.SportsmanDAOTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng/junitreports/TEST-test.SportsmenTeamsDAOTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng/junitreports/TEST-test.SportsmenTeamsDAOTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng/junitreports/TEST-test.TeamDAOTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng/junitreports/TEST-test.TeamDAOTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng/junitreports/TEST-test.TrainerDAOTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng/junitreports/TEST-test.TrainerDAOTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng/old/Default Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/testng/old/Default Suite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng/old/Default Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/testng/old/Default Suite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng/testng-results.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -476,7 +493,8 @@
       <workItem from="1584733590486" duration="5292000" />
       <workItem from="1584774448265" duration="16541000" />
       <workItem from="1584813443845" duration="218000" />
-      <workItem from="1584876657668" duration="474000" />
+      <workItem from="1584876657668" duration="883000" />
+      <workItem from="1585045052978" duration="2929000" />
     </task>
     <servers />
   </component>
@@ -540,10 +558,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="339" y="23" width="1071" height="810" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1584792142293" />
-    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1584783815415">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1585045969310">
+      <screen x="0" y="23" width="1440" height="811" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1440.900@0.0.1440.900" timestamp="1584783815415" />
+    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1440.811@0.23.1440.811" timestamp="1585045969310" />
     <state x="612" y="224" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1584738456998">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -572,28 +591,28 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="683" y="55" key="#runtests/0.0.1440.900@0.0.1440.900" timestamp="1584739252411" />
-    <state width="1398" height="39" key="GridCell.Tab.0.bottom" timestamp="1584792939542">
+    <state width="1398" height="406" key="GridCell.Tab.0.bottom" timestamp="1585048098687">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="39" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584792939542" />
+    <state width="1398" height="406" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1585048098687" />
     <state width="1398" height="162" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1584778567931" />
     <state width="336" height="288" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1584725907069" />
-    <state width="1398" height="39" key="GridCell.Tab.0.center" timestamp="1584792939541">
+    <state width="1398" height="406" key="GridCell.Tab.0.center" timestamp="1585048098684">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="39" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584792939541" />
+    <state width="1398" height="406" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1585048098684" />
     <state width="1398" height="162" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1584778567930" />
     <state width="336" height="288" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1584725907068" />
-    <state width="1398" height="39" key="GridCell.Tab.0.left" timestamp="1584792939540">
+    <state width="1398" height="406" key="GridCell.Tab.0.left" timestamp="1585048098672">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="39" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584792939540" />
+    <state width="1398" height="406" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1585048098672" />
     <state width="1398" height="162" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1584778567930" />
     <state width="336" height="288" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1584725907065" />
-    <state width="1398" height="39" key="GridCell.Tab.0.right" timestamp="1584792939542">
+    <state width="1398" height="406" key="GridCell.Tab.0.right" timestamp="1585048098686">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="39" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584792939542" />
+    <state width="1398" height="406" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1585048098686" />
     <state width="1398" height="162" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1584778567931" />
     <state width="336" height="288" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1584725907068" />
     <state width="1398" height="39" key="GridCell.Tab.1.bottom" timestamp="1584792939544">

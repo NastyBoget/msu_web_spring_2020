@@ -39,23 +39,26 @@ public class CompetitionDAOTest {
         Competition competition = _dao.getById((long) 1);
         assertEquals(competition.getCompName(), "FIFA World Cup");
         assertEquals(competition.getCompStatus(), Competition.CompStatus.passed);
-        assertEquals(competition.getCompTime().toString(), "2019-09-22 17:20:00.0");
+        assertEquals(competition.getCompTime(), new Timestamp(119, 8, 22, 17, 20, 0, 0));
         assertEquals(competition.getLocation(), "Russia, Moscow, Arena CSKA");
         assertEquals(competition.getSportKind(), Competition.SportKind.football);
         assertFalse(competition.isFreeSeatsStatus());
 
-        List<Competition> comps = _dao.getByCompTime(new Timestamp(2019, 9, 22, 17, 20, 0, 0),
-                new Timestamp(2019, 9, 22, 17, 20, 0, 0));
+        List<Competition> comps = _dao.getByCompTime(new Timestamp(119, 8, 22, 17, 20, 0, 0),
+                new Timestamp(119, 8, 22, 17, 20, 0, 0));
+        assertEquals(comps.size(), 1);
         for (Competition comp: comps) {
             assertEquals((long) comp.getCompId(), 1);
         }
 
-        comps = _dao.getByLocation("FIFA World Cup");
+        comps = _dao.getByLocation("Russia, Moscow, Arena CSKA");
+        assertEquals(comps.size(), 1);
         for (Competition comp: comps) {
             assertEquals((long) comp.getCompId(), 1);
         }
 
         comps = _dao.getBySportKind(Competition.SportKind.football);
+        assertEquals(comps.size(), 1);
         for (Competition comp: comps) {
             assertEquals((long) comp.getCompId(), 1);
         }
@@ -92,14 +95,14 @@ public class CompetitionDAOTest {
         Competition tmp = new Competition();
         tmp.setCompName("New competition");
         tmp.setCompStatus(Competition.CompStatus.now);
-        tmp.setCompTime(new Timestamp(2020, 3, 31, 10, 0, 0, 0));
+        tmp.setCompTime(new Timestamp(120, 2, 1, 10, 0, 0, 0));
         tmp.setLocation("Russia, Moscow, Arena CSKA");
         tmp.setSportKind(Competition.SportKind.biathlon);
         tmp.setFreeSeatsStatus(Boolean.TRUE);
         _dao.save(tmp);
         assertEquals("New competition", _dao.getById(tmp.getCompId()).getCompName());
         assertEquals(Competition.CompStatus.now, _dao.getById(tmp.getCompId()).getCompStatus());
-        assertEquals(new Timestamp(2020, 3, 31, 10, 0, 0, 0),
+        assertEquals(new Timestamp(120, 2, 1, 10, 0, 0, 0),
                 _dao.getById(tmp.getCompId()).getCompTime());
         assertEquals("Russia, Moscow, Arena CSKA", _dao.getById(tmp.getCompId()).getLocation());
         assertEquals(Competition.SportKind.biathlon, _dao.getById(tmp.getCompId()).getSportKind());
@@ -111,9 +114,9 @@ public class CompetitionDAOTest {
         tmp.setCompStatus(Competition.CompStatus.soon);
         _dao.update(tmp);
         assertEquals(Competition.CompStatus.soon, _dao.getById(tmp.getCompId()).getCompStatus());
-        tmp.setCompTime(new Timestamp(2020, 4, 30, 10, 0, 0, 0));
+        tmp.setCompTime(new Timestamp(120, 3, 1, 10, 0, 0, 0));
         _dao.update(tmp);
-        assertEquals(new Timestamp(2020, 4, 30, 10, 0, 0, 0),
+        assertEquals(new Timestamp(120, 3, 1, 10, 0, 0, 0),
                 _dao.getById(tmp.getCompId()).getCompTime());
         tmp.setLocation("Russia, Moscow");
         _dao.update(tmp);
