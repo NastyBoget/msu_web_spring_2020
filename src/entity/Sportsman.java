@@ -4,14 +4,6 @@ import javax.persistence.*;
 import java.util.Date;
 import java.util.Objects;
 
-/*
-    sportsman_id LongEGER PRIMARY KEY,
-    trainer_id LongEGER REFERENCES trainers, -- may be NULL if sportsman has a team
-    team_id LongEGER REFERENCES teams, -- may be NULL if sportsman hasn't a team
-    sportsman_name VARCHAR(50) NOT NULL,
-    birthday DATE NOT NULL,
- */
-
 @Entity
 @Table(name = "sportsmen", schema = "public", catalog = "sportinfo")
 public class Sportsman {
