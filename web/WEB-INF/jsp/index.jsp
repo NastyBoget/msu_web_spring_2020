@@ -1,12 +1,30 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
-<head>
-  <title>HelloPage</title>
-</head>
+<title> Home </title>
 <body>
-<c:forEach items="${sportsmen}" var="sportsman">
-  <td>${sportsman.sportsmanName}</td>
-</c:forEach>
+<div style="text-align: center;">
+    <h1>
+        Competition Information
+    </h1>
+</div>
+<br>
+<a href="competitions">
+    <div>
+        Competitions
+    </div>
+</a>
+<br>
+<a href="sportsmen">
+    <div>
+        Sportsmen
+    </div>
+</a>
+<br>
+<a href="teams">
+    <div>
+        Teams
+    </div>
+</a>
 </body>
 </html>
