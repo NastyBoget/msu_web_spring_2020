@@ -14,15 +14,13 @@ public class SportsmanController {
     private SportsmanDAO sportsmanDAO;
 
     @RequestMapping(value = "/sportsmen", method = RequestMethod.GET)
-    public String getSportsmen(ModelMap map)
-    {
+    public String getSportsmen(ModelMap map) {
         map.addAttribute("sportsmenList", sportsmanDAO.getAll());
         return "sportsmen";
     }
 
     @RequestMapping(value = "/sportsman", method = RequestMethod.GET)
-    public String getSportsman(@RequestParam(value="id", required=true) Long id, ModelMap map)
-    {
+    public String getSportsman(@RequestParam(value="id", required=true) Long id, ModelMap map) {
         map.addAttribute("sportsman", sportsmanDAO.getById(id));
         return "sportsman";
     }
