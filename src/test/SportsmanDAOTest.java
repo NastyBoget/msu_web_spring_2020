@@ -1,10 +1,11 @@
 package test;
 
+import daoClasses.SeatsDAO;
 import daoClasses.SportsmanDAO;
 import daoClasses.TeamDAO;
 import daoClasses.TrainerDAO;
 import entity.Sportsman;
-import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.testng.annotations.Test;
@@ -18,18 +19,18 @@ public class SportsmanDAOTest {
     private SportsmanDAO _dao;
     private TrainerDAO _dao_trainer;
     private TeamDAO _dao_team;
-    private Session s;
+    private SessionFactory s;
     private Transaction tx;
 
     public void setUp() throws Exception {
-        s = new Configuration().configure().buildSessionFactory().openSession();
-        tx = s.beginTransaction();
+        s = new Configuration().configure().buildSessionFactory();
+        tx = s.getCurrentSession().beginTransaction();
         _dao = new SportsmanDAO();
         _dao_trainer = new TrainerDAO();
         _dao_team = new TeamDAO();
-        _dao.setSession(s);
-        _dao_trainer.setSession(s);
-        _dao_team.setSession(s);
+        _dao.setSessionFactory(s);
+        _dao_trainer.setSessionFactory(s);
+        _dao_team.setSessionFactory(s);
     }
 
     public void shutDown() throws Exception {

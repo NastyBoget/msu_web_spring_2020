@@ -2,7 +2,7 @@ package test;
 
 import daoClasses.CompSportsmenDAO;
 import entity.CompSportsmen;
-import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.testng.annotations.Test;
@@ -13,14 +13,14 @@ import static org.testng.Assert.*;
 
 public class CompSportsmenDAOTest {
     private CompSportsmenDAO _dao;
-    private Session s;
+    private SessionFactory s;
     private Transaction tx;
 
     public void setUp() throws Exception {
-        s = new Configuration().configure().buildSessionFactory().openSession();
-        tx = s.beginTransaction();
+        s = new Configuration().configure().buildSessionFactory();
+        tx = s.getCurrentSession().beginTransaction();
         _dao = new CompSportsmenDAO();
-        _dao.setSession(s);
+        _dao.setSessionFactory(s);
     }
 
     public void shutDown() throws Exception {

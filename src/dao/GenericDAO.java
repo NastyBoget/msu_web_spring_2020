@@ -1,17 +1,21 @@
 package dao;
 
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.criteria.CriteriaQuery;
+import javax.transaction.Transactional;
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
 import java.util.List;
 
+@SuppressWarnings("unchecked")
 public class GenericDAO<T, ID extends Serializable> {
     private Class<T> persistentClass;
-    private Session session;
+    @Autowired
+    SessionFactory sessionFactory;
 
-    @SuppressWarnings("unchecked")
     public GenericDAO() {
         this.persistentClass = (Class<T>) ((ParameterizedType) getClass()
                 .getGenericSuperclass()).getActualTypeArguments()[0];
@@ -21,33 +25,38 @@ public class GenericDAO<T, ID extends Serializable> {
         return persistentClass;
     }
 
-    public void setSession(Session session) {
-        this.session = session;
+    public void setSessionFactory(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
     }
 
-    protected Session getSession() {
-        return session;
+    public Session getCurrentSession() {
+        return sessionFactory.getCurrentSession();
     }
 
+    @Transactional
     public T getById(ID id) {
-        return getSession().get(persistentClass, id);
+        return  getCurrentSession().get(persistentClass, id);
     }
 
+    @Transactional
     public List<T> getAll() {
-        CriteriaQuery<T> query = getSession().getCriteriaBuilder().createQuery(persistentClass);
+        CriteriaQuery<T> query =  getCurrentSession().getCriteriaBuilder().createQuery(persistentClass);
         query.from(persistentClass);
-        return getSession().createQuery(query).getResultList();
+        return  getCurrentSession().createQuery(query).getResultList();
     }
 
+    @Transactional
     public void delete(T t) {
-        getSession().delete(t);
+        getCurrentSession().delete(t);
     }
 
+    @Transactional
     public void save(T t) {
-        getSession().save(t);
+        getCurrentSession().save(t);
     }
 
+    @Transactional
     public void update(T t) {
-        getSession().update(t);
+        getCurrentSession().update(t);
     }
 }

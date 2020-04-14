@@ -29,6 +29,10 @@
             1
         </property>
 
+        <property name="hibernate.current_session_context_class">
+            org.hibernate.context.internal.ThreadLocalSessionContext
+        </property>
+
         <!-- Mapping files -->
         <mapping class="entity.Competition"/>
         <mapping class="entity.Trainer"/>

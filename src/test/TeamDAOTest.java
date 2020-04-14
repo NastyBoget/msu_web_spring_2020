@@ -3,7 +3,7 @@ package test;
 import daoClasses.TeamDAO;
 import daoClasses.TrainerDAO;
 import entity.Team;
-import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.testng.annotations.Test;
@@ -15,16 +15,16 @@ import static org.testng.Assert.*;
 public class TeamDAOTest {
     private TeamDAO _dao;
     private TrainerDAO _dao_trainer;
-    private Session s;
+    private SessionFactory s;
     private Transaction tx;
 
     public void setUp() throws Exception {
-        s = new Configuration().configure().buildSessionFactory().openSession();
-        tx = s.beginTransaction();
+        s = new Configuration().configure().buildSessionFactory();
+        tx = s.getCurrentSession().beginTransaction();
         _dao = new TeamDAO();
         _dao_trainer = new TrainerDAO();
-        _dao.setSession(s);
-        _dao_trainer.setSession(s);
+        _dao.setSessionFactory(s);
+        _dao_trainer.setSessionFactory(s);
     }
 
     public void shutDown() throws Exception {
