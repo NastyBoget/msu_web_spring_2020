@@ -40,7 +40,7 @@
     </tr>
 </table>
 <br>
-<a href="team_delete">Delete team</a>
+<a href="team_delete?id=${team.teamId}">Delete team</a>
 <br>
 <a href="team_update">Edit team</a>
 </body>

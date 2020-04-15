@@ -42,7 +42,7 @@
     </tr>
 </table>
 <br>
-<a href="sportsman_delete">Delete sportsman</a>
+<a href="sportsman_delete?id=${sportsman.sportsmanId}">Delete sportsman</a>
 <br>
 <a href="sportsman_update">Edit sportsman</a>
 </body>

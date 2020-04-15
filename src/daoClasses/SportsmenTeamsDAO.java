@@ -35,4 +35,22 @@ public class SportsmenTeamsDAO extends GenericDAO<SportsmenTeams, SportsmenTeams
                 .setParameter("teamId", teamId);
         return query.getResultList();
     }
+
+    @SuppressWarnings("unchecked")
+    public List<SportsmenTeams> getAllByTeamId(Long teamId) {
+        TypedQuery<SportsmenTeams> query = getCurrentSession().createQuery(
+                "SELECT e FROM SportsmenTeams e " +
+                        "WHERE e.id.teamId = :teamId")
+                .setParameter("teamId", teamId);
+        return query.getResultList();
+    }
+
+    @SuppressWarnings("unchecked")
+    public List<SportsmenTeams> getAllBySportsmanId(Long sportsmanId) {
+        TypedQuery<SportsmenTeams> query = getCurrentSession().createQuery(
+                "SELECT e FROM SportsmenTeams e " +
+                        "WHERE e.id.sportsmanId = :sportsmanId")
+                .setParameter("sportsmanId", sportsmanId);
+        return query.getResultList();
+    }
 }

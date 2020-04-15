@@ -35,12 +35,10 @@ CREATE TABLE IF NOT EXISTS teams (
 
 CREATE TABLE IF NOT EXISTS sportsmen (
      sportsman_id SERIAL PRIMARY KEY,
-     trainer_id INTEGER REFERENCES trainers, -- may be NULL if sportsman has a team
-     team_id INTEGER REFERENCES teams, -- may be NULL if sportsman hasn't a team
+     trainer_id INTEGER REFERENCES trainers,
+     team_id INTEGER REFERENCES teams,
      sportsman_name VARCHAR(50) NOT NULL,
-     birthday DATE NOT NULL,
-     CHECK (team_id IS NULL AND trainer_id IS NOT NULL OR
-            team_id IS NOT NULL AND trainer_id IS NULL)
+     birthday DATE NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS sportsmen_teams (

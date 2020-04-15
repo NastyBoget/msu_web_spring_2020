@@ -1,14 +1,18 @@
 package spring.controller;
 
 import daoClasses.CompTeamsDAO;
+import daoClasses.SportsmanDAO;
 import daoClasses.SportsmenTeamsDAO;
 import daoClasses.TeamDAO;
+import entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.List;
 
 @Controller
 public class TeamController {
@@ -18,6 +22,8 @@ public class TeamController {
     private CompTeamsDAO compTeamsDAO;
     @Autowired
     private SportsmenTeamsDAO sportsmenTeamsDAO;
+    @Autowired
+    private SportsmanDAO sportsmanDAO;
 
     @RequestMapping(value = "/teams", method = RequestMethod.GET)
     public String getTeams(ModelMap map) {
@@ -33,4 +39,23 @@ public class TeamController {
         return "team";
     }
 
+    @RequestMapping(value = "/team_delete", method = RequestMethod.GET)
+    public String delTeam(@RequestParam(value="id", required=true) Long id, ModelMap map) {
+        Team team = teamDAO.getById(id);
+        List<CompTeams> compTeams = compTeamsDAO.getAllByTeamId(id);
+        for(CompTeams item: compTeams) {
+            compTeamsDAO.delete(item);
+        }
+        List<Sportsman> sportsmen = sportsmanDAO.getByTeamId(id);
+        for(Sportsman sportsman: sportsmen) {
+            sportsman.setTeamId(null);
+            sportsmanDAO.update(sportsman);
+        }
+        List<SportsmenTeams> sportsmenTeams = sportsmenTeamsDAO.getAllByTeamId(id);
+        for(SportsmenTeams item: sportsmenTeams) {
+            sportsmenTeamsDAO.delete(item);
+        }
+        teamDAO.delete(team);
+        return "redirect:teams";
+    }
 }

@@ -44,4 +44,13 @@ public class CompTeamsDAO extends GenericDAO<CompTeams, CompTeamsId> {
                 .setParameter("compId", compId);
         return query.getResultList();
     }
+
+    @SuppressWarnings("unchecked")
+    public List<CompTeams> getAllByTeamId(Long teamId) {
+        TypedQuery<CompTeams> query = getCurrentSession().createQuery(
+                "SELECT e FROM CompTeams e " +
+                        "WHERE e.id.teamId = :teamId")
+                .setParameter("teamId", teamId);
+        return query.getResultList();
+    }
 }

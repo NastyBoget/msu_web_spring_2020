@@ -17,7 +17,7 @@ public class Sportsman {
     @JoinColumn(name = "trainer_id", nullable = true)
     private Trainer trainerId;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "team_id", nullable = true)
     private Team teamId;
 

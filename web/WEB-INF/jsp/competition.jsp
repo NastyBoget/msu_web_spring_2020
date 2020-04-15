@@ -93,7 +93,7 @@
 <br>
 <a href="seats?id=${competition.compId}">More information about free seats and prices</a>
 <br>
-<a href="competition_delete">Delete competition</a>
+<a href="competition_delete?id=${competition.compId}">Delete competition</a>
 <br>
 <a href="competition_update">Edit competition</a>
 </body>

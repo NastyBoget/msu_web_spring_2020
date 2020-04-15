@@ -19,4 +19,13 @@ public class SportsmanDAO extends GenericDAO<Sportsman, Long> {
                 .setParameter("name", '%' + name + '%');
         return query.getResultList();
     }
+
+    @SuppressWarnings("unchecked")
+    public List<Sportsman> getByTeamId(Long id) {
+        TypedQuery<Sportsman> query = getCurrentSession().createQuery(
+                "SELECT e FROM Sportsman e " +
+                        "WHERE e.teamId.teamId = :id")
+                .setParameter("id", id);
+        return query.getResultList();
+    }
 }
