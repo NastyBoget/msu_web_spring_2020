@@ -6,9 +6,11 @@ import entity.SportsmenTeamsId;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.TypedQuery;
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Repository
+@Transactional
 public class SportsmenTeamsDAO extends GenericDAO<SportsmenTeams, SportsmenTeamsId> {
     public SportsmenTeams getByCompositeId(Long sportsmanId, Long teamId) {
         return getById(new SportsmenTeamsId(sportsmanId, teamId));

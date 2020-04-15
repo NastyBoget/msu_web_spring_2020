@@ -1,6 +1,9 @@
 package spring.controller;
 
+import daoClasses.CompSportsmenDAO;
+import daoClasses.CompTeamsDAO;
 import daoClasses.CompetitionDAO;
+import daoClasses.SeatsDAO;
 import entity.Competition;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,6 +16,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class CompetitionController {
     @Autowired
     private CompetitionDAO competitionDAO;
+    @Autowired
+    private CompTeamsDAO compTeamsDAO;
+    @Autowired
+    private CompSportsmenDAO compSportsmenDAO;
 
     @RequestMapping(value = "/competitions", method = RequestMethod.GET)
     public String getCompetitions(ModelMap map) {
@@ -22,15 +29,11 @@ public class CompetitionController {
 
     @RequestMapping(value = "/competition", method = RequestMethod.GET)
     public String getCompetition(@RequestParam(value="id", required=true) Long id, ModelMap map) {
-        map.addAttribute("competition", competitionDAO.getById(id));
+        Competition competition = competitionDAO.getById(id);
+        map.addAttribute("competition", competition);
+        map.addAttribute("sportsmanList", compSportsmenDAO.getByCompId(id));
+        map.addAttribute("teamList", compTeamsDAO.getByCompId(id));
         return "competition";
     }
-
-//    @RequestMapping(value = "/competition", method = RequestMethod.GET)
-//    public String getBySportKind(@RequestParam(value="sportKind", required=true) Competition.SportKind sportKind,
-//                                 ModelMap map) {
-//        map.addAttribute("competition", competitionDAO.getBySportKind(sportKind));
-//        return "competitions";
-//    }
 
 }

@@ -5,9 +5,11 @@ import entity.Sportsman;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.TypedQuery;
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Repository
+@Transactional
 public class SportsmanDAO extends GenericDAO<Sportsman, Long> {
     @SuppressWarnings("unchecked")
     public List<Sportsman> getByName(String name) {

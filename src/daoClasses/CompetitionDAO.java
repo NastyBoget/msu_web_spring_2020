@@ -6,10 +6,12 @@ import org.springframework.stereotype.Repository;
 
 import javax.persistence.TemporalType;
 import javax.persistence.TypedQuery;
+import javax.transaction.Transactional;
 import java.sql.Timestamp;
 import java.util.List;
 
 @Repository
+@Transactional
 public class CompetitionDAO extends GenericDAO<Competition, Long> {
     @SuppressWarnings("unchecked")
     public List<Competition> getByCompTime(Timestamp startTime, Timestamp endTime) {

@@ -31,20 +31,18 @@ public class CompTeamsDAOTest {
     @Test(priority = 0)
     void getCompTeams() throws Exception {
         setUp();
-        List<CompTeams> _list = _dao.getByCompId((long) 5);
-        assertEquals(2, _list.size());
-        for (CompTeams i: _list) {
-            assertNull(i.getPlace());
-            assertNull(i.getPoints());
-            assertEquals(5, (long) i.getCompId().getCompId());
+        List<Team> teamList = _dao.getByCompId((long) 5);
+        assertEquals(2, teamList.size());
+        for (Team i: teamList) {
+            assertNotNull(i);
         }
 
-        _list = _dao.getByTeamId((long) 2);
-        assertEquals(1, _list.size());
-        for (CompTeams i: _list) {
-            assertEquals(3, (int) i.getPlace());
-            assertEquals(10, (int) i.getPoints());
-            assertEquals(2, (long) i.getTeamId().getTeamId());
+        List<Competition> compList = _dao.getByTeamId((long) 2);
+        assertEquals(1, compList.size());
+        for (Competition i: compList) {
+            assertEquals(1, (long) i.getCompId());
+            assertEquals("FIFA World Cup", i.getCompName());
+            assertEquals("Russia, Moscow, Arena CSKA", i.getLocation());
         }
 
         CompTeams _entity = _dao.getByCompositeId((long) 2, (long) 1);
@@ -53,14 +51,14 @@ public class CompTeamsDAOTest {
         assertEquals(2, (long) _entity.getCompId().getCompId());
         assertEquals(1, (long) _entity.getTeamId().getTeamId());
 
-        _list = _dao.getByCompId((long) 100);
-        assertTrue(_list.isEmpty());
-        _list = _dao.getByTeamId((long) 100);
-        assertTrue(_list.isEmpty());
+        teamList = _dao.getByCompId((long) 100);
+        assertTrue(teamList.isEmpty());
+        compList = _dao.getByTeamId((long) 100);
+        assertTrue(compList.isEmpty());
         assertNull(_dao.getByCompositeId((long) 100, (long) 100));
         shutDown();
     }
-    
+
     @Test(priority = 2)
     public void findAll() throws Exception {
         setUp();

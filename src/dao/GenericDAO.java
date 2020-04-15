@@ -11,6 +11,7 @@ import java.lang.reflect.ParameterizedType;
 import java.util.List;
 
 @SuppressWarnings("unchecked")
+@Transactional
 public class GenericDAO<T, ID extends Serializable> {
     private Class<T> persistentClass;
     @Autowired
@@ -33,29 +34,24 @@ public class GenericDAO<T, ID extends Serializable> {
         return sessionFactory.getCurrentSession();
     }
 
-    @Transactional
     public T getById(ID id) {
         return  getCurrentSession().get(persistentClass, id);
     }
 
-    @Transactional
     public List<T> getAll() {
         CriteriaQuery<T> query =  getCurrentSession().getCriteriaBuilder().createQuery(persistentClass);
         query.from(persistentClass);
         return  getCurrentSession().createQuery(query).getResultList();
     }
 
-    @Transactional
     public void delete(T t) {
         getCurrentSession().delete(t);
     }
 
-    @Transactional
     public void save(T t) {
         getCurrentSession().save(t);
     }
 
-    @Transactional
     public void update(T t) {
         getCurrentSession().update(t);
     }

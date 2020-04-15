@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<style><%@include file="/WEB-INF/jsp/styles.css"%></style>
 <%--https://www.w3schools.com/howto/howto_js_filter_table.asp--%>
 <html>
 <head>
@@ -18,19 +19,19 @@
     </h1>
 </div>
 <br>
-<input type="text" id="Name" onkeyup="FilterFunction(0, id)" placeholder="Search by name..">
-<input type="text" id="Time" onkeyup="FilterFunction(1, id)" placeholder="Search by time..">
-<input type="text" id="Location" onkeyup="FilterFunction(2, id)" placeholder="Search location ..">
-<input type="text" id="SportKind" onkeyup="FilterFunction(3, id)" placeholder="Search by kind of sport..">
 
-<br>
-
-<table id="myTable">
+<table id="CompTable">
     <tr>
         <th>Name</th>
         <th>Time</th>
         <th>Location</th>
         <th>Kind of sport</th>
+    </tr>
+    <tr>
+        <td><input type="text" id="Name" onkeyup="FilterFunction(0, id)" placeholder="Search by name.."></td>
+        <td><input type="text" id="Time" onkeyup="FilterFunction(1, id)" placeholder="Search by time.."></td>
+        <td><input type="text" id="Location" onkeyup="FilterFunction(2, id)" placeholder="Search location .."></td>
+        <td><input type="text" id="SportKind" onkeyup="FilterFunction(3, id)" placeholder="Search by kind of sport.."></td>
     </tr>
 <c:forEach items="${competitionsList}" var="competition">
     <tr>
@@ -51,7 +52,7 @@
         var real_input, filter, table, tr, td, i, txtValue;
         real_input = document.getElementById(input);
         filter = real_input.value.toUpperCase();
-        table = document.getElementById("myTable");
+        table = document.getElementById("CompTable");
         tr = table.getElementsByTagName("tr");
 
         // Loop through all table rows, and hide those who don't match the search query

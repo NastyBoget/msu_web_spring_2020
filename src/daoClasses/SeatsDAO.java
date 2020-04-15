@@ -6,9 +6,11 @@ import entity.SeatsId;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.TypedQuery;
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Repository
+@Transactional
 public class SeatsDAO extends GenericDAO<Seats, SeatsId> {
     @SuppressWarnings("unchecked")
     public List<Seats> getByCompId(Long compId) {

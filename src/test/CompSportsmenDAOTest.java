@@ -2,6 +2,8 @@ package test;
 
 import daoClasses.CompSportsmenDAO;
 import entity.CompSportsmen;
+import entity.Competition;
+import entity.Sportsman;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
@@ -31,20 +33,18 @@ public class CompSportsmenDAOTest {
     @Test(priority = 0)
     void getCompSportsmen() throws Exception {
         setUp();
-        List<CompSportsmen> _list = _dao.getByCompId((long) 4);
-        assertEquals(3, _list.size());
-        for (CompSportsmen i: _list) {
-            assertNull(i.getPlace());
-            assertNull(i.getPoints());
-            assertEquals(4, (long) i.getCompId().getCompId());
+        List<Sportsman> sportsmanList = _dao.getByCompId((long) 4);
+        assertEquals(3, sportsmanList.size());
+        for (Sportsman i: sportsmanList) {
+            assertNotNull(i);
         }
 
-        _list = _dao.getBySportsmanId((long) 6);
-        assertEquals(1, _list.size());
-        for (CompSportsmen i: _list) {
-            assertEquals(2, (int) i.getPlace());
-            assertEquals(40, (int) i.getPoints());
-            assertEquals(6, (long) i.getSportsmanId().getSportsmanId());
+        List<Competition> compList = _dao.getBySportsmanId((long) 6);
+        assertEquals(1, compList.size());
+        for (Competition i: compList) {
+            assertEquals(3, (long) i.getCompId());
+            assertEquals("2020 GYMNASTICS WORLD CUP", i.getCompName());
+            assertEquals("UK, Birmingham, Arena Birmingham", i.getLocation());
         }
 
         CompSportsmen _entity = _dao.getByCompositeId((long) 4, (long) 10);
@@ -53,10 +53,10 @@ public class CompSportsmenDAOTest {
         assertEquals(4, (long) _entity.getCompId().getCompId());
         assertEquals(10, (long) _entity.getSportsmanId().getSportsmanId());
 
-        _list = _dao.getByCompId((long) 100);
-        assertTrue(_list.isEmpty());
-        _list = _dao.getBySportsmanId((long) 100);
-        assertTrue(_list.isEmpty());
+        sportsmanList = _dao.getByCompId((long) 100);
+        assertTrue(sportsmanList.isEmpty());
+        compList = _dao.getBySportsmanId((long) 100);
+        assertTrue(compList.isEmpty());
         assertNull(_dao.getByCompositeId((long) 100, (long) 100));
         shutDown();
     }
