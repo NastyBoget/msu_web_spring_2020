@@ -1,30 +1,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<style><%@include file="/WEB-INF/jsp/styles.css"%></style>
 <html>
 <title> Home </title>
 <body>
+<h1>Competition Information</h1>
+<br>
 <div style="text-align: center;">
-    <h1>
-        Competition Information
-    </h1>
+    <a href="competitions">Competitions</a>
+    <br>
+    <a href="sportsmen">Sportsmen</a>
+    <br>
+    <a href="teams">Teams</a>
 </div>
-<br>
-<a href="competitions">
-    <div>
-        Competitions
-    </div>
-</a>
-<br>
-<a href="sportsmen">
-    <div>
-        Sportsmen
-    </div>
-</a>
-<br>
-<a href="teams">
-    <div>
-        Teams
-    </div>
-</a>
 </body>
 </html>

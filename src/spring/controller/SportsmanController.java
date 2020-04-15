@@ -1,6 +1,8 @@
 package spring.controller;
 
+import daoClasses.CompSportsmenDAO;
 import daoClasses.SportsmanDAO;
+import daoClasses.SportsmenTeamsDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -12,6 +14,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class SportsmanController {
     @Autowired
     private SportsmanDAO sportsmanDAO;
+    @Autowired
+    private CompSportsmenDAO compSportsmenDAO;
+    @Autowired
+    private SportsmenTeamsDAO sportsmenTeamsDAO;
 
     @RequestMapping(value = "/sportsmen", method = RequestMethod.GET)
     public String getSportsmen(ModelMap map) {
@@ -22,6 +28,8 @@ public class SportsmanController {
     @RequestMapping(value = "/sportsman", method = RequestMethod.GET)
     public String getSportsman(@RequestParam(value="id", required=true) Long id, ModelMap map) {
         map.addAttribute("sportsman", sportsmanDAO.getById(id));
+        map.addAttribute("teamList", sportsmenTeamsDAO.getBySportsmenId(id));
+        map.addAttribute("compList", compSportsmenDAO.getBySportsmanId(id));
         return "sportsman";
     }
 

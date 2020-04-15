@@ -1,58 +1,60 @@
-#Name {
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
-}
-#Time {
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
-}
-#Location {
-     background-position: 10px 12px; /* Position the search icon */
-     background-repeat: no-repeat; /* Do not repeat the icon image */
-     width: 100%; /* Full-width */
-     font-size: 16px; /* Increase font-size */
-     padding: 12px 20px 12px 40px; /* Add some padding */
-     border: 1px solid #ddd; /* Add a grey border */
-     margin-bottom: 12px; /* Add some space below the input */
- }
-#SportKind {
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
+.non_display {
+    display: none;
 }
 
-#CompTable {
-    /*border-collapse: collapse; !* Collapse borders *!*/
-    width: 100%; /* Full-width */
-    border: 1px solid #ddd; /* Add a grey border */
-    font-size: 18px; /* Increase font-size */
+.search_icon {
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    margin: 12px;
 }
 
-#CompTable th, #CompTable td {
-    text-align: left; /* Left-align text */
-    padding: 12px; /* Add padding */
+h1 {
+    text-align: center;
 }
 
-#CompTable tr {
-    /* Add a bottom border to all table rows */
+table {
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+th {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 12px;
+}
+
+td {
+    text-align: center;
+}
+
+tr {
     border-bottom: 1px solid #ddd;
 }
 
-#CompTable tr.header, #CompTable tr:hover {
-    /* Add a grey background color to the table header and on hover */
+tr:hover {
     background-color: #f1f1f1;
+}
+
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px;
+    background-color: #7d7d7d;
+}
+
+a {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+a:hover {
+    color: #6f6b6b;
+}
+
+body, div {
+    font-size: 16px;
 }

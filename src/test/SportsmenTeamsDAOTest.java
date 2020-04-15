@@ -1,7 +1,9 @@
 package test;
 
 import daoClasses.SportsmenTeamsDAO;
+import entity.Sportsman;
 import entity.SportsmenTeams;
+import entity.Team;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
@@ -31,26 +33,26 @@ public class SportsmenTeamsDAOTest {
     @Test(priority = 0)
     void getSportsmenTeams() throws Exception {
         setUp();
-        List<SportsmenTeams> _list = _dao.getBySportsmenId((long) 8);
-        assertEquals(2, _list.size());
-        for (SportsmenTeams i: _list) {
-            assertEquals(8, (long) i.getSportsmanId().getSportsmanId());
+        List<Team> teamList = _dao.getBySportsmenId((long) 8);
+        assertEquals(2, teamList.size());
+        for (Team i: teamList) {
+            assertNotNull(i);
         }
 
-        _list = _dao.getByTeamId((long) 4);
-        assertEquals(1, _list.size());
-        for (SportsmenTeams i: _list) {
-            assertEquals(4, (long) i.getTeamId().getTeamId());
+        List<Sportsman> sportsmanList = _dao.getByTeamId((long) 4);
+        assertEquals(1, sportsmanList.size());
+        for (Sportsman i: sportsmanList) {
+            assertEquals(5, (long) i.getTeamId().getTeamId());
         }
 
         SportsmenTeams _entity = _dao.getByCompositeId((long) 3, (long) 1);
         assertEquals(3, (long) _entity.getSportsmanId().getSportsmanId());
         assertEquals(1, (long) _entity.getTeamId().getTeamId());
 
-        _list = _dao.getBySportsmenId((long) 100);
-        assertTrue(_list.isEmpty());
-        _list = _dao.getByTeamId((long) 100);
-        assertTrue(_list.isEmpty());
+        teamList = _dao.getBySportsmenId((long) 100);
+        assertTrue(teamList.isEmpty());
+        sportsmanList = _dao.getByTeamId((long) 100);
+        assertTrue(sportsmanList.isEmpty());
         assertNull(_dao.getByCompositeId((long) 100, (long) 100));
         shutDown();
     }

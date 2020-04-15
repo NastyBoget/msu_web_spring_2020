@@ -1,8 +1,10 @@
 package daoClasses;
 
 import dao.GenericDAO;
+import entity.Sportsman;
 import entity.SportsmenTeams;
 import entity.SportsmenTeamsId;
+import entity.Team;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.TypedQuery;
@@ -17,18 +19,18 @@ public class SportsmenTeamsDAO extends GenericDAO<SportsmenTeams, SportsmenTeams
     }
 
     @SuppressWarnings("unchecked")
-    public List<SportsmenTeams> getBySportsmenId(Long sportsmanId) {
-        TypedQuery<SportsmenTeams> query = getCurrentSession().createQuery(
-                "SELECT e FROM SportsmenTeams e " +
+    public List<Team> getBySportsmenId(Long sportsmanId) {
+        TypedQuery<Team> query = getCurrentSession().createQuery(
+                "SELECT e.teamId FROM SportsmenTeams e " +
                         "WHERE e.id.sportsmanId = :sportsmanId")
                 .setParameter("sportsmanId", sportsmanId);
         return query.getResultList();
     }
 
     @SuppressWarnings("unchecked")
-    public List<SportsmenTeams> getByTeamId(Long teamId) {
-        TypedQuery<SportsmenTeams> query = getCurrentSession().createQuery(
-                "SELECT e FROM SportsmenTeams e " +
+    public List<Sportsman> getByTeamId(Long teamId) {
+        TypedQuery<Sportsman> query = getCurrentSession().createQuery(
+                "SELECT e.sportsmanId FROM SportsmenTeams e " +
                         "WHERE e.id.teamId = :teamId")
                 .setParameter("teamId", teamId);
         return query.getResultList();

@@ -36,14 +36,6 @@ public class HibernateConfig {
         return hibernateProperties;
     }
 
-    @Bean(name = "localeResolver")
-    public LocaleResolver localeResolver() {
-        SessionLocaleResolver sessionLocaleResolver = new SessionLocaleResolver();
-        sessionLocaleResolver.setDefaultLocale(new Locale("ru_RU"));
-
-        return sessionLocaleResolver;
-    }
-
     @Bean(name = "dataSource")
     public DataSource getDataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();

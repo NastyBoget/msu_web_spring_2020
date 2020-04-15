@@ -3,7 +3,6 @@ package spring.controller;
 import daoClasses.CompSportsmenDAO;
 import daoClasses.CompTeamsDAO;
 import daoClasses.CompetitionDAO;
-import daoClasses.SeatsDAO;
 import entity.Competition;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -33,6 +32,8 @@ public class CompetitionController {
         map.addAttribute("competition", competition);
         map.addAttribute("sportsmanList", compSportsmenDAO.getByCompId(id));
         map.addAttribute("teamList", compTeamsDAO.getByCompId(id));
+        map.addAttribute("sportsmanResults", compSportsmenDAO.getAllByCompId(id));
+        map.addAttribute("teamsResults", compTeamsDAO.getAllByCompId(id));
         return "competition";
     }
 

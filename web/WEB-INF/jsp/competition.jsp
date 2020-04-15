@@ -4,26 +4,14 @@
 <html>
 <head>
     <title>Competition</title>
-    <style>
-        .status {
-            display: none;
-        }
-    </style>
 </head>
 <body>
-<a href="index">
-    <div>
-        home page
-    </div>
-</a>
-<hr>
-<div style="text-align: center;">
-    <h1>
-        ${competition.compName}
-    </h1>
-</div>
+<a href="index">home page</a>
 <br>
-<table id="CompTable">
+<hr>
+<h1>${competition.compName}</h1>
+<br>
+<table>
     <tr>
         <th>Kind of sport</th>
         <th>Time</th>
@@ -40,52 +28,73 @@
         <td>
             <c:forEach items="${sportsmanList}" var="sportsman">
                 <a href="sportsman?id=${sportsman.sportsmanId}">
-                    <div>
-                            ${sportsman.sportsmanName}
-                    </div>
+                    <div>${sportsman.sportsmanName}</div>
                 </a>
             </c:forEach>
         </td>
         <td>
             <c:forEach items="${teamList}" var="team">
                 <a href="team?id=${team.teamId}">
-                    <div>
-                            ${team.teamName}
-                    </div>
+                    <div>${team.teamName}</div>
                 </a>
             </c:forEach>
         </td>
+        <td>${competition.compStatus}</td>
         <td>
-            ${competition.compStatus}
-        </td>
-        <td>
-            <div id="status" class=status>${competition.isFreeSeatsStatus()} </div>
-            <script>
-                var status = document.getElementById("status");
-                if (status) {
-                    document.write("there are free seats");
-                } else {
-                    document.write("no free seats");
-                }
-            </script>
+            <div style="${competition.isFreeSeatsStatus() ? 'display:block' : 'display:none'}">
+                there are free seats
+            </div>
+            <div style="${competition.isFreeSeatsStatus() ? 'display:none' : 'display:block'}">
+                no free seats
+            </div>
         </td>
         </tr>
 </table>
 <br>
-<a href="seats_price">
-    <div>
-        More information about free seats and prices
-    </div>
-</a>
-<a href="competition_delete">
-    <div>
-        Delete competition
-    </div>
-</a>
-<a href="competition_update">
-    <div>
-        Edit competition
-    </div>
-</a>
+<table style="${sportsmanList.size() == 0 ? 'display:none' : 'display:block'}">
+    <caption> Results for sportsmen </caption>
+    <tr>
+        <th>Participant</th>
+        <th>Points</th>
+        <th>Place</th>
+    </tr>
+    <c:forEach items="${sportsmanResults}" var="results">
+        <tr>
+            <td>
+                <a href="sportsman?id=${results.sportsmanId.sportsmanId}">
+                    ${results.sportsmanId.sportsmanName}
+                </a>
+            </td>
+            <td>${results.points}</td>
+            <td>${results.place}</td>
+        </tr>
+    </c:forEach>
+</table>
+<br>
+<table style="${teamList.size() == 0 ? 'display:none' : 'display:block'}">
+    <caption> Results for teams </caption>
+    <tr>
+        <th>Participant</th>
+        <th>Points</th>
+        <th>Place</th>
+    </tr>
+    <c:forEach items="${teamsResults}" var="results">
+        <tr>
+            <td>
+                <a href="team?id=${results.teamId.teamId}">
+                        ${results.teamId.teamName}
+                </a>
+            </td>
+            <td>${results.points}</td>
+            <td>${results.place}</td>
+        </tr>
+    </c:forEach>
+</table>
+<br>
+<a href="seats?id=${competition.compId}">More information about free seats and prices</a>
+<br>
+<a href="competition_delete">Delete competition</a>
+<br>
+<a href="competition_update">Edit competition</a>
 </body>
 </html>

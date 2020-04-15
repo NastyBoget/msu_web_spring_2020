@@ -35,4 +35,13 @@ public class CompSportsmenDAO extends GenericDAO<CompSportsmen, CompSportsmenId>
                 .setParameter("sportsmanId", sportsmanId);
         return query.getResultList();
     }
+
+    @SuppressWarnings("unchecked")
+    public List<CompSportsmen> getAllByCompId(Long compId) {
+        TypedQuery<CompSportsmen> query = getCurrentSession().createQuery(
+                "SELECT e FROM CompSportsmen e " +
+                        "WHERE e.id.compId = :compId")
+                .setParameter("compId", compId);
+        return query.getResultList();
+    }
 }

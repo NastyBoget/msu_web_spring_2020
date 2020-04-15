@@ -1,36 +1,21 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<style><%@include file="/WEB-INF/jsp/styles.css"%></style>
 <html>
 <head>
     <title>Teams</title>
 </head>
 <body>
-<a href="index">
-    <div>
-        home page
-    </div>
-</a>
+<a href="index">home page</a>
+<br>
 <hr>
-
-<div style="text-align: center;">
-    <h1>
-        Teams
-    </h1>
-</div>
+<h1>Teams</h1>
 <br>
 <c:forEach items="${teamsList}" var="team">
-    <a href="team?id=${team.teamId}">
-        <div>
-                ${team.teamName}
-        </div>
-    </a>
+    <a href="team?id=${team.teamId}">${team.teamName}</a>
+    <br>
 </c:forEach>
 <br>
-<a href="team_add">
-    <div>
-        Add team
-    </div>
-</a>
+<a href="team_add">Add team</a>
 </body>
 </html>
