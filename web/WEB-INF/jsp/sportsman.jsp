@@ -44,6 +44,6 @@
 <br>
 <a href="sportsman_delete?id=${sportsman.sportsmanId}">Delete sportsman</a>
 <br>
-<a href="sportsman_update">Edit sportsman</a>
+<a href="sportsman_update?id=${sportsman.sportsmanId}">Edit sportsman</a>
 </body>
 </html>
