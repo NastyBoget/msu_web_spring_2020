@@ -1,17 +1,17 @@
 package spring.controller;
 
-import daoClasses.CompTeamsDAO;
-import daoClasses.SportsmanDAO;
-import daoClasses.SportsmenTeamsDAO;
-import daoClasses.TeamDAO;
+import daoClasses.*;
 import entity.*;
+import forms.TeamForm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -24,6 +24,8 @@ public class TeamController {
     private SportsmenTeamsDAO sportsmenTeamsDAO;
     @Autowired
     private SportsmanDAO sportsmanDAO;
+    @Autowired
+    private TrainerDAO trainerDAO;
 
     @RequestMapping(value = "/teams", method = RequestMethod.GET)
     public String getTeams(ModelMap map) {
@@ -57,5 +59,59 @@ public class TeamController {
         }
         teamDAO.delete(team);
         return "redirect:teams";
+    }
+
+    private void saveTeam(TeamForm teamForm) {
+        Team team = (teamForm.getTeamId() == null) ?
+                new Team() : teamDAO.getById(teamForm.getTeamId());
+        team.setTeamName(teamForm.getName());
+        team.setTrainerId(trainerDAO.getById(teamForm.getTrainerId()));
+        if (teamForm.getTeamId() == null) {
+            teamDAO.save(team);
+        } else {
+            teamDAO.update(team);
+        }
+        List<Sportsman> sportsmen = new ArrayList<Sportsman>();
+        for(Long id: teamForm.getSportsmenList()) {
+            sportsmen.add(sportsmanDAO.getById(id));
+        }
+        for(Sportsman sportsman: sportsmen) {
+            try {
+                sportsmenTeamsDAO.save(new SportsmenTeams(sportsman, team));
+            } catch(Exception ignored) {}
+        }
+    }
+
+    @RequestMapping(value = "/team_add", method = RequestMethod.GET)
+    public String addTeam(ModelMap map) {
+        map.addAttribute("trainers", trainerDAO.getAll());
+        map.addAttribute("sportsmen", sportsmanDAO.getAll());
+        map.addAttribute("teamForm", new TeamForm());
+        return "team_update";
+    }
+
+    @RequestMapping(value = "/team_add", method = RequestMethod.POST)
+    public String addTeam(ModelMap map,
+                          @ModelAttribute("teamForm") TeamForm teamForm) {
+        saveTeam(teamForm);
+        return "redirect:teams";
+    }
+
+    @RequestMapping(value = "/team_update", method = RequestMethod.GET)
+    public String updateTeam(@RequestParam(value="id", required=true) Long id,
+                             ModelMap map) {
+        map.addAttribute("trainers", trainerDAO.getAll());
+        map.addAttribute("sportsmen", sportsmanDAO.getAll());
+        TeamForm teamForm = new TeamForm();
+        teamForm.setTeamId(id);
+        map.addAttribute("teamForm", teamForm);
+        return "team_update";
+    }
+
+    @RequestMapping(value = "/team_update", method = RequestMethod.POST)
+    public String updateTeam(ModelMap map,
+                             @ModelAttribute("teamForm") TeamForm teamForm) {
+        saveTeam(teamForm);
+        return "redirect:team?id=" + teamForm.getTeamId().toString();
     }
 }

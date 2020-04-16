@@ -6,10 +6,10 @@
 <html>
 <head>
     <c:if test="${empty sportsmanForm.sportsmanId}">
-        <title>Add</title>
+        <title>Add sportsman</title>
     </c:if>
     <c:if test="${!empty sportsmanForm.sportsmanId}">
-        <title>Edit</title>
+        <title>Edit sportsman</title>
     </c:if>
 </head>
 <body>
@@ -17,10 +17,10 @@
 <br>
 <hr>
 <c:if test="${empty sportsmanForm.sportsmanId}">
-    <h1>Add sportsmen</h1>
+    <h1>Add sportsman</h1>
 </c:if>
 <c:if test="${!empty sportsmanForm.sportsmanId}">
-    <h1>Edit sportsmen</h1>
+    <h1>Edit sportsman</h1>
 </c:if>
 <br>
 <c:if test="${empty sportsmanForm.sportsmanId}">
@@ -34,9 +34,9 @@
         <form:input type="hidden" path="sportsmanId" value="${sportsmanForm.sportsmanId}"/>
     </c:if>
     <label for="name">Name</label>
-    <form:input type="text" path="name" id="name"/>
+    <form:input type="text" path="name" id="name" placeholder="Name"/>
     <label for="birthday">Birthday</label>
-    <form:input type="date" path="birthday" id="birthday"/>
+    <form:input type="date" path="birthday" id="birthday" placeholder="yyyy-mm-dd"/>
     <label for="trainer">Trainer</label>
     <form:select path="trainerId" id="trainer">
         <c:forEach items="${trainers}" var="trainer">

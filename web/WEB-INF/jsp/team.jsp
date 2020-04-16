@@ -42,6 +42,6 @@
 <br>
 <a href="team_delete?id=${team.teamId}">Delete team</a>
 <br>
-<a href="team_update">Edit team</a>
+<a href="team_update?id=${team.teamId}">Edit team</a>
 </body>
 </html>
