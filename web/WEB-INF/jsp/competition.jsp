@@ -95,6 +95,6 @@
 <br>
 <a href="competition_delete?id=${competition.compId}">Delete competition</a>
 <br>
-<a href="competition_update">Edit competition</a>
+<a href="competition_update?id=${competition.compId}">Edit competition</a>
 </body>
 </html>

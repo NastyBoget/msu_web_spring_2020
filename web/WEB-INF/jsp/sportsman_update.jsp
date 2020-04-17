@@ -35,8 +35,10 @@
     </c:if>
     <label for="name">Name</label>
     <form:input type="text" path="name" id="name" placeholder="Name"/>
+    <br>
     <label for="birthday">Birthday</label>
     <form:input type="date" path="birthday" id="birthday" placeholder="yyyy-mm-dd"/>
+    <br>
     <label for="trainer">Trainer</label>
     <form:select path="trainerId" id="trainer">
         <c:forEach items="${trainers}" var="trainer">
@@ -44,6 +46,7 @@
         </c:forEach>
         <option value="">None</option>
     </form:select>
+    <br>
     <label for="team">Team</label>
     <form:select path="teamId" id="team">
         <c:forEach items="${teams}" var="team">
@@ -51,6 +54,7 @@
         </c:forEach>
         <option value="">None</option>
     </form:select>
+    <br>
     <c:if test="${empty sportsmanForm.sportsmanId}">
         <input type="submit" value="Add sportsman">
     </c:if>

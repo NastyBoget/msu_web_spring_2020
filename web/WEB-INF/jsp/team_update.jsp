@@ -35,6 +35,7 @@
     </c:if>
     <label for="name">Name</label>
     <form:input placeholder="Name" type="text" path="name" id="name"/>
+    <br>
     <label for="trainer">Trainer</label>
     <form:select path="trainerId" id="trainer">
         <c:forEach items="${trainers}" var="trainer">
@@ -42,6 +43,7 @@
         </c:forEach>
         <option value="">None</option>
     </form:select>
+    <br>
     <label for="sportsmen">Sportsmen</label>
     <form:select multiple="true" path="sportsmenList" id="sportsmen">
         <c:forEach items="${sportsmen}" var="sportsman">
@@ -49,6 +51,7 @@
         </c:forEach>
         <option value="">None</option>
     </form:select>
+    <br>
     <c:if test="${empty teamForm.teamId}">
         <input type="submit" value="Add team">
     </c:if>

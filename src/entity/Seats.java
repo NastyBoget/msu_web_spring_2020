@@ -53,12 +53,13 @@ public class Seats implements Serializable {
     public Seats() {}
 
     public Seats(@NotNull Competition compId, SeatsType type,
-                 Short numSeats, Short numFreeSeats) {
+                 Short numSeats, Short numFreeSeats, Double price) {
         this.id = new SeatsId(compId.getCompId(), type);
         this.compId = compId;
         this.type = type;
         this.numSeats = numSeats;
         this.numFreeSeats = numFreeSeats;
+        this.price = price;
     }
 
     public SeatsId getId() {

@@ -31,13 +31,12 @@ public class CompSportsmen implements Serializable {
 
     public CompSportsmen() {}
 
-    public CompSportsmen(@NotNull Sportsman sportsmanId, @NotNull Competition compId,
-                         Integer place, Integer points) {
+    public CompSportsmen(@NotNull Competition compId, @NotNull Sportsman sportsmanId) {
         this.id = new CompSportsmenId(compId.getCompId(), sportsmanId.getSportsmanId());
         this.sportsmanId = sportsmanId;
         this.compId = compId;
-        this.place = place;
-        this.points = points;
+        this.place = null;
+        this.points = null;
     }
 
     public Integer getPlace() {
