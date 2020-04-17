@@ -28,7 +28,11 @@
       </facet>
     </facet>
     <facet type="Spring" name="Spring">
-      <configuration />
+      <configuration>
+        <fileset id="fileset" name="HibernateConfig" removed="false">
+          <file>file://$MODULE_DIR$/src/spring/config/HibernateConfig.java</file>
+        </fileset>
+      </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">

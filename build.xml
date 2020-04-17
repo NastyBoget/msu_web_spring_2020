@@ -16,13 +16,44 @@
   </target>
 
   <target name = "clean">
-    <delete failonerror = "false">
-      <fileset dir = "${build.dir}">
-        <include name = "**/*.class"/>
-      </fileset>
-    </delete>
+    <delete dir="out"/>
   </target>
 
-  <target name = "all" depends = "clean, initdb, build, runtests"/>
+  <target name = "build-war">
+    <ant antfile = "${web.dir}/build.xml"/>
+  </target>
+
+  <target name = "start-server">
+    <exec executable = "${asadmin}">
+      <arg value="start-domain"/>
+    </exec>
+  </target>
+
+  <target name = "stop-server">
+    <exec executable = "${asadmin}">
+      <arg value="stop-domain"/>
+    </exec>
+  </target>
+
+  <target name = "deploy">
+    <exec executable = "${asadmin}">
+      <arg value = "deploy"/>
+      <arg value = "--force=true"/>
+      <arg value = "${webapp.dir}/${war.file}"/>
+    </exec>
+  </target>
+
+  <target name = "undeploy">
+    <exec executable = "${asadmin}">
+      <arg value = "undeploy"/>
+      <arg value = "${war.name}"/>
+    </exec>
+  </target>
+
+  <target name = "run-system-tests" >
+    <ant antfile = "${selenium.dir}/build.xml"/>
+  </target>
+
+  <target name = "all" depends = "clean, initdb, build, runtests, build-war, start-server, deploy, run-system-tests"/>
 
 </project>

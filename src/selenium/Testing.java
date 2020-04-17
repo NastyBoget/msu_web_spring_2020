@@ -1,5 +1,7 @@
 package selenium;
 
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.is;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -14,7 +16,7 @@ public class Testing {
     protected WebDriver driver;
 
     @Test
-    public void test() {
+    public void pagesTest() {
         System.setProperty("webdriver.chrome.driver", chromeDriver);
         driver = new ChromeDriver();
         driver.get(appURL);
@@ -151,6 +153,70 @@ public class Testing {
         driver.findElement(By.id("card")).sendKeys("1111");
         driver.findElement(By.cssSelector("input:nth-child(9)")).click();
         driver.findElement(By.linkText("home page")).click();
+        driver.quit();
+    }
+    @Test
+    public void wrongTest() {
+        System.setProperty("webdriver.chrome.driver", chromeDriver);
+        driver = new ChromeDriver();
+        driver.get(appURL);
+        driver.get("http://localhost:8080/index");
+        driver.manage().window().setSize(new Dimension(1200, 767));
+        driver.findElement(By.linkText("Competitions")).click();
+        driver.findElement(By.linkText("Add competition")).click();
+        driver.findElement(By.cssSelector("input:nth-child(42)")).click();
+        assertThat(driver.findElement(By.cssSelector("h1")).getText(), is("Sorry, some error occured :("));
+        driver.findElement(By.linkText("competitions")).click();
+        driver.findElement(By.linkText("Add competition")).click();
+        driver.findElement(By.id("time")).click();
+        driver.findElement(By.cssSelector("input:nth-child(42)")).click();
+        assertThat(driver.findElement(By.cssSelector("h1")).getText(), is("Sorry, some error occured :("));
+        assertThat(driver.getTitle(), is("Error"));
+        driver.findElement(By.linkText("sportsmen")).click();
+        driver.findElement(By.linkText("Add sportsman")).click();
+        driver.findElement(By.id("birthday")).click();
+        driver.findElement(By.cssSelector("input:nth-child(13)")).click();
+        assertThat(driver.findElement(By.cssSelector("h1")).getText(), is("Sorry, some error occured :("));
+        driver.quit();
+    }
+    @Test
+    public void pagesContentTest() {
+        System.setProperty("webdriver.chrome.driver", chromeDriver);
+        driver = new ChromeDriver();
+        driver.get(appURL);
+        driver.manage().window().setSize(new Dimension(1200, 767));
+        driver.findElement(By.linkText("Competitions")).click();
+        driver.findElement(By.id("Name")).click();
+        driver.findElement(By.id("Name")).sendKeys("nhl");
+        assertThat(driver.findElement(By.linkText("NHL regular season")).getText(), is("NHL regular season"));
+        assertThat(driver.getTitle(), is("Competitions"));
+        driver.findElement(By.id("Time")).click();
+        driver.findElement(By.id("Time")).sendKeys("10:00");
+        driver.findElement(By.linkText("2020 GYMNASTICS WORLD CUP")).click();
+        assertThat(driver.getTitle(), is("Competition"));
+        assertThat(driver.findElement(By.linkText("More information about free seats and prices")).getText(), is("More information about free seats and prices"));
+        driver.findElement(By.linkText("More information about free seats and prices")).click();
+        driver.findElement(By.linkText("Buy ticket")).click();
+        {
+            WebElement element = driver.findElement(By.id("email"));
+            Boolean isEditable = element.isEnabled() && element.getAttribute("readonly") == null;
+            assertTrue(isEditable);
+        }
+        driver.findElement(By.id("email")).sendKeys("user@gmail.com");
+        driver.findElement(By.id("card")).click();
+        driver.findElement(By.id("card")).sendKeys("1111");
+        {
+            WebElement element = driver.findElement(By.id("card"));
+            Boolean isEditable = element.isEnabled() && element.getAttribute("readonly") == null;
+            assertTrue(isEditable);
+        }
+        {
+            List<WebElement> elements = driver.findElements(By.cssSelector("input:nth-child(9)"));
+            assert(elements.size() > 0);
+        }
+        driver.findElement(By.cssSelector("input:nth-child(9)")).click();
+        driver.findElement(By.linkText("More information about free seats and prices")).click();
+        assertThat(driver.findElement(By.cssSelector("td:nth-child(2)")).getText(), is("1542"));
         driver.quit();
     }
 }

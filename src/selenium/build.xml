@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<project basedir = "." default = "run-tests" name = "run-system-tests">
+
+    <property file = "../../build.properties"/>
+
+    <path id = "classpath.test">
+        <fileset dir = "${lib.dir}">
+            <include name = "**/*.jar"/>
+        </fileset>
+
+        <pathelement location = "${build.dir}"/>
+    </path>
+
+    <taskdef name = "testng" classname = "org.testng.TestNGAntTask">
+        <classpath>
+            <pathelement location = "${testng.classpath}"/>
+        </classpath>
+    </taskdef>
+
+    <target name = "run-tests">
+        <mkdir dir = "${report.dir}"/>
+
+        <testng classpathref = "classpath.test" outputdir = "${report.dir}">
+            <xmlfileset dir = "${selenium.dir}" includes = "testng.xml"/>
+        </testng>
+    </target>
+</project>
