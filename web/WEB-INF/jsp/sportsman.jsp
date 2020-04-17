@@ -5,6 +5,9 @@
 <title>Sportsman</title>
 <body>
 <a href="index">home page</a>
+<a href="competitions">competitions</a>
+<a href="sportsmen">sportsmen</a>
+<a href="teams">teams</a>
 <br>
 <hr>
 <h1>

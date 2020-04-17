@@ -7,6 +7,9 @@
 </head>
 <body>
 <a href="index">home page</a>
+<a href="competitions">competitions</a>
+<a href="sportsmen">sportsmen</a>
+<a href="teams">teams</a>
 <br>
 <hr>
 <h1>Information about free seats</h1>
@@ -24,7 +27,7 @@
             <td>${seat.numFreeSeats}</td>
             <td>${seat.price}</td>
             <td style="${seat.numFreeSeats > 0 ? 'display:block' : 'display:none'}">
-                <a href="buy?compId=${seat.compId} type=${seat.type}">
+                <a href="buy?id=${seat.compId.compId}&type=${seat.type}">
                     Buy ticket
                 </a>
             </td>

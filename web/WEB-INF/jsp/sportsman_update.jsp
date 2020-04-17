@@ -14,6 +14,9 @@
 </head>
 <body>
 <a href="index">home page</a>
+<a href="competitions">competitions</a>
+<a href="sportsmen">sportsmen</a>
+<a href="teams">teams</a>
 <br>
 <hr>
 <c:if test="${empty sportsmanForm.sportsmanId}">
