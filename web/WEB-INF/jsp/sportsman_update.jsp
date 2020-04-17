@@ -40,7 +40,7 @@
     <form:input type="text" path="name" id="name" placeholder="Name"/>
     <br>
     <label for="birthday">Birthday</label>
-    <form:input type="date" path="birthday" id="birthday" placeholder="yyyy-mm-dd"/>
+    <form:input type="text" path="birthday" id="birthday" placeholder="yyyy-mm-dd"/>
     <br>
     <label for="trainer">Trainer</label>
     <form:select path="trainerId" id="trainer">

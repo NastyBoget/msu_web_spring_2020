@@ -43,7 +43,7 @@
     <form:input placeholder="Location" type="text" path="location" id="location"/>
     <br>
     <label for="time">Time</label>
-    <form:input placeholder="yyyy-mm-dd hh:mm:ss" type="datetime-local" path="compTime" id="time"/>
+    <form:input placeholder="yyyy-mm-dd hh:mm:ss" type="text" path="compTime" id="time"/>
     <form:errors path="compTime" class="help-inline"/>
     <br>
     <label for="status">Status</label>
