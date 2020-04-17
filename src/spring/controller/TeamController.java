@@ -29,36 +29,48 @@ public class TeamController {
 
     @RequestMapping(value = "/teams", method = RequestMethod.GET)
     public String getTeams(ModelMap map) {
-        map.addAttribute("teamsList", teamDAO.getAll());
-        return "teams";
+        try {
+            map.addAttribute("teamsList", teamDAO.getAll());
+            return "teams";
+        } catch (Exception e) {
+            return "error";
+        }
     }
 
     @RequestMapping(value = "/team", method = RequestMethod.GET)
     public String getTeam(@RequestParam(value="id", required=true) Long id, ModelMap map) {
-        map.addAttribute("team", teamDAO.getById(id));
-        map.addAttribute("compList", compTeamsDAO.getByTeamId(id));
-        map.addAttribute("sportsmanList", sportsmenTeamsDAO.getByTeamId(id));
-        return "team";
+        try {
+            map.addAttribute("team", teamDAO.getById(id));
+            map.addAttribute("compList", compTeamsDAO.getByTeamId(id));
+            map.addAttribute("sportsmanList", sportsmenTeamsDAO.getByTeamId(id));
+            return "team";
+        } catch (Exception e) {
+            return "error";
+        }
     }
 
     @RequestMapping(value = "/team_delete", method = RequestMethod.GET)
     public String delTeam(@RequestParam(value="id", required=true) Long id, ModelMap map) {
-        Team team = teamDAO.getById(id);
-        List<CompTeams> compTeams = compTeamsDAO.getAllByTeamId(id);
-        for(CompTeams item: compTeams) {
-            compTeamsDAO.delete(item);
+        try {
+            Team team = teamDAO.getById(id);
+            List<CompTeams> compTeams = compTeamsDAO.getAllByTeamId(id);
+            for(CompTeams item: compTeams) {
+                compTeamsDAO.delete(item);
+            }
+            List<Sportsman> sportsmen = sportsmanDAO.getByTeamId(id);
+            for(Sportsman sportsman: sportsmen) {
+                sportsman.setTeamId(null);
+                sportsmanDAO.update(sportsman);
+            }
+            List<SportsmenTeams> sportsmenTeams = sportsmenTeamsDAO.getAllByTeamId(id);
+            for(SportsmenTeams item: sportsmenTeams) {
+                sportsmenTeamsDAO.delete(item);
+            }
+            teamDAO.delete(team);
+            return "redirect:teams";
+        } catch (Exception e) {
+            return "error";
         }
-        List<Sportsman> sportsmen = sportsmanDAO.getByTeamId(id);
-        for(Sportsman sportsman: sportsmen) {
-            sportsman.setTeamId(null);
-            sportsmanDAO.update(sportsman);
-        }
-        List<SportsmenTeams> sportsmenTeams = sportsmenTeamsDAO.getAllByTeamId(id);
-        for(SportsmenTeams item: sportsmenTeams) {
-            sportsmenTeamsDAO.delete(item);
-        }
-        teamDAO.delete(team);
-        return "redirect:teams";
     }
 
     private void saveTeam(TeamForm teamForm) {
@@ -84,34 +96,50 @@ public class TeamController {
 
     @RequestMapping(value = "/team_add", method = RequestMethod.GET)
     public String addTeam(ModelMap map) {
-        map.addAttribute("trainers", trainerDAO.getAll());
-        map.addAttribute("sportsmen", sportsmanDAO.getAll());
-        map.addAttribute("teamForm", new TeamForm());
-        return "team_update";
+        try {
+            map.addAttribute("trainers", trainerDAO.getAll());
+            map.addAttribute("sportsmen", sportsmanDAO.getAll());
+            map.addAttribute("teamForm", new TeamForm());
+            return "team_update";
+        } catch (Exception e) {
+            return "error";
+        }
     }
 
     @RequestMapping(value = "/team_add", method = RequestMethod.POST)
     public String addTeam(ModelMap map,
                           @ModelAttribute("teamForm") TeamForm teamForm) {
-        saveTeam(teamForm);
-        return "redirect:teams";
+        try {
+            saveTeam(teamForm);
+            return "redirect:teams";
+        } catch (Exception e) {
+            return "error";
+        }
     }
 
     @RequestMapping(value = "/team_update", method = RequestMethod.GET)
     public String updateTeam(@RequestParam(value="id", required=true) Long id,
                              ModelMap map) {
-        map.addAttribute("trainers", trainerDAO.getAll());
-        map.addAttribute("sportsmen", sportsmanDAO.getAll());
-        TeamForm teamForm = new TeamForm();
-        teamForm.setTeamId(id);
-        map.addAttribute("teamForm", teamForm);
-        return "team_update";
+        try {
+            map.addAttribute("trainers", trainerDAO.getAll());
+            map.addAttribute("sportsmen", sportsmanDAO.getAll());
+            TeamForm teamForm = new TeamForm();
+            teamForm.setTeamId(id);
+            map.addAttribute("teamForm", teamForm);
+            return "team_update";
+        } catch (Exception e) {
+            return "error";
+        }
     }
 
     @RequestMapping(value = "/team_update", method = RequestMethod.POST)
     public String updateTeam(ModelMap map,
                              @ModelAttribute("teamForm") TeamForm teamForm) {
-        saveTeam(teamForm);
-        return "redirect:team?id=" + teamForm.getTeamId().toString();
+        try {
+            saveTeam(teamForm);
+            return "redirect:team?id=" + teamForm.getTeamId().toString();
+        } catch (Exception e) {
+            return "error";
+        }
     }
 }

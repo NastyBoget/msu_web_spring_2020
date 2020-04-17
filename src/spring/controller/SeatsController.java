@@ -25,34 +25,46 @@ public class SeatsController {
     @RequestMapping(value = "/seats", method = RequestMethod.GET)
     public String getCompetitions(@RequestParam(value="id", required=true) Long id,
                                   ModelMap map) {
-        map.addAttribute("seats", seatsDAO.getByCompId(id));
-        return "seats";
+        try {
+            map.addAttribute("seats", seatsDAO.getByCompId(id));
+            return "seats";
+        } catch (Exception e) {
+            return "error";
+        }
     }
 
     @RequestMapping(value = "/buy", method = RequestMethod.GET)
     public String buyTicket(@RequestParam(value="id", required=true) Long id,
                             @RequestParam(value="type", required=true) Seats.SeatsType type,
                             ModelMap map) {
-        BuyForm form = new BuyForm(id, type);
-        map.addAttribute("buyForm", form);
-        return "buy";
+        try {
+            BuyForm form = new BuyForm(id, type);
+            map.addAttribute("buyForm", form);
+            return "buy";
+        } catch (Exception e) {
+            return "error";
+        }
     }
 
     @RequestMapping(value = "/buy", method = RequestMethod.POST)
     public String updateCompetition(ModelMap map,
                                     @ModelAttribute("buyForm") BuyForm buyForm) {
-        List<Seats> seats = seatsDAO.getByCompId(buyForm.getCompId());
-        Integer amountSeats = 0;
-        for(Seats seat: seats) {
-            if (seat.getType() == buyForm.getSeatsType()) {
-                seat.setNumFreeSeats((short)(seat.getNumFreeSeats() - 1));
-                seatsDAO.update(seat);
+        try {
+            List<Seats> seats = seatsDAO.getByCompId(buyForm.getCompId());
+            Integer amountSeats = 0;
+            for (Seats seat : seats) {
+                if (seat.getType() == buyForm.getSeatsType()) {
+                    seat.setNumFreeSeats((short) (seat.getNumFreeSeats() - 1));
+                    seatsDAO.update(seat);
+                }
+                amountSeats += seat.getNumFreeSeats();
             }
-            amountSeats += seat.getNumFreeSeats();
+            Competition competition = competitionDAO.getById(buyForm.getCompId());
+            competition.setFreeSeatsStatus(amountSeats != 0);
+            competitionDAO.update(competition);
+            return "redirect:competition?id=" + buyForm.getCompId().toString();
+        } catch (Exception e) {
+            return "error";
         }
-        Competition competition = competitionDAO.getById(buyForm.getCompId());
-        competition.setFreeSeatsStatus(amountSeats != 0);
-        competitionDAO.update(competition);
-        return "redirect:competition?id=" + buyForm.getCompId().toString();
     }
 }

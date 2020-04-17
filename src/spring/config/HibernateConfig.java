@@ -1,7 +1,6 @@
 package spring.config;
 
 import daoClasses.*;
-import entity.CompTeams;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -12,11 +11,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-import org.springframework.web.servlet.LocaleResolver;
-import org.springframework.web.servlet.i18n.SessionLocaleResolver;
-
 import javax.sql.DataSource;
-import java.util.Locale;
 import java.util.Properties;
 
 @Configuration

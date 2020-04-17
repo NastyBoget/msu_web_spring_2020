@@ -4,7 +4,7 @@ import java.sql.Date;
 
 public class SportsmanForm {
     private Long sportsmanId;
-    private Date birthday;
+    private String birthday;
     private Long trainerId;
     private String name;
     private Long teamId;
@@ -21,11 +21,11 @@ public class SportsmanForm {
         sportsmanId = id;
     }
 
-    public Date getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
 

@@ -44,6 +44,7 @@
     <br>
     <label for="time">Time</label>
     <form:input placeholder="yyyy-mm-dd hh:mm:ss" type="datetime-local" path="compTime" id="time"/>
+    <form:errors path="compTime" class="help-inline"/>
     <br>
     <label for="status">Status</label>
     <form:select path="status" id="status">
@@ -67,6 +68,7 @@
             <c:forEach items="${sportsmen}" var="sportsman">
                 <option value="${sportsman.sportsmanId}">${sportsman.sportsmanName}</option>
             </c:forEach>
+            <option value="">None</option>
         </form:select>
         <br>
         <label for="teams">Teams</label>
@@ -74,17 +76,15 @@
             <c:forEach items="${teams}" var="team">
                 <option value="${team.teamId}">${team.teamName}</option>
             </c:forEach>
+            <option value="">None</option>
         </form:select>
         <br>
         <c:forEach items="${seats}" var="seat">
-            <label for="price">Price for ${seat}</label>
-            <form:input placeholder="Price" type="text" path="prices" id="price"/>
-            <br>
-            <label for="numSeats">Seats number for ${seat}</label>
+            <label for="numSeats">Seats number for ${seat} seats</label>
             <form:input placeholder="Seats number" type="text" path="numSeats" id="numSeats"/>
             <br>
-            <label for="numFreeSeats">Free seats number for ${seat}</label>
-            <form:input placeholder="Free seats number" type="text" path="numFreeSeats" id="numFreeSeats"/>
+            <label for="price">Price for ${seat} seats</label>
+            <form:input placeholder="Price" type="text" path="prices" id="price"/>
             <br>
         </c:forEach>
     </c:if>

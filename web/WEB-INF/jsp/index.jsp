@@ -7,11 +7,11 @@
 <h1>Competition Information</h1>
 <br>
 <div style="text-align: center;">
-    <a href="competitions">Competitions</a>
+    <a href="competitions" style="font-size: 24px;">Competitions</a>
     <br>
-    <a href="sportsmen">Sportsmen</a>
+    <a href="sportsmen" style="font-size: 24px;">Sportsmen</a>
     <br>
-    <a href="teams">Teams</a>
+    <a href="teams" style="font-size: 24px;">Teams</a>
 </div>
 </body>
 </html>

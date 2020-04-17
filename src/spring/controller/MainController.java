@@ -14,7 +14,11 @@ public class MainController {
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String getIndex(ModelMap map) {
-        map.addAttribute("sportsmenList", sportsmanDAO.getAll());
-        return "index";
+        try {
+            map.addAttribute("sportsmenList", sportsmanDAO.getAll());
+            return "index";
+        } catch (Exception e) {
+            return "error";
+        }
     }
 }

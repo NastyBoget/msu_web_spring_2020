@@ -8,7 +8,7 @@ public class CompetitionForm {
     private Long compId;
     private String compName;
     private String location;
-    private Timestamp compTime;
+    private String compTime;
     private String status;
     private String sportKind;
     private List<Long> sportsmanList;
@@ -18,7 +18,6 @@ public class CompetitionForm {
     private List<Integer> sportsmenPlaces;
     private List<Integer> teamsPlaces;
     private List<Short> numSeats;
-    private List<Short> numFreeSeats;
     private List<Double> prices;
 
     public CompetitionForm() {
@@ -29,16 +28,11 @@ public class CompetitionForm {
         sportsmenPlaces = new ArrayList<>();
         teamsPlaces = new ArrayList<>();
         numSeats = new ArrayList<>();
-        numFreeSeats = new ArrayList<>();
         prices = new ArrayList<>();
     }
 
     public String getStatus() {
         return status;
-    }
-
-    public List<Short> getNumFreeSeats() {
-        return numFreeSeats;
     }
 
     public List<Double> getPrices() {
@@ -89,7 +83,7 @@ public class CompetitionForm {
         return location;
     }
 
-    public Timestamp getCompTime() {
+    public String getCompTime() {
         return compTime;
     }
 
@@ -101,16 +95,12 @@ public class CompetitionForm {
         this.compName = compName;
     }
 
-    public void setCompTime(Timestamp compTime) {
+    public void setCompTime(String compTime) {
         this.compTime = compTime;
     }
 
     public void setLocation(String location) {
         this.location = location;
-    }
-
-    public void setNumFreeSeats(List<Short> numFreeSeats) {
-        this.numFreeSeats = numFreeSeats;
     }
 
     public void setNumSeats(List<Short> numSeats) {

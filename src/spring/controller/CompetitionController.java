@@ -11,7 +11,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -31,41 +34,53 @@ public class CompetitionController {
 
     @RequestMapping(value = "/competitions", method = RequestMethod.GET)
     public String getCompetitions(ModelMap map) {
-        map.addAttribute("competitionsList", competitionDAO.getAll());
-        return "competitions";
+        try {
+            map.addAttribute("competitionsList", competitionDAO.getAll());
+            return "competitions";
+        } catch (Exception e) {
+            return "error";
+        }
     }
 
     @RequestMapping(value = "/competition", method = RequestMethod.GET)
     public String getCompetition(@RequestParam(value="id", required=true) Long id, ModelMap map) {
-        Competition competition = competitionDAO.getById(id);
-        map.addAttribute("competition", competition);
-        map.addAttribute("sportsmanList", compSportsmenDAO.getByCompId(id));
-        map.addAttribute("teamList", compTeamsDAO.getByCompId(id));
-        map.addAttribute("sportsmanResults", compSportsmenDAO.getAllByCompId(id));
-        map.addAttribute("teamsResults", compTeamsDAO.getAllByCompId(id));
-        return "competition";
+        try {
+            Competition competition = competitionDAO.getById(id);
+            map.addAttribute("competition", competition);
+            map.addAttribute("sportsmanList", compSportsmenDAO.getByCompId(id));
+            map.addAttribute("teamList", compTeamsDAO.getByCompId(id));
+            map.addAttribute("sportsmanResults", compSportsmenDAO.getAllByCompId(id));
+            map.addAttribute("teamsResults", compTeamsDAO.getAllByCompId(id));
+            return "competition";
+        } catch (Exception e) {
+            return "error";
+        }
     }
 
     @RequestMapping(value = "/competition_delete", method = RequestMethod.GET)
     public String delCompetition(@RequestParam(value="id", required=true) Long id, ModelMap map) {
-        Competition competition = competitionDAO.getById(id);
-        List<CompTeams> compTeams = compTeamsDAO.getAllByCompId(id);
-        for(CompTeams item: compTeams) {
-            compTeamsDAO.delete(item);
+        try {
+            Competition competition = competitionDAO.getById(id);
+            List<CompTeams> compTeams = compTeamsDAO.getAllByCompId(id);
+            for (CompTeams item : compTeams) {
+                compTeamsDAO.delete(item);
+            }
+            List<CompSportsmen> compSportsmen = compSportsmenDAO.getAllByCompId(id);
+            for (CompSportsmen item : compSportsmen) {
+                compSportsmenDAO.delete(item);
+            }
+            List<Seats> seats = seatsDAO.getByCompId(id);
+            for (Seats item : seats) {
+                seatsDAO.delete(item);
+            }
+            competitionDAO.delete(competition);
+            return "redirect:competitions";
+        } catch (Exception e) {
+            return "error";
         }
-        List<CompSportsmen> compSportsmen = compSportsmenDAO.getAllByCompId(id);
-        for(CompSportsmen item: compSportsmen) {
-            compSportsmenDAO.delete(item);
-        }
-        List<Seats> seats = seatsDAO.getByCompId(id);
-        for(Seats item: seats) {
-            seatsDAO.delete(item);
-        }
-        competitionDAO.delete(competition);
-        return "redirect:competitions";
     }
 
-    private void saveCompetition(CompetitionForm competitionForm) {
+    private void saveCompetition(CompetitionForm competitionForm) throws Exception {
         Competition competition = (competitionForm.getCompId() == null) ?
                 new Competition() : competitionDAO.getById(competitionForm.getCompId());
         competition.setCompName(competitionForm.getCompName());
@@ -79,11 +94,12 @@ public class CompetitionController {
             default:
                 competition.setCompStatus(Competition.CompStatus.passed);
         }
-        competition.setCompTime(competitionForm.getCompTime());
+        Date date = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").parse(competitionForm.getCompTime());
+        competition.setCompTime(new Timestamp(date.getTime()));
         competition.setLocation(competitionForm.getLocation());
-        List<Short> numFreeSeats = competitionForm.getNumFreeSeats();
+        List<Short> numSeats = competitionForm.getNumSeats();
         Integer amountFreeSeats = 0;
-        for(Short num: numFreeSeats) {
+        for(Short num: numSeats) {
             amountFreeSeats += num;
         }
         competition.setFreeSeatsStatus(amountFreeSeats != 0);
@@ -153,11 +169,10 @@ public class CompetitionController {
             List<Seats.SeatsType> seats = Arrays.asList(Seats.SeatsType.front,
                     Seats.SeatsType.middle, Seats.SeatsType.back);;
             List<Double> prices = competitionForm.getPrices();
-            List<Short> numSeats = competitionForm.getNumSeats();
             for (int i = 0; i < seats.size(); ++i) {
                 try {
                     seatsDAO.save(new Seats(competition, seats.get(i),
-                            numSeats.get(i), numFreeSeats.get(i), prices.get(i)));
+                            numSeats.get(i), numSeats.get(i), prices.get(i)));
                 } catch (Exception ignored) {}
             }
         }
@@ -165,36 +180,52 @@ public class CompetitionController {
 
     @RequestMapping(value = "/competition_add", method = RequestMethod.GET)
     public String addCompetition(ModelMap map) {
-        List<String> seatsTypes = Arrays.asList("front", "middle", "back");
-        map.addAttribute("teams", teamDAO.getAll());
-        map.addAttribute("sportsmen", sportsmanDAO.getAll());
-        map.addAttribute("seats", seatsTypes);
-        map.addAttribute("competitionForm", new CompetitionForm());
-        return "competition_update";
+        try {
+            List<String> seatsTypes = Arrays.asList("front", "middle", "back");
+            map.addAttribute("teams", teamDAO.getAll());
+            map.addAttribute("sportsmen", sportsmanDAO.getAll());
+            map.addAttribute("seats", seatsTypes);
+            map.addAttribute("competitionForm", new CompetitionForm());
+            return "competition_update";
+        } catch (Exception e) {
+            return "error";
+        }
     }
 
     @RequestMapping(value = "/competition_add", method = RequestMethod.POST)
     public String addCompetition(ModelMap map,
-                          @ModelAttribute("competitionForm") CompetitionForm competitionForm) {
-        saveCompetition(competitionForm);
-        return "redirect:competitions";
+                                 @ModelAttribute("competitionForm") CompetitionForm competitionForm) {
+        try {
+            saveCompetition(competitionForm);
+            return "redirect:competitions";
+        } catch (Exception e) {
+            return "error";
+        }
     }
 
     @RequestMapping(value = "/competition_update", method = RequestMethod.GET)
     public String updateCompetition(@RequestParam(value="id", required=true) Long id,
                              ModelMap map) {
-        CompetitionForm competitionForm = new CompetitionForm();
-        competitionForm.setCompId(id);
-        map.addAttribute("sportsmen", compSportsmenDAO.getByCompId(id));
-        map.addAttribute("teams", compTeamsDAO.getByCompId(id));
-        map.addAttribute("competitionForm", competitionForm);
-        return "competition_update";
+        try {
+            CompetitionForm competitionForm = new CompetitionForm();
+            competitionForm.setCompId(id);
+            map.addAttribute("sportsmen", compSportsmenDAO.getByCompId(id));
+            map.addAttribute("teams", compTeamsDAO.getByCompId(id));
+            map.addAttribute("competitionForm", competitionForm);
+            return "competition_update";
+        } catch (Exception e) {
+            return "error";
+        }
     }
 
     @RequestMapping(value = "/competition_update", method = RequestMethod.POST)
     public String updateCompetition(ModelMap map,
-                             @ModelAttribute("competitionForm") CompetitionForm competitionForm) {
-        saveCompetition(competitionForm);
-        return "redirect:competition?id=" + competitionForm.getCompId().toString();
+                                    @ModelAttribute("competitionForm") CompetitionForm competitionForm) {
+        try {
+            saveCompetition(competitionForm);
+            return "redirect:competition?id=" + competitionForm.getCompId().toString();
+        } catch (Exception e) {
+            return "error";
+        }
     }
 }
