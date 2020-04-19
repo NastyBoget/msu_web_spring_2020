@@ -35,7 +35,7 @@ public class SeatsController {
 
     @RequestMapping(value = "/buy", method = RequestMethod.GET)
     public String buyTicket(@RequestParam(value="id", required=true) Long id,
-                            @RequestParam(value="type", required=true) Seats.SeatsType type,
+                            @RequestParam(value="type", required=true) String type,
                             ModelMap map) {
         try {
             BuyForm form = new BuyForm(id, type);
@@ -52,8 +52,19 @@ public class SeatsController {
         try {
             List<Seats> seats = seatsDAO.getByCompId(buyForm.getCompId());
             Integer amountSeats = 0;
+            Seats.SeatsType type;
+            switch (buyForm.getSeatsType()) {
+                case "front":
+                    type = Seats.SeatsType.front;
+                    break;
+                case "middle":
+                    type = Seats.SeatsType.middle;
+                    break;
+                default:
+                    type = Seats.SeatsType.back;
+            }
             for (Seats seat : seats) {
-                if (seat.getType() == buyForm.getSeatsType()) {
+                if (seat.getType() == type) {
                     seat.setNumFreeSeats((short) (seat.getNumFreeSeats() - 1));
                     seatsDAO.update(seat);
                 }

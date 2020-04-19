@@ -89,7 +89,9 @@ public class TeamController {
         }
         for(Sportsman sportsman: sportsmen) {
             try {
-                sportsmenTeamsDAO.save(new SportsmenTeams(sportsman, team));
+                if (sportsmenTeamsDAO.getByCompositeId(sportsman.getSportsmanId(), team.getTeamId()) == null) {
+                    sportsmenTeamsDAO.save(new SportsmenTeams(sportsman, team));
+                }
             } catch(Exception ignored) {}
         }
     }

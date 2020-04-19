@@ -1,5 +1,4 @@
 out
 .idea
 *.DS_Store
-testng
 lib/glassfish5

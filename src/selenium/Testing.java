@@ -15,72 +15,94 @@ public class Testing {
     protected final String appURL = "http://localhost:8080/index";
     protected WebDriver driver;
 
-    @Test
+    @Test()
     public void pagesTest() {
         System.setProperty("webdriver.chrome.driver", chromeDriver);
         driver = new ChromeDriver();
         driver.get(appURL);
         driver.manage().window().setSize(new Dimension(1200, 767));
+        {
+            List<WebElement> elements = driver.findElements(By.linkText("Competitions"));
+            assert(elements.size() > 0);
+        }
+        {
+            List<WebElement> elements = driver.findElements(By.linkText("Sportsmen"));
+            assert(elements.size() > 0);
+        }
+        {
+            List<WebElement> elements = driver.findElements(By.linkText("Teams"));
+            assert(elements.size() > 0);
+        }
         driver.findElement(By.linkText("Competitions")).click();
         driver.findElement(By.id("Name")).click();
+        {
+            WebElement element = driver.findElement(By.id("Name"));
+            Boolean isEditable = element.isEnabled() && element.getAttribute("readonly") == null;
+            assertTrue(isEditable);
+        }
         driver.findElement(By.id("Name")).sendKeys("fifa");
         {
             List<WebElement> elements = driver.findElements(By.linkText("FIFA World Cup"));
             assert(elements.size() > 0);
         }
-        driver.findElement(By.id("Time")).click();
-        driver.findElement(By.id("Time")).sendKeys("2019");
         {
-            List<WebElement> elements = driver.findElements(By.cssSelector("tr:nth-child(3) > td:nth-child(2)"));
-            assert(elements.size() > 0);
-        }
-        driver.findElement(By.id("Location")).click();
-        driver.findElement(By.id("Location")).sendKeys("Russia");
-        {
-            List<WebElement> elements = driver.findElements(By.cssSelector("tr:nth-child(3) > td:nth-child(3)"));
-            assert(elements.size() > 0);
-        }
-        driver.findElement(By.id("SportKind")).click();
-        driver.findElement(By.id("SportKind")).sendKeys("football");
-        {
-            List<WebElement> elements = driver.findElements(By.cssSelector("tr:nth-child(3) > td:nth-child(4)"));
+            List<WebElement> elements = driver.findElements(By.linkText("Add competition"));
             assert(elements.size() > 0);
         }
         driver.findElement(By.linkText("Add competition")).click();
-        driver.findElement(By.id("name")).click();
-        driver.findElement(By.id("name")).sendKeys("World cup");
+        {
+            WebElement element = driver.findElement(By.id("name"));
+            Boolean isEditable = element.isEnabled() && element.getAttribute("readonly") == null;
+            assertTrue(isEditable);
+        }
+        driver.findElement(By.id("name")).sendKeys("Test");
         driver.findElement(By.id("location")).click();
-        driver.findElement(By.id("location")).sendKeys("London");
+        driver.findElement(By.id("location")).sendKeys("Test");
         driver.findElement(By.id("time")).click();
         driver.findElement(By.id("time")).sendKeys("2020-02-03 12:00:00");
         {
             WebElement dropdown = driver.findElement(By.id("sportsmen"));
-            dropdown.findElement(By.xpath("//option[. = 'Auston Matthews']")).click();
+            dropdown.findElement(By.xpath("//option[. = 'David Pastrniak']")).click();
         }
         {
             WebElement dropdown = driver.findElement(By.id("teams"));
             dropdown.findElement(By.xpath("//option[. = 'None']")).click();
         }
         driver.findElement(By.id("numSeats")).click();
-        driver.findElement(By.id("numSeats")).sendKeys("100");
+        driver.findElement(By.id("numSeats")).sendKeys("1");
         driver.findElement(By.id("price")).click();
-        driver.findElement(By.id("price")).sendKeys("1000");
+        driver.findElement(By.id("price")).sendKeys("200");
         driver.findElement(By.xpath("(//input[@id=\'numSeats\'])[2]")).click();
-        driver.findElement(By.xpath("(//input[@id=\'numSeats\'])[2]")).sendKeys("12");
-        driver.findElement(By.id("competitionForm")).click();
+        driver.findElement(By.xpath("(//input[@id=\'numSeats\'])[2]")).sendKeys("0");
         driver.findElement(By.xpath("(//input[@id=\'price\'])[2]")).click();
-        driver.findElement(By.xpath("(//input[@id=\'price\'])[2]")).sendKeys("1000");
+        driver.findElement(By.xpath("(//input[@id=\'price\'])[2]")).sendKeys("0");
         driver.findElement(By.xpath("(//input[@id=\'numSeats\'])[3]")).click();
         driver.findElement(By.xpath("(//input[@id=\'numSeats\'])[3]")).sendKeys("0");
         driver.findElement(By.xpath("(//input[@id=\'price\'])[3]")).click();
         driver.findElement(By.xpath("(//input[@id=\'price\'])[3]")).sendKeys("0");
         driver.findElement(By.cssSelector("input:nth-child(42)")).click();
-        driver.findElement(By.linkText("World cup")).click();
+        {
+            List<WebElement> elements = driver.findElements(By.linkText("Test"));
+            assert(elements.size() > 0);
+        }
+        driver.findElement(By.linkText("Test")).click();
+        {
+            List<WebElement> elements = driver.findElements(By.linkText("More information about free seats and prices"));
+            assert(elements.size() > 0);
+        }
+        {
+            List<WebElement> elements = driver.findElements(By.linkText("Delete competition"));
+            assert(elements.size() > 0);
+        }
+        {
+            List<WebElement> elements = driver.findElements(By.linkText("Edit competition"));
+            assert(elements.size() > 0);
+        }
         driver.findElement(By.linkText("Edit competition")).click();
         driver.findElement(By.id("name")).click();
-        driver.findElement(By.id("name")).sendKeys("World cup");
+        driver.findElement(By.id("name")).sendKeys("Test");
         driver.findElement(By.id("location")).click();
-        driver.findElement(By.id("location")).sendKeys("London");
+        driver.findElement(By.id("location")).sendKeys("Test");
         driver.findElement(By.id("time")).click();
         driver.findElement(By.id("time")).sendKeys("2020-02-03 12:00:00");
         driver.findElement(By.id("sPoints")).click();
@@ -88,79 +110,99 @@ public class Testing {
         driver.findElement(By.id("sPlace")).click();
         driver.findElement(By.id("sPlace")).sendKeys("1");
         driver.findElement(By.cssSelector("input:nth-child(23)")).click();
+        {
+            List<WebElement> elements = driver.findElements(By.cssSelector("tbody:nth-child(2) td:nth-child(2)"));
+            assert(elements.size() > 0);
+        }
         driver.findElement(By.linkText("Delete competition")).click();
         driver.findElement(By.linkText("sportsmen")).click();
+        {
+            List<WebElement> elements = driver.findElements(By.linkText("Add sportsman"));
+            assert(elements.size() > 0);
+        }
         driver.findElement(By.linkText("Add sportsman")).click();
         driver.findElement(By.id("name")).click();
-        driver.findElement(By.id("name")).sendKeys("Jack Green");
+        driver.findElement(By.id("name")).sendKeys("Test");
         driver.findElement(By.id("birthday")).click();
         driver.findElement(By.id("birthday")).sendKeys("1990-04-04");
-        driver.findElement(By.id("trainer")).click();
-        {
-            WebElement dropdown = driver.findElement(By.id("trainer"));
-            dropdown.findElement(By.xpath("//option[. = 'James van rimsdike']")).click();
-        }
-        driver.findElement(By.id("team")).click();
-        {
-            WebElement dropdown = driver.findElement(By.id("team"));
-            dropdown.findElement(By.xpath("//option[. = 'None']")).click();
-        }
         driver.findElement(By.cssSelector("input:nth-child(13)")).click();
-        driver.findElement(By.linkText("Jack Green")).click();
+        {
+            List<WebElement> elements = driver.findElements(By.linkText("Test"));
+            assert(elements.size() > 0);
+        }
+        driver.findElement(By.linkText("Test")).click();
+        {
+            List<WebElement> elements = driver.findElements(By.linkText("Delete sportsman"));
+            assert(elements.size() > 0);
+        }
+        {
+            List<WebElement> elements = driver.findElements(By.linkText("Edit sportsman"));
+            assert(elements.size() > 0);
+        }
         driver.findElement(By.linkText("Edit sportsman")).click();
         driver.findElement(By.id("name")).click();
-        driver.findElement(By.id("name")).sendKeys("Jack Green");
+        driver.findElement(By.id("name")).sendKeys("Test");
         driver.findElement(By.id("birthday")).click();
         driver.findElement(By.id("birthday")).sendKeys("1990-04-04");
-        driver.findElement(By.id("team")).click();
-        {
-            WebElement dropdown = driver.findElement(By.id("team"));
-            dropdown.findElement(By.xpath("//option[. = 'None']")).click();
-        }
-        driver.findElement(By.cssSelector("input:nth-child(14)")).click();
-        driver.findElement(By.linkText("Delete sportsman")).click();
-        driver.findElement(By.linkText("teams")).click();
-        driver.findElement(By.linkText("Add team")).click();
-        driver.findElement(By.id("name")).click();
-        driver.findElement(By.id("name")).sendKeys("Team");
         driver.findElement(By.id("trainer")).click();
         {
             WebElement dropdown = driver.findElement(By.id("trainer"));
             dropdown.findElement(By.xpath("//option[. = 'Roope Hinz']")).click();
         }
+        driver.findElement(By.cssSelector("input:nth-child(14)")).click();
+        driver.findElement(By.linkText("Delete sportsman")).click();
+        driver.findElement(By.linkText("teams")).click();
+        {
+            List<WebElement> elements = driver.findElements(By.linkText("Add team"));
+            assert(elements.size() > 0);
+        }
+        driver.findElement(By.linkText("Add team")).click();
+        driver.findElement(By.id("name")).click();
+        driver.findElement(By.id("name")).sendKeys("Test");
         {
             WebElement dropdown = driver.findElement(By.id("sportsmen"));
-            dropdown.findElement(By.xpath("//option[. = 'Dominic Kubalik']")).click();
+            dropdown.findElement(By.xpath("//option[. = 'David Pastrniak']")).click();
         }
         driver.findElement(By.cssSelector("input:nth-child(11)")).click();
-        driver.findElement(By.linkText("Team")).click();
+        {
+            List<WebElement> elements = driver.findElements(By.linkText("Test"));
+            assert(elements.size() > 0);
+        }
+        driver.findElement(By.linkText("Test")).click();
+        {
+            List<WebElement> elements = driver.findElements(By.linkText("Delete team"));
+            assert(elements.size() > 0);
+        }
+        {
+            List<WebElement> elements = driver.findElements(By.linkText("Edit team"));
+            assert(elements.size() > 0);
+        }
         driver.findElement(By.linkText("Edit team")).click();
         driver.findElement(By.id("name")).click();
-        driver.findElement(By.id("name")).sendKeys("Team");
+        driver.findElement(By.id("name")).sendKeys("Test");
         {
             WebElement dropdown = driver.findElement(By.id("sportsmen"));
-            dropdown.findElement(By.xpath("//option[. = 'William Nyulander']")).click();
+            dropdown.findElement(By.xpath("//option[. = 'Patrick Layne']")).click();
         }
         driver.findElement(By.cssSelector("input:nth-child(12)")).click();
+        {
+            List<WebElement> elements = driver.findElements(By.linkText("Patrick Layne"));
+            assert(elements.size() > 0);
+        }
         driver.findElement(By.linkText("Delete team")).click();
-        driver.findElement(By.linkText("competitions")).click();
-        driver.findElement(By.linkText("2020 GYMNASTICS WORLD CUP")).click();
-        driver.findElement(By.linkText("More information about free seats and prices")).click();
-        driver.findElement(By.linkText("Buy ticket")).click();
-        driver.findElement(By.id("email")).click();
-        driver.findElement(By.id("email")).sendKeys("user@gmail.com");
-        driver.findElement(By.id("card")).click();
-        driver.findElement(By.id("card")).sendKeys("1111");
-        driver.findElement(By.cssSelector("input:nth-child(9)")).click();
+        {
+            List<WebElement> elements = driver.findElements(By.linkText("home page"));
+            assert(elements.size() > 0);
+        }
         driver.findElement(By.linkText("home page")).click();
         driver.quit();
     }
-    @Test
+
+    @Test(dependsOnMethods = "pagesTest")
     public void wrongTest() {
         System.setProperty("webdriver.chrome.driver", chromeDriver);
         driver = new ChromeDriver();
         driver.get(appURL);
-        driver.get("http://localhost:8080/index");
         driver.manage().window().setSize(new Dimension(1200, 767));
         driver.findElement(By.linkText("Competitions")).click();
         driver.findElement(By.linkText("Add competition")).click();
@@ -169,54 +211,25 @@ public class Testing {
         driver.findElement(By.linkText("competitions")).click();
         driver.findElement(By.linkText("Add competition")).click();
         driver.findElement(By.id("time")).click();
+        driver.findElement(By.id("time")).sendKeys("2020-02-03 12:00");
         driver.findElement(By.cssSelector("input:nth-child(42)")).click();
         assertThat(driver.findElement(By.cssSelector("h1")).getText(), is("Sorry, some error occured :("));
-        assertThat(driver.getTitle(), is("Error"));
+        driver.findElement(By.linkText("competitions")).click();
+        driver.findElement(By.linkText("Add competition")).click();
+        driver.findElement(By.id("time")).click();
+        driver.findElement(By.id("time")).sendKeys("2020-02-03 12:00:00");
+        driver.findElement(By.cssSelector("input:nth-child(42)")).click();
+        assertThat(driver.findElement(By.cssSelector("h1")).getText(), is("Sorry, some error occured :("));
+        driver.findElement(By.linkText("sportsmen")).click();
+        driver.findElement(By.linkText("Add sportsman")).click();
+        driver.findElement(By.cssSelector("input:nth-child(13)")).click();
+        assertThat(driver.findElement(By.cssSelector("h1")).getText(), is("Sorry, some error occured :("));
         driver.findElement(By.linkText("sportsmen")).click();
         driver.findElement(By.linkText("Add sportsman")).click();
         driver.findElement(By.id("birthday")).click();
+        driver.findElement(By.id("birthday")).sendKeys("1990-04-");
         driver.findElement(By.cssSelector("input:nth-child(13)")).click();
         assertThat(driver.findElement(By.cssSelector("h1")).getText(), is("Sorry, some error occured :("));
-        driver.quit();
-    }
-    @Test
-    public void pagesContentTest() {
-        System.setProperty("webdriver.chrome.driver", chromeDriver);
-        driver = new ChromeDriver();
-        driver.get(appURL);
-        driver.manage().window().setSize(new Dimension(1200, 767));
-        driver.findElement(By.linkText("Competitions")).click();
-        driver.findElement(By.id("Name")).click();
-        driver.findElement(By.id("Name")).sendKeys("nhl");
-        assertThat(driver.findElement(By.linkText("NHL regular season")).getText(), is("NHL regular season"));
-        assertThat(driver.getTitle(), is("Competitions"));
-        driver.findElement(By.id("Time")).click();
-        driver.findElement(By.id("Time")).sendKeys("10:00");
-        driver.findElement(By.linkText("2020 GYMNASTICS WORLD CUP")).click();
-        assertThat(driver.getTitle(), is("Competition"));
-        assertThat(driver.findElement(By.linkText("More information about free seats and prices")).getText(), is("More information about free seats and prices"));
-        driver.findElement(By.linkText("More information about free seats and prices")).click();
-        driver.findElement(By.linkText("Buy ticket")).click();
-        {
-            WebElement element = driver.findElement(By.id("email"));
-            Boolean isEditable = element.isEnabled() && element.getAttribute("readonly") == null;
-            assertTrue(isEditable);
-        }
-        driver.findElement(By.id("email")).sendKeys("user@gmail.com");
-        driver.findElement(By.id("card")).click();
-        driver.findElement(By.id("card")).sendKeys("1111");
-        {
-            WebElement element = driver.findElement(By.id("card"));
-            Boolean isEditable = element.isEnabled() && element.getAttribute("readonly") == null;
-            assertTrue(isEditable);
-        }
-        {
-            List<WebElement> elements = driver.findElements(By.cssSelector("input:nth-child(9)"));
-            assert(elements.size() > 0);
-        }
-        driver.findElement(By.cssSelector("input:nth-child(9)")).click();
-        driver.findElement(By.linkText("More information about free seats and prices")).click();
-        assertThat(driver.findElement(By.cssSelector("td:nth-child(2)")).getText(), is("1542"));
         driver.quit();
     }
 }

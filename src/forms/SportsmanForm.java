@@ -1,7 +1,5 @@
 package forms;
 
-import java.sql.Date;
-
 public class SportsmanForm {
     private Long sportsmanId;
     private String birthday;

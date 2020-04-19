@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="20" passed="20">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="4140" started-at="2020-04-19T17:11:43Z" finished-at="2020-04-19T17:11:47Z">
+    <groups>
+    </groups>
+    <test name="sportinfo" duration-ms="4140" started-at="2020-04-19T17:11:43Z" finished-at="2020-04-19T17:11:47Z">
+      <class name="test.TeamDAOTest">
+        <test-method status="PASS" signature="getTrainer()[pri:0, instance:test.TeamDAOTest@7f63425a]" name="getTrainer" duration-ms="110" started-at="2020-04-19T17:11:46Z" finished-at="2020-04-19T17:11:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTrainer -->
+        <test-method status="PASS" signature="saveUpdateDelete()[pri:1, instance:test.TeamDAOTest@7f63425a]" name="saveUpdateDelete" duration-ms="104" started-at="2020-04-19T17:11:46Z" finished-at="2020-04-19T17:11:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveUpdateDelete -->
+        <test-method status="PASS" signature="findAll()[pri:2, instance:test.TeamDAOTest@7f63425a]" name="findAll" duration-ms="114" started-at="2020-04-19T17:11:47Z" finished-at="2020-04-19T17:11:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+      </class> <!-- test.TeamDAOTest -->
+      <class name="test.CompSportsmenDAOTest">
+        <test-method status="PASS" signature="getCompSportsmen()[pri:0, instance:test.CompSportsmenDAOTest@7a79be86]" name="getCompSportsmen" duration-ms="174" started-at="2020-04-19T17:11:45Z" finished-at="2020-04-19T17:11:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCompSportsmen -->
+        <test-method status="PASS" signature="findAll()[pri:2, instance:test.CompSportsmenDAOTest@7a79be86]" name="findAll" duration-ms="103" started-at="2020-04-19T17:11:46Z" finished-at="2020-04-19T17:11:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+      </class> <!-- test.CompSportsmenDAOTest -->
+      <class name="test.SportsmenTeamsDAOTest">
+        <test-method status="PASS" signature="getSportsmenTeams()[pri:0, instance:test.SportsmenTeamsDAOTest@3f3afe78]" name="getSportsmenTeams" duration-ms="114" started-at="2020-04-19T17:11:45Z" finished-at="2020-04-19T17:11:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSportsmenTeams -->
+        <test-method status="PASS" signature="findAll()[pri:2, instance:test.SportsmenTeamsDAOTest@3f3afe78]" name="findAll" duration-ms="98" started-at="2020-04-19T17:11:47Z" finished-at="2020-04-19T17:11:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+      </class> <!-- test.SportsmenTeamsDAOTest -->
+      <class name="test.TrainerDAOTest">
+        <test-method status="PASS" signature="getTrainer()[pri:0, instance:test.TrainerDAOTest@36d64342]" name="getTrainer" duration-ms="103" started-at="2020-04-19T17:11:46Z" finished-at="2020-04-19T17:11:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTrainer -->
+        <test-method status="PASS" signature="saveUpdateDelete()[pri:1, instance:test.TrainerDAOTest@36d64342]" name="saveUpdateDelete" duration-ms="104" started-at="2020-04-19T17:11:46Z" finished-at="2020-04-19T17:11:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveUpdateDelete -->
+        <test-method status="PASS" signature="findAll()[pri:2, instance:test.TrainerDAOTest@36d64342]" name="findAll" duration-ms="95" started-at="2020-04-19T17:11:47Z" finished-at="2020-04-19T17:11:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+      </class> <!-- test.TrainerDAOTest -->
+      <class name="test.CompTeamsDAOTest">
+        <test-method status="PASS" signature="getCompTeams()[pri:0, instance:test.CompTeamsDAOTest@34ce8af7]" name="getCompTeams" duration-ms="139" started-at="2020-04-19T17:11:45Z" finished-at="2020-04-19T17:11:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCompTeams -->
+        <test-method status="PASS" signature="findAll()[pri:2, instance:test.CompTeamsDAOTest@34ce8af7]" name="findAll" duration-ms="126" started-at="2020-04-19T17:11:47Z" finished-at="2020-04-19T17:11:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+      </class> <!-- test.CompTeamsDAOTest -->
+      <class name="test.CompetitionDAOTest">
+        <test-method status="PASS" signature="getCompetition()[pri:0, instance:test.CompetitionDAOTest@6e8dacdf]" name="getCompetition" duration-ms="1792" started-at="2020-04-19T17:11:43Z" finished-at="2020-04-19T17:11:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCompetition -->
+        <test-method status="PASS" signature="saveUpdateDelete()[pri:1, instance:test.CompetitionDAOTest@6e8dacdf]" name="saveUpdateDelete" duration-ms="117" started-at="2020-04-19T17:11:46Z" finished-at="2020-04-19T17:11:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveUpdateDelete -->
+        <test-method status="PASS" signature="findAll()[pri:2, instance:test.CompetitionDAOTest@6e8dacdf]" name="findAll" duration-ms="222" started-at="2020-04-19T17:11:46Z" finished-at="2020-04-19T17:11:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+      </class> <!-- test.CompetitionDAOTest -->
+      <class name="test.SeatsDAOTest">
+        <test-method status="PASS" signature="getSeats()[pri:0, instance:test.SeatsDAOTest@b684286]" name="getSeats" duration-ms="147" started-at="2020-04-19T17:11:45Z" finished-at="2020-04-19T17:11:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSeats -->
+        <test-method status="PASS" signature="findAll()[pri:2, instance:test.SeatsDAOTest@b684286]" name="findAll" duration-ms="122" started-at="2020-04-19T17:11:47Z" finished-at="2020-04-19T17:11:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+      </class> <!-- test.SeatsDAOTest -->
+      <class name="test.SportsmanDAOTest">
+        <test-method status="PASS" signature="getSportsman()[pri:0, instance:test.SportsmanDAOTest@880ec60]" name="getSportsman" duration-ms="127" started-at="2020-04-19T17:11:45Z" finished-at="2020-04-19T17:11:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSportsman -->
+        <test-method status="PASS" signature="saveUpdateDelete()[pri:1, instance:test.SportsmanDAOTest@880ec60]" name="saveUpdateDelete" duration-ms="107" started-at="2020-04-19T17:11:46Z" finished-at="2020-04-19T17:11:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveUpdateDelete -->
+        <test-method status="PASS" signature="findAll()[pri:2, instance:test.SportsmanDAOTest@880ec60]" name="findAll" duration-ms="96" started-at="2020-04-19T17:11:47Z" finished-at="2020-04-19T17:11:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findAll -->
+      </class> <!-- test.SportsmanDAOTest -->
+    </test> <!-- sportinfo -->
+  </suite> <!-- Default Suite -->
+</testng-results>

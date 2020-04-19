@@ -54,6 +54,6 @@
     <ant antfile = "${selenium.dir}/build.xml"/>
   </target>
 
-  <target name = "all" depends = "clean, initdb, build, runtests, build-war, start-server, deploy, run-system-tests"/>
+  <target name = "all" depends = "clean, initdb, build, build-war, start-server, deploy"/>
 
 </project>

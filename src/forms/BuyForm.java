@@ -1,14 +1,14 @@
 package forms;
 
-import entity.Seats;
-
 public class BuyForm {
     private Long compId;
-    private Seats.SeatsType seatsType;
+    private String seatsType;
     private String email;
     private String card;
 
-    public BuyForm(Long id, Seats.SeatsType type) {
+    public BuyForm() {}
+
+    public BuyForm(Long id, String type) {
         compId = id;
         seatsType = type;
     }
@@ -21,11 +21,11 @@ public class BuyForm {
         return compId;
     }
 
-    public Seats.SeatsType getSeatsType() {
+    public String getSeatsType() {
         return seatsType;
     }
 
-    public void setSeatsType(Seats.SeatsType seatsType) {
+    public void setSeatsType(String seatsType) {
         this.seatsType = seatsType;
     }
 

@@ -14,6 +14,7 @@
         <mkdir dir = "${build.dir}"/>
         <copy file="src/hibernate.cfg.xml" todir="${build.dir}"/>
         <copy file = "${test.dir}/testng.xml" todir = "${build.dir}/test"/>
+        <copy file = "${src.dir}/selenium/testng.xml" todir = "${build.dir}/selenium"/>
 
         <javac includeantruntime = "false"
                destdir = "${build.dir}"

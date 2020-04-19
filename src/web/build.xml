@@ -1,6 +1,6 @@
 <?xml version = "1.0" encoding = "utf-8"?>
 <project basedir = "." default = "build-war" name = "webapp">
-    <property file = "../build.properties"/>
+    <property file = "../../build.properties"/>
 
     <target name = "init">
         <mkdir dir = "${webapp.dir}/WEB-INF/classes"/>

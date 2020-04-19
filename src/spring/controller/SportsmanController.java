@@ -64,10 +64,8 @@ public class SportsmanController {
                 sportsmenTeamsDAO.delete(item);
             }
             sportsmanDAO.delete(sportsman);
-            return "redirect:sportsmen";
-        } catch (Exception e) {
-            return "error";
-        }
+        } catch (Exception ignored) {}
+        return "redirect:sportsmen";
     }
 
     private void saveSportsman(SportsmanForm sportsmanForm) throws Exception {
@@ -91,7 +89,9 @@ public class SportsmanController {
             sportsmanDAO.update(sportsman);
         }
         if (sportsman.getTeamId() != null) {
-            sportsmenTeamsDAO.save(new SportsmenTeams(sportsman, sportsman.getTeamId()));
+            if (sportsmenTeamsDAO.getByCompositeId(sportsman.getSportsmanId(), sportsman.getTeamId().getTeamId()) == null) {
+                sportsmenTeamsDAO.save(new SportsmenTeams(sportsman, sportsman.getTeamId()));
+            }
         }
     }
 

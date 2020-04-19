@@ -1,0 +1,179 @@
+<html>
+<head>
+<title>TestNG:  sportinfo</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>sportinfo</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>20/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Apr 19 20:11:43 MSK 2020</td>
+</tr>
+<tr><td>Total time:</td><td>4 seconds (4140 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.CompetitionDAOTest.findAll()'><b>findAll</b><br>Test class: test.CompetitionDAOTest</td>
+<td></td>
+<td>0</td>
+<td>test.CompetitionDAOTest@6e8dacdf</td></tr>
+<tr>
+<td title='test.CompSportsmenDAOTest.findAll()'><b>findAll</b><br>Test class: test.CompSportsmenDAOTest</td>
+<td></td>
+<td>0</td>
+<td>test.CompSportsmenDAOTest@7a79be86</td></tr>
+<tr>
+<td title='test.CompTeamsDAOTest.findAll()'><b>findAll</b><br>Test class: test.CompTeamsDAOTest</td>
+<td></td>
+<td>0</td>
+<td>test.CompTeamsDAOTest@34ce8af7</td></tr>
+<tr>
+<td title='test.SeatsDAOTest.findAll()'><b>findAll</b><br>Test class: test.SeatsDAOTest</td>
+<td></td>
+<td>0</td>
+<td>test.SeatsDAOTest@b684286</td></tr>
+<tr>
+<td title='test.SportsmanDAOTest.findAll()'><b>findAll</b><br>Test class: test.SportsmanDAOTest</td>
+<td></td>
+<td>0</td>
+<td>test.SportsmanDAOTest@880ec60</td></tr>
+<tr>
+<td title='test.SportsmenTeamsDAOTest.findAll()'><b>findAll</b><br>Test class: test.SportsmenTeamsDAOTest</td>
+<td></td>
+<td>0</td>
+<td>test.SportsmenTeamsDAOTest@3f3afe78</td></tr>
+<tr>
+<td title='test.TeamDAOTest.findAll()'><b>findAll</b><br>Test class: test.TeamDAOTest</td>
+<td></td>
+<td>0</td>
+<td>test.TeamDAOTest@7f63425a</td></tr>
+<tr>
+<td title='test.TrainerDAOTest.findAll()'><b>findAll</b><br>Test class: test.TrainerDAOTest</td>
+<td></td>
+<td>0</td>
+<td>test.TrainerDAOTest@36d64342</td></tr>
+<tr>
+<td title='test.CompSportsmenDAOTest.getCompSportsmen()'><b>getCompSportsmen</b><br>Test class: test.CompSportsmenDAOTest</td>
+<td></td>
+<td>0</td>
+<td>test.CompSportsmenDAOTest@7a79be86</td></tr>
+<tr>
+<td title='test.CompTeamsDAOTest.getCompTeams()'><b>getCompTeams</b><br>Test class: test.CompTeamsDAOTest</td>
+<td></td>
+<td>0</td>
+<td>test.CompTeamsDAOTest@34ce8af7</td></tr>
+<tr>
+<td title='test.CompetitionDAOTest.getCompetition()'><b>getCompetition</b><br>Test class: test.CompetitionDAOTest</td>
+<td></td>
+<td>1</td>
+<td>test.CompetitionDAOTest@6e8dacdf</td></tr>
+<tr>
+<td title='test.SeatsDAOTest.getSeats()'><b>getSeats</b><br>Test class: test.SeatsDAOTest</td>
+<td></td>
+<td>0</td>
+<td>test.SeatsDAOTest@b684286</td></tr>
+<tr>
+<td title='test.SportsmanDAOTest.getSportsman()'><b>getSportsman</b><br>Test class: test.SportsmanDAOTest</td>
+<td></td>
+<td>0</td>
+<td>test.SportsmanDAOTest@880ec60</td></tr>
+<tr>
+<td title='test.SportsmenTeamsDAOTest.getSportsmenTeams()'><b>getSportsmenTeams</b><br>Test class: test.SportsmenTeamsDAOTest</td>
+<td></td>
+<td>0</td>
+<td>test.SportsmenTeamsDAOTest@3f3afe78</td></tr>
+<tr>
+<td title='test.TeamDAOTest.getTrainer()'><b>getTrainer</b><br>Test class: test.TeamDAOTest</td>
+<td></td>
+<td>0</td>
+<td>test.TeamDAOTest@7f63425a</td></tr>
+<tr>
+<td title='test.TrainerDAOTest.getTrainer()'><b>getTrainer</b><br>Test class: test.TrainerDAOTest</td>
+<td></td>
+<td>0</td>
+<td>test.TrainerDAOTest@36d64342</td></tr>
+<tr>
+<td title='test.CompetitionDAOTest.saveUpdateDelete()'><b>saveUpdateDelete</b><br>Test class: test.CompetitionDAOTest</td>
+<td></td>
+<td>0</td>
+<td>test.CompetitionDAOTest@6e8dacdf</td></tr>
+<tr>
+<td title='test.SportsmanDAOTest.saveUpdateDelete()'><b>saveUpdateDelete</b><br>Test class: test.SportsmanDAOTest</td>
+<td></td>
+<td>0</td>
+<td>test.SportsmanDAOTest@880ec60</td></tr>
+<tr>
+<td title='test.TeamDAOTest.saveUpdateDelete()'><b>saveUpdateDelete</b><br>Test class: test.TeamDAOTest</td>
+<td></td>
+<td>0</td>
+<td>test.TeamDAOTest@7f63425a</td></tr>
+<tr>
+<td title='test.TrainerDAOTest.saveUpdateDelete()'><b>saveUpdateDelete</b><br>Test class: test.TrainerDAOTest</td>
+<td></td>
+<td>0</td>
+<td>test.TrainerDAOTest@36d64342</td></tr>
+</table><p>
+</body>
+</html>
