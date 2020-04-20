@@ -115,6 +115,71 @@ public class Testing {
             assert(elements.size() > 0);
         }
         driver.findElement(By.linkText("Delete competition")).click();
+        driver.findElement(By.linkText("Add competition")).click();
+        driver.findElement(By.id("name")).click();
+        driver.findElement(By.id("name")).sendKeys("Test");
+        driver.findElement(By.id("location")).click();
+        driver.findElement(By.id("location")).sendKeys("Test");
+        driver.findElement(By.id("time")).click();
+        driver.findElement(By.id("time")).sendKeys("2020-02-03 12:00:00");
+        {
+            WebElement dropdown = driver.findElement(By.id("sportsmen"));
+            dropdown.findElement(By.xpath("//option[. = 'Artemy Panarin']")).click();
+        }
+        {
+            WebElement dropdown = driver.findElement(By.id("teams"));
+            dropdown.findElement(By.xpath("//option[. = 'None']")).click();
+        }
+        driver.findElement(By.id("numSeats")).click();
+        driver.findElement(By.id("numSeats")).sendKeys("2");
+        driver.findElement(By.id("price")).click();
+        driver.findElement(By.id("price")).sendKeys("200");
+        driver.findElement(By.xpath("(//input[@id=\'numSeats\'])[2]")).click();
+        driver.findElement(By.xpath("(//input[@id=\'numSeats\'])[2]")).sendKeys("0");
+        driver.findElement(By.xpath("(//input[@id=\'price\'])[2]")).click();
+        driver.findElement(By.xpath("(//input[@id=\'price\'])[2]")).sendKeys("0");
+        driver.findElement(By.xpath("(//input[@id=\'numSeats\'])[3]")).click();
+        driver.findElement(By.xpath("(//input[@id=\'numSeats\'])[3]")).sendKeys("0");
+        driver.findElement(By.xpath("(//input[@id=\'price\'])[3]")).click();
+        driver.findElement(By.xpath("(//input[@id=\'price\'])[3]")).sendKeys("0");
+        driver.findElement(By.cssSelector("input:nth-child(42)")).click();
+        driver.findElement(By.linkText("Test")).click();
+        assertThat(driver.findElement(By.cssSelector("td > div:nth-child(1)")).getText(), is("there are free seats"));
+        driver.findElement(By.linkText("More information about free seats and prices")).click();
+        {
+            List<WebElement> elements = driver.findElements(By.linkText("Buy ticket"));
+            assert(elements.size() > 0);
+        }
+        {
+            List<WebElement> elements = driver.findElements(By.cssSelector("td:nth-child(2)"));
+            assert(elements.size() > 0);
+        }
+        driver.findElement(By.linkText("Buy ticket")).click();
+        driver.findElement(By.id("email")).click();
+        driver.findElement(By.id("email")).sendKeys("user@gmail.com");
+        driver.findElement(By.id("card")).click();
+        driver.findElement(By.id("card")).sendKeys("1111");
+        driver.findElement(By.cssSelector("input:nth-child(9)")).click();
+        {
+            List<WebElement> elements = driver.findElements(By.cssSelector("td > div:nth-child(1)"));
+            assert(elements.size() > 0);
+        }
+        driver.findElement(By.linkText("More information about free seats and prices")).click();
+        assertThat(driver.findElement(By.cssSelector("td:nth-child(2)")).getText(), is("1"));
+        {
+            List<WebElement> elements = driver.findElements(By.linkText("Buy ticket"));
+            assert(elements.size() > 0);
+        }
+        driver.findElement(By.linkText("Buy ticket")).click();
+        driver.findElement(By.id("email")).click();
+        driver.findElement(By.id("email")).sendKeys("user@gmail.com");
+        driver.findElement(By.id("card")).click();
+        driver.findElement(By.id("card")).sendKeys("1111");
+        driver.findElement(By.cssSelector("input:nth-child(9)")).click();
+        assertThat(driver.findElement(By.cssSelector("div:nth-child(2)")).getText(), is("no free seats"));
+        driver.findElement(By.linkText("competitions")).click();
+        driver.findElement(By.linkText("Test")).click();
+        driver.findElement(By.linkText("Delete competition")).click();
         driver.findElement(By.linkText("sportsmen")).click();
         {
             List<WebElement> elements = driver.findElements(By.linkText("Add sportsman"));

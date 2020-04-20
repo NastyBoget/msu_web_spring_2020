@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="SystemSuite" duration-ms="9545" started-at="2020-04-19T17:11:00Z" finished-at="2020-04-19T17:11:09Z">
+  <suite name="SystemSuite" duration-ms="14931" started-at="2020-04-20T19:15:03Z" finished-at="2020-04-20T19:15:18Z">
     <groups>
     </groups>
-    <test name="SystemTest" duration-ms="9545" started-at="2020-04-19T17:11:00Z" finished-at="2020-04-19T17:11:09Z">
+    <test name="SystemTest" duration-ms="14931" started-at="2020-04-20T19:15:03Z" finished-at="2020-04-20T19:15:18Z">
       <class name="selenium.Testing">
-        <test-method status="PASS" signature="pagesTest()[pri:0, instance:selenium.Testing@7a79be86]" name="pagesTest" duration-ms="6779" started-at="2020-04-19T17:11:00Z" finished-at="2020-04-19T17:11:06Z">
+        <test-method status="PASS" signature="pagesTest()[pri:0, instance:selenium.Testing@7a79be86]" name="pagesTest" duration-ms="11929" started-at="2020-04-20T19:15:03Z" finished-at="2020-04-20T19:15:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pagesTest -->
-        <test-method status="PASS" signature="wrongTest()[pri:0, instance:selenium.Testing@7a79be86]" name="wrongTest" duration-ms="2749" started-at="2020-04-19T17:11:06Z" depends-on-methods="selenium.Testing.pagesTest" finished-at="2020-04-19T17:11:09Z">
+        <test-method status="PASS" signature="wrongTest()[pri:0, instance:selenium.Testing@7a79be86]" name="wrongTest" duration-ms="2982" started-at="2020-04-20T19:15:15Z" depends-on-methods="selenium.Testing.pagesTest" finished-at="2020-04-20T19:15:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrongTest -->
